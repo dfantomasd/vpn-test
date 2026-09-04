@@ -1,6 +1,8 @@
 import unittest
 import base64
-from scripts.experimental_vless import parse_link, source_lines, SOURCES, ROOT, is_whitelist_profile
+from scripts.experimental_vless import (parse_link, source_lines, SOURCES, ROOT,
+                                        is_whitelist_profile, MAX_PUBLISHED,
+                                        CURATED_MOBILE_SOURCES)
 from scripts import build_clients as clients
 
 
@@ -71,6 +73,8 @@ class ExperimentalTests(unittest.TestCase):
         self.assertEqual(len({name for name, _ in SOURCES}), len(SOURCES))
         self.assertEqual(len({url for _, url in SOURCES}), len(SOURCES))
         self.assertTrue(all(url.startswith('https://') for _, url in SOURCES))
+        self.assertLessEqual(MAX_PUBLISHED, 5)
+        self.assertTrue(CURATED_MOBILE_SOURCES <= {name for name, _ in SOURCES})
 
     def test_mobile_failure_keys_are_full_node_hashes(self):
         failures = clients.read_json(ROOT / 'experimental_mobile_failures.json')

@@ -44,6 +44,11 @@ PER_SOURCE_LIMIT = 5
 MAX_SOURCE_BYTES = 4_000_000
 MIN_SPEED_MBPS = 1.5
 MAX_LATENCY_MS = 1500
+MAX_PUBLISHED = 5
+CURATED_MOBILE_SOURCES = {
+    'internet-tenshi-whitelist', 'zieng2-whitelist', 'AirLink-whitelist',
+    'HardVPN-whitelist', 'Generation-Liberty', 'igareck-white-sni',
+}
 
 # Public services commonly reachable when Russian mobile operators switch to an
 # allow-list. This is only a candidate fingerprint, not proof of reachability.
@@ -233,7 +238,7 @@ def main():
             safe.append((source, outbound, values.pop()))
     policy = clients.routing_policy(working)
     template = clients.read_json(ROOT / 'subscription.txt')[1]
-    good, results = [], []
+    good, mobile_trials, results = [], [], []
     with tempfile.TemporaryDirectory(prefix='vpn-test-trial-') as directory:
         for index, (source, outbound, country) in enumerate(safe, 1):
             host = clients.server_host(outbound)
@@ -251,6 +256,13 @@ def main():
             if checked.returncode:
                 rejected['xray_rejected'] += 1
                 continue
+            # A white-list endpoint can deliberately be unreachable from a
+            # foreign GitHub runner while remaining reachable on Russian LTE.
+            # Keep a bounded, clearly labelled iPhone trial pool after Xray
+            # validates the complete configuration.
+            trial = copy.deepcopy(config)
+            trial['remarks'] = f"📱 ПРОВЕРИТЬ iPhone · {country} · {source} · {clients.node_key(outbound)[:6]}"
+            mobile_trials.append((source, trial))
             _, metric = probes.measure((name, outbound), args.mihomo)
             results.append({'name': name, **metric})
             print(f'{index}/{len(safe)} {name}: {metric["status"]}', flush=True)
@@ -258,15 +270,39 @@ def main():
                     and metric['latency_ms'] <= MAX_LATENCY_MS):
                 config['remarks'] += f" | тест: ≈{metric['speed_mbps']:.2f} Мбит/с · {metric['latency_ms']} мс"
                 good.append((metric['speed_mbps'], config))
+    verified = [config for _, config in sorted(good, key=lambda item: item[0], reverse=True)]
+    selected_keys = {clients.node_key(next(o for o in c['outbounds'] if o.get('protocol') == 'vless'))
+                     for c in verified}
+    curated = [item for item in mobile_trials if item[0] in CURATED_MOBILE_SOURCES]
+    other = [item for item in mobile_trials if item[0] not in CURATED_MOBILE_SOURCES]
+    fallback = []
+    used_sources = set()
+    # Source diversity first, then fill remaining slots in stable source order.
+    for source, config in curated + other:
+        key = clients.node_key(next(o for o in config['outbounds'] if o.get('protocol') == 'vless'))
+        if key in selected_keys or source in used_sources:
+            continue
+        fallback.append(config)
+        selected_keys.add(key)
+        used_sources.add(source)
+    for source, config in curated + other:
+        key = clients.node_key(next(o for o in config['outbounds'] if o.get('protocol') == 'vless'))
+        if key not in selected_keys:
+            fallback.append(config)
+            selected_keys.add(key)
+    payload = (verified + fallback)[:MAX_PUBLISHED]
     report = {'sources': [{'name': name, 'url': url, 'sha256': source_hashes.get(name)}
                           for name, url in SOURCES],
               'measured_at': datetime.datetime.now(datetime.timezone.utc).isoformat(),
               'vantage': 'GitHub Actions' if os.environ.get('GITHUB_ACTIONS') else 'local machine',
               'quality_thresholds': {'min_speed_mbps': MIN_SPEED_MBPS,
                                      'max_latency_ms': MAX_LATENCY_MS},
-              'rejected': dict(rejected), 'measurements': results, 'published_nodes': min(len(good), 10),
-              'note': 'Only resolved TCP VLESS TLS/REALITY subset. Not proof of Telegram access or operator trust.'}
-    payload = [config for _, config in sorted(good, key=lambda item: item[0], reverse=True)[:10]]
+              'rejected': dict(rejected), 'measurements': results,
+              'published_nodes': len(payload), 'externally_verified_nodes': len(verified[:MAX_PUBLISHED]),
+              'iphone_trial_nodes': max(0, len(payload) - len(verified[:MAX_PUBLISHED])),
+              'note': ('Foreign VLESS Reality white-list candidates. Names beginning with '
+                       '"ПРОВЕРИТЬ iPhone" passed structural/Xray validation but are intentionally '
+                       'not claimed to work until tested on Russian mobile access.')}
     (ROOT / 'subscription_experimental.txt').write_text(clients.json_text(payload), encoding='utf-8')
     (ROOT / 'experimental_report.json').write_text(clients.json_text(report), encoding='utf-8')
     print(f'Published {len(payload)} qualifying experimental profiles; working feeds untouched')
