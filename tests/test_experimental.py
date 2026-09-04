@@ -1,6 +1,6 @@
 import unittest
 import base64
-from scripts.experimental_vless import parse_link, source_lines
+from scripts.experimental_vless import parse_link, source_lines, SOURCES
 
 
 class ExperimentalTests(unittest.TestCase):
@@ -53,3 +53,8 @@ class ExperimentalTests(unittest.TestCase):
     def test_other_protocol_rejected(self):
         with self.assertRaises(ValueError):
             parse_link(self.link().replace('vless://', 'vmess://'))
+
+    def test_source_names_and_urls_are_unique_https(self):
+        self.assertEqual(len({name for name, _ in SOURCES}), len(SOURCES))
+        self.assertEqual(len({url for _, url in SOURCES}), len(SOURCES))
+        self.assertTrue(all(url.startswith('https://raw.githubusercontent.com/') for _, url in SOURCES))

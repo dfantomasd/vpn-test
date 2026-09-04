@@ -30,8 +30,11 @@ SOURCES = [
     ('igareck', 'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt'),
     ('Au1rxx', 'https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/v2ray-base64.txt'),
     ('morpheus', 'https://raw.githubusercontent.com/morpheusadam/v2ray-config/main/subs/bundles/reality.txt'),
+    ('Vovaplus', 'https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Secure/vless.txt'),
+    ('Radikal', 'https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt'),
+    ('aviamasters', 'https://raw.githubusercontent.com/aviamastersgh/vpn-free-russia/main/verified_configs.txt'),
 ]
-PER_SOURCE_LIMIT = 8
+PER_SOURCE_LIMIT = 5
 MAX_SOURCE_BYTES = 4_000_000
 MIN_SPEED_MBPS = 1.5
 MAX_LATENCY_MS = 1500
