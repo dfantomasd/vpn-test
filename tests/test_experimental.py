@@ -1,5 +1,6 @@
 import unittest
-from scripts.experimental_vless import parse_link
+import base64
+from scripts.experimental_vless import parse_link, source_lines
 
 
 class ExperimentalTests(unittest.TestCase):
@@ -17,10 +18,20 @@ class ExperimentalTests(unittest.TestCase):
         self.assertEqual(outbound['streamSettings']['realitySettings']['shortId'], 'abcd')
         self.assertEqual(outbound['streamSettings']['realitySettings']['spiderX'], '/hello')
 
-    def test_private_local_and_hostname_rejected(self):
-        for host in ('127.0.0.1', '10.0.0.1', '169.254.169.254', '[::1]', 'example.com'):
+    def test_private_local_rejected(self):
+        for host in ('127.0.0.1', '10.0.0.1', '169.254.169.254', '[::1]'):
             with self.subTest(host=host), self.assertRaises(ValueError):
                 parse_link(self.link(host))
+
+    def test_valid_hostname_is_accepted(self):
+        self.assertEqual(parse_link(self.link('example.com'))['settings']['vnext'][0]['address'],
+                         'example.com')
+
+    def test_plain_and_base64_sources(self):
+        line = self.link()
+        self.assertEqual(source_lines(line.encode()), [line])
+        encoded = base64.b64encode(line.encode())
+        self.assertEqual(source_lines(encoded), [line])
 
     def test_unknown_duplicate_or_insecure_parameters_rejected(self):
         for extra in ('&allowInsecure=1', '&insecure=true', '&type=ws', '&unknown=yes'):
