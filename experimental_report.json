@@ -13,68 +13,57 @@
     {
       "name": "morpheus",
       "url": "https://raw.githubusercontent.com/morpheusadam/v2ray-config/main/subs/bundles/reality.txt",
-      "sha256": null
+      "sha256": "fdc0fb031e533523a6b9a02ac46b8fcc8abc4e49dd47b7f6defd2583564488d7"
     }
   ],
-  "measured_at": "2026-09-04T17:27:26.807607+00:00",
+  "measured_at": "2026-09-04T17:35:46.113693+00:00",
   "vantage": "GitHub Actions",
+  "quality_thresholds": {
+    "min_speed_mbps": 1.5,
+    "max_latency_ms": 1500
+  },
   "rejected": {
     "igareck:unsupported_or_unsafe": 6,
-    "Au1rxx:unsupported_or_unsafe": 44,
-    "morpheus:source_too_large": 1,
-    "Au1rxx:russian_unknown_or_mixed_registration": 8
+    "Au1rxx:unsupported_or_unsafe": 41,
+    "Au1rxx:duplicate_or_existing": 1,
+    "morpheus:unsupported_or_unsafe": 16,
+    "morpheus:russian_geoip": 6,
+    "igareck:russian_unknown_or_mixed_registration": 7,
+    "Au1rxx:russian_unknown_or_mixed_registration": 8,
+    "morpheus:russian_unknown_or_mixed_registration": 3
   },
   "measurements": [
-    {
-      "name": "🧪 igareck · FI · 42f82e",
-      "status": "unavailable",
-      "reason": "latency_probe_failed"
-    },
-    {
-      "name": "🧪 igareck · FI · 8a84cf",
-      "status": "unavailable",
-      "reason": "latency_probe_failed"
-    },
-    {
-      "name": "🧪 igareck · FI · 96cc3c",
-      "status": "ok",
-      "latency_ms": 4741,
-      "speed_mbps": 0.39,
-      "sample_bytes": 262144,
-      "successful_samples": 3,
-      "samples_mbps": [
-        0.805432,
-        0.390272,
-        0.389032
-      ]
-    },
-    {
-      "name": "🧪 igareck · FI · 2e5efd",
-      "status": "unavailable",
-      "latency_ms": 1763,
-      "reason": "speed_probe_failed"
-    },
-    {
-      "name": "🧪 igareck · FI · 659972",
-      "status": "unavailable",
-      "reason": "latency_probe_failed"
-    },
-    {
-      "name": "🧪 igareck · FI · 8be252",
-      "status": "unavailable",
-      "reason": "latency_probe_failed"
-    },
-    {
-      "name": "🧪 igareck · FI · 293bcc",
-      "status": "unavailable",
-      "reason": "latency_probe_failed"
-    },
     {
       "name": "🧪 igareck · FR · 636c57",
       "status": "unavailable",
       "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 morpheus · US · 666e2d",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 morpheus · DE · e8f896",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 morpheus · FI · 80445e",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 morpheus · DE · eb0f64",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 morpheus · DE · f6fd4c",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
     }
   ],
-  "published_nodes": 1,
+  "published_nodes": 0,
   "note": "Only resolved TCP VLESS TLS/REALITY subset. Not proof of Telegram access or operator trust."
 }
