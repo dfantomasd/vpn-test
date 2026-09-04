@@ -212,12 +212,10 @@ def main():
                                      'max_latency_ms': MAX_LATENCY_MS},
               'rejected': dict(rejected), 'measurements': results, 'published_nodes': min(len(good), 10),
               'note': 'Only resolved TCP VLESS TLS/REALITY subset. Not proof of Telegram access or operator trust.'}
-    if not good:
-        raise SystemExit('No successful trial nodes; previous experimental subscription untouched')
     payload = [config for _, config in sorted(good, key=lambda item: item[0], reverse=True)[:10]]
     (ROOT / 'subscription_experimental.txt').write_text(clients.json_text(payload), encoding='utf-8')
     (ROOT / 'experimental_report.json').write_text(clients.json_text(report), encoding='utf-8')
-    print(f'Published {len(payload)} experimental profiles; working feeds untouched')
+    print(f'Published {len(payload)} qualifying experimental profiles; working feeds untouched')
 
 
 if __name__ == '__main__':
