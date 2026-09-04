@@ -224,6 +224,20 @@ class ClientTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'At least two'):
             clients.happ_json_configs([manual])
 
+    def test_happ_unknown_domains_can_reach_geoip_second_pass(self):
+        for config in json.loads(self.outputs['subscription.txt']):
+            routing = config['routing']
+            self.assertEqual(routing['domainStrategy'], 'IPIfNonMatch')
+            rules = routing['rules']
+            self.assertEqual(rules[-1]['ip'], ['0.0.0.0/0', '::/0'])
+            # Every rule requires a domain or IP: an unknown domain must not
+            # match a catch-all before Xray resolves it for the second pass.
+            self.assertTrue(all(r.get('domain') or r.get('ip') for r in rules))
+            ru_index = next(i for i, r in enumerate(rules) if 'geoip:ru' in r.get('ip', []))
+            self.assertLess(ru_index, len(rules) - 1)
+            self.assertEqual(rules[ru_index]['outboundTag'], 'direct')
+            self.assertNotEqual(rules[-1].get('outboundTag'), 'direct')
+
     def test_happ_manual_connection_preserved(self):
         for config in json.loads(self.outputs['subscription.txt'])[1:]:
             source = next(c for c in self.catalog if c['remarks'] == config['remarks'])

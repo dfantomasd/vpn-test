@@ -301,7 +301,11 @@ def happ_routing(policy, target):
         {'type': 'field', 'ip': ['geoip:telegram'], **target},
         {'type': 'field', 'domain': policy['DirectSites'], 'outboundTag': 'direct'},
         {'type': 'field', 'ip': policy['DirectIp'], 'outboundTag': 'direct'},
-        {'type': 'field', 'network': 'tcp,udp', **target},
+        # An unconditional network rule would match unresolved hostnames and
+        # suppress IPIfNonMatch's second pass, bypassing the RU IP rule above.
+        # Match all IPs instead: unresolved names trigger DNS, then RU IPs go
+        # direct and remaining addresses use the selected proxy/balancer.
+        {'type': 'field', 'ip': ['0.0.0.0/0', '::/0'], **target},
     ]}
 
 

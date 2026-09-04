@@ -1395,7 +1395,10 @@
         },
         {
           "type": "field",
-          "network": "tcp,udp",
+          "ip": [
+            "0.0.0.0/0",
+            "::/0"
+          ],
           "balancerTag": "Auto_Balancer"
         }
       ],
@@ -2241,7 +2244,10 @@
         },
         {
           "type": "field",
-          "network": "tcp,udp",
+          "ip": [
+            "0.0.0.0/0",
+            "::/0"
+          ],
           "outboundTag": "proxy"
         }
       ]
@@ -3060,7 +3066,10 @@
         },
         {
           "type": "field",
-          "network": "tcp,udp",
+          "ip": [
+            "0.0.0.0/0",
+            "::/0"
+          ],
           "outboundTag": "proxy"
         }
       ]
@@ -3879,7 +3888,10 @@
         },
         {
           "type": "field",
-          "network": "tcp,udp",
+          "ip": [
+            "0.0.0.0/0",
+            "::/0"
+          ],
           "outboundTag": "proxy"
         }
       ]
@@ -4683,7 +4695,10 @@
         },
         {
           "type": "field",
-          "network": "tcp,udp",
+          "ip": [
+            "0.0.0.0/0",
+            "::/0"
+          ],
           "outboundTag": "proxy"
         }
       ]
@@ -5487,7 +5502,10 @@
         },
         {
           "type": "field",
-          "network": "tcp,udp",
+          "ip": [
+            "0.0.0.0/0",
+            "::/0"
+          ],
           "outboundTag": "proxy"
         }
       ]
@@ -6305,7 +6323,10 @@
         },
         {
           "type": "field",
-          "network": "tcp,udp",
+          "ip": [
+            "0.0.0.0/0",
+            "::/0"
+          ],
           "outboundTag": "proxy"
         }
       ]
@@ -7124,7 +7145,10 @@
         },
         {
           "type": "field",
-          "network": "tcp,udp",
+          "ip": [
+            "0.0.0.0/0",
+            "::/0"
+          ],
           "outboundTag": "proxy"
         }
       ]
@@ -7928,7 +7952,10 @@
         },
         {
           "type": "field",
-          "network": "tcp,udp",
+          "ip": [
+            "0.0.0.0/0",
+            "::/0"
+          ],
           "outboundTag": "proxy"
         }
       ]
@@ -8732,7 +8759,10 @@
         },
         {
           "type": "field",
-          "network": "tcp,udp",
+          "ip": [
+            "0.0.0.0/0",
+            "::/0"
+          ],
           "outboundTag": "proxy"
         }
       ]
@@ -9536,7 +9566,10 @@
         },
         {
           "type": "field",
-          "network": "tcp,udp",
+          "ip": [
+            "0.0.0.0/0",
+            "::/0"
+          ],
           "outboundTag": "proxy"
         }
       ]
@@ -10355,7 +10388,10 @@
         },
         {
           "type": "field",
-          "network": "tcp,udp",
+          "ip": [
+            "0.0.0.0/0",
+            "::/0"
+          ],
           "outboundTag": "proxy"
         }
       ]
@@ -11174,7 +11210,10 @@
         },
         {
           "type": "field",
-          "network": "tcp,udp",
+          "ip": [
+            "0.0.0.0/0",
+            "::/0"
+          ],
           "outboundTag": "proxy"
         }
       ]
@@ -11978,7 +12017,10 @@
         },
         {
           "type": "field",
-          "network": "tcp,udp",
+          "ip": [
+            "0.0.0.0/0",
+            "::/0"
+          ],
           "outboundTag": "proxy"
         }
       ]
@@ -12782,7 +12824,10 @@
         },
         {
           "type": "field",
-          "network": "tcp,udp",
+          "ip": [
+            "0.0.0.0/0",
+            "::/0"
+          ],
           "outboundTag": "proxy"
         }
       ]
@@ -13600,7 +13645,10 @@
         },
         {
           "type": "field",
-          "network": "tcp,udp",
+          "ip": [
+            "0.0.0.0/0",
+            "::/0"
+          ],
           "outboundTag": "proxy"
         }
       ]
@@ -14404,7 +14452,10 @@
         },
         {
           "type": "field",
-          "network": "tcp,udp",
+          "ip": [
+            "0.0.0.0/0",
+            "::/0"
+          ],
           "outboundTag": "proxy"
         }
       ]
@@ -15208,7 +15259,10 @@
         },
         {
           "type": "field",
-          "network": "tcp,udp",
+          "ip": [
+            "0.0.0.0/0",
+            "::/0"
+          ],
           "outboundTag": "proxy"
         }
       ]
