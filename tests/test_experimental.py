@@ -1,6 +1,7 @@
 import unittest
 import base64
-from scripts.experimental_vless import parse_link, source_lines, SOURCES
+from scripts.experimental_vless import parse_link, source_lines, SOURCES, ROOT
+from scripts import build_clients as clients
 
 
 class ExperimentalTests(unittest.TestCase):
@@ -58,3 +59,10 @@ class ExperimentalTests(unittest.TestCase):
         self.assertEqual(len({name for name, _ in SOURCES}), len(SOURCES))
         self.assertEqual(len({url for _, url in SOURCES}), len(SOURCES))
         self.assertTrue(all(url.startswith('https://raw.githubusercontent.com/') for _, url in SOURCES))
+
+    def test_mobile_failure_keys_are_full_node_hashes(self):
+        failures = clients.read_json(ROOT / 'experimental_mobile_failures.json')
+        self.assertTrue(failures['node_keys'])
+        self.assertEqual(len(failures['node_keys']), len(set(failures['node_keys'])))
+        self.assertTrue(all(len(key) == 64 and set(key) <= set('0123456789abcdef')
+                            for key in failures['node_keys']))

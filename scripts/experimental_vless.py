@@ -136,6 +136,8 @@ def main():
     args = parser.parse_args()
     rejected = Counter()
     working = clients.read_json(ROOT / 'whitelist_configs_combined.json')
+    failures_path = ROOT / 'experimental_mobile_failures.json'
+    mobile_failures = set(clients.read_json(failures_path).get('node_keys', [])) if failures_path.exists() else set()
     existing_hosts = {clients.server_host(o) for _, o in clients.nodes(working)}
     nets = [ipaddress.ip_network(n) for rule in clients.read_json(ROOT / 'rules/geoip-ru.json')['rules']
             for n in rule['ip_cidr']]
@@ -153,6 +155,9 @@ def main():
                 outbound = parse_link(line)
                 host = clients.server_host(outbound)
                 identity = clients.node_key(outbound)
+                if identity in mobile_failures:
+                    rejected[source + ':failed_iphone_telegram'] += 1
+                    continue
                 if host in existing_hosts or identity in seen:
                     rejected[source + ':duplicate_or_existing'] += 1
                     continue
