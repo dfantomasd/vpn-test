@@ -9,11 +9,6 @@
     "name": "RU-YANDEXCLOUD",
     "url": "https://rdap.db.ripe.net/ip/158.160.15.114"
   },
-  "178.176.128.128": {
-    "country": "RU",
-    "name": "MF-MC-18072022",
-    "url": "https://rdap.db.ripe.net/ip/178.176.128.128"
-  },
   "188.72.103.4": {
     "country": "RU",
     "name": "RU-YANDEX-TELECOM-20090709",
@@ -74,15 +69,15 @@
     "name": "NET-31-56-150-0-24",
     "url": "https://rdap.db.ripe.net/ip/31.56.150.238"
   },
-  "31.56.150.249": {
-    "country": "AM",
-    "name": "NET-31-56-150-0-24",
-    "url": "https://rdap.db.ripe.net/ip/31.56.150.249"
-  },
   "31.56.150.26": {
     "country": "AM",
     "name": "NET-31-56-150-0-24",
     "url": "https://rdap.db.ripe.net/ip/31.56.150.26"
+  },
+  "31.56.150.42": {
+    "country": "AM",
+    "name": "NET-31-56-150-0-24",
+    "url": "https://rdap.db.ripe.net/ip/31.56.150.42"
   },
   "31.56.150.43": {
     "country": "AM",
@@ -118,6 +113,11 @@
     "country": "RU",
     "name": "RU-CLOUDRU-20101228",
     "url": "https://rdap.db.ripe.net/ip/46.243.142.42"
+  },
+  "87.242.127.82": {
+    "country": "RU",
+    "name": "RU-CLOUDRU-20050722",
+    "url": "https://rdap.db.ripe.net/ip/87.242.127.82"
   },
   "87.84.224.249": {
     "country": "EU",
