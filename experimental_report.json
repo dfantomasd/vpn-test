@@ -3,7 +3,7 @@
     {
       "name": "internet-tenshi-whitelist",
       "url": "https://internet-tenshi.kangel.tech/whitelist",
-      "sha256": "4264cca9513c66c00c64f5fe9c96d22ed3cd515102e969a578656df91b1aa7e9"
+      "sha256": "0be9f17686b46b8c53ee5f9aecfa36f00ee5917b2e3232df5f89559b808dfa0b"
     },
     {
       "name": "zieng2-whitelist",
@@ -38,7 +38,7 @@
     {
       "name": "Au1rxx",
       "url": "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/v2ray-base64.txt",
-      "sha256": "199ca0f3cf1bd26e88d6a0b08680a137f168ead9b56027a34c980ba0117c51b0"
+      "sha256": "990c1a6268666c897c4b4e6de5857a5b7825beaa485e1f4e8f8edcde30def162"
     },
     {
       "name": "morpheus",
@@ -53,7 +53,7 @@
     {
       "name": "Radikal",
       "url": "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt",
-      "sha256": "8bfbb82564edc8b3789b207583ca2ba876bcf513bfff6a91fb6f98bb527eeb80"
+      "sha256": "70fbfc49ea057e345ecd443654b6b5a10a8272708f8818e6475f1fab2a17b066"
     },
     {
       "name": "aviamasters",
@@ -61,7 +61,7 @@
       "sha256": "a23920ee6ef7e3ebe75a316182a2ef7ea7187ca1553ecb4ab3a72057dafce83b"
     }
   ],
-  "measured_at": "2026-09-04T21:15:33.172864+00:00",
+  "measured_at": "2026-09-04T21:22:36.284933+00:00",
   "vantage": "GitHub Actions",
   "quality_thresholds": {
     "min_speed_mbps": 1.5,
@@ -86,9 +86,8 @@
     "igareck-white-sni:unsupported_or_unsafe": 12,
     "igareck:unsupported_or_unsafe": 64,
     "igareck:not_mobile_whitelist_profile": 92,
-    "Au1rxx:unsupported_or_unsafe": 169,
-    "Au1rxx:not_mobile_whitelist_profile": 358,
-    "Au1rxx:duplicate_or_existing": 1,
+    "Au1rxx:unsupported_or_unsafe": 173,
+    "Au1rxx:not_mobile_whitelist_profile": 349,
     "morpheus:unsupported_or_unsafe": 19,
     "morpheus:russian_geoip": 8,
     "morpheus:not_mobile_whitelist_profile": 25,
@@ -100,31 +99,17 @@
     "aviamasters:unsupported_or_unsafe": 318,
     "aviamasters:not_mobile_whitelist_profile": 127,
     "aviamasters:russian_geoip": 1,
-    "internet-tenshi-whitelist:russian_unknown_or_mixed_registration": 3,
+    "internet-tenshi-whitelist:russian_unknown_or_mixed_registration": 4,
     "HardVPN-whitelist:russian_unknown_or_mixed_registration": 1,
+    "Generation-Liberty:russian_unknown_or_mixed_registration": 1,
     "Au1rxx:russian_unknown_or_mixed_registration": 5,
     "morpheus:russian_unknown_or_mixed_registration": 1,
-    "Vovaplus:russian_unknown_or_mixed_registration": 3,
-    "Radikal:russian_unknown_or_mixed_registration": 2
+    "Vovaplus:russian_unknown_or_mixed_registration": 5,
+    "Radikal:russian_unknown_or_mixed_registration": 5
   },
   "measurements": [
     {
-      "name": "🧪 internet-tenshi-whitelist · DE · d8659f",
-      "status": "unavailable",
-      "reason": "latency_probe_failed"
-    },
-    {
       "name": "🧪 internet-tenshi-whitelist · DE · c47865",
-      "status": "unavailable",
-      "reason": "latency_probe_failed"
-    },
-    {
-      "name": "🧪 Generation-Liberty · CY · e30d44",
-      "status": "unavailable",
-      "reason": "latency_probe_failed"
-    },
-    {
-      "name": "🧪 morpheus · BY · 1dfe42",
       "status": "unavailable",
       "reason": "latency_probe_failed"
     },
@@ -144,31 +129,13 @@
       "reason": "latency_probe_failed"
     },
     {
-      "name": "🧪 Vovaplus · AT · bfa275",
-      "status": "unavailable",
-      "reason": "latency_probe_failed"
-    },
-    {
-      "name": "🧪 Vovaplus · NL · fe5af7",
-      "status": "unavailable",
-      "reason": "latency_probe_failed"
-    },
-    {
-      "name": "🧪 Radikal · GB · bde0a2",
-      "status": "unavailable",
-      "reason": "latency_probe_failed"
-    },
-    {
-      "name": "🧪 Radikal · FI · 6145d3",
-      "status": "unavailable",
-      "reason": "latency_probe_failed"
-    },
-    {
-      "name": "🧪 Radikal · NL · f0ec7a",
+      "name": "🧪 morpheus · TR · 6db51d",
       "status": "unavailable",
       "reason": "latency_probe_failed"
     }
   ],
-  "published_nodes": 0,
-  "note": "Only resolved TCP VLESS TLS/REALITY subset. Not proof of Telegram access or operator trust."
+  "published_nodes": 5,
+  "externally_verified_nodes": 0,
+  "iphone_trial_nodes": 5,
+  "note": "Foreign VLESS Reality white-list candidates. Names beginning with \"ПРОВЕРИТЬ iPhone\" passed structural/Xray validation but are intentionally not claimed to work until tested on Russian mobile access."
 }
