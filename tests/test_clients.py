@@ -224,12 +224,27 @@ class ClientTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'At least two'):
             clients.happ_json_configs([manual])
 
-    def test_happ_manual_connection_and_dns_preserved(self):
+    def test_happ_manual_connection_preserved(self):
         for config in json.loads(self.outputs['subscription.txt'])[1:]:
             source = next(c for c in self.catalog if c['remarks'] == config['remarks'])
             self.assertEqual(config['outbounds'], source['outbounds'])
-            self.assertEqual(config.get('dns'), source.get('dns'))
             self.assertEqual(config.get('inbounds'), source.get('inbounds'))
+
+    def test_happ_split_dns_in_every_profile(self):
+        for config in json.loads(self.outputs['subscription.txt']):
+            dns = config['dns']
+            self.assertTrue(dns['disableFallbackIfMatch'])
+            domestic = dns['servers'][:2]
+            self.assertEqual([s['address'] for s in domestic],
+                             ['tcp+local://77.88.8.8', 'tcp+local://77.88.8.1'])
+            for server in domestic:
+                self.assertTrue(server['skipFallback'])
+                self.assertEqual(server['domains'], config['routing']['rules'][2]['domain'])
+                for name in ('tbank.ru', 'sberbank.ru', 'ozon.ru', 'max.ru'):
+                    self.assertIn('domain:' + name, server['domains'])
+                self.assertNotIn('geosite:telegram', server['domains'])
+            self.assertEqual(dns['servers'][2:],
+                             ['https://8.8.8.8/dns-query', 'https://8.8.4.4/dns-query'])
 
     def test_all_karing_conversions_fail_preserves_previous_file(self):
         with patch.object(clients, 'connection', side_effect=ValueError('unsupported')):

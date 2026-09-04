@@ -256,6 +256,7 @@ def happ_json_configs(catalog, as_of=None):
     for config in singles:
         proxy = next(o for o in config['outbounds'] if o['protocol'] == 'vless')
         config['routing'] = happ_routing(policy, {'outboundTag': proxy['tag']})
+        config['dns'] = happ_dns(policy)
     auto = copy.deepcopy(singles[0])
     auto['remarks'] = '🔄 Авто'
     proxies = []
@@ -277,6 +278,20 @@ def happ_json_configs(catalog, as_of=None):
                        'interval': '1m', 'timeout': '3s', 'sampling': 2},
     }
     return [auto] + singles, excluded_profiles
+
+
+def happ_dns(policy):
+    """Direct DNS only for direct domains; other names retain tunneled DoH.
+
+    TCP local mode bypasses Xray routing without relying on resolver GeoIP.
+    skipFallback prevents foreign queries reaching the domestic resolvers;
+    disableFallbackIfMatch prevents domestic queries falling back to the VPN.
+    """
+    domestic = [{'address': 'tcp+local://' + address,
+                 'domains': list(policy['DirectSites']), 'skipFallback': True}
+                for address in ('77.88.8.8', '77.88.8.1')]
+    return {'queryStrategy': 'UseIP', 'disableFallbackIfMatch': True,
+            'servers': domestic + ['https://8.8.8.8/dns-query', 'https://8.8.4.4/dns-query']}
 
 
 def happ_routing(policy, target):
