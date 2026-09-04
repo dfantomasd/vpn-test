@@ -1,6 +1,8 @@
 name: Experimental VLESS
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '47 * * * *'
 permissions:
   contents: read
 concurrency:

@@ -74,6 +74,11 @@ def is_whitelist_profile(outbound):
                     for suffix in WHITELIST_SNI_SUFFIXES))
 
 
+def quality_score(metric):
+    """Balance useful throughput with connection responsiveness."""
+    return metric['speed_mbps'] / (1 + metric['latency_ms'] / 200)
+
+
 def parse_link(line):
     """Only literal public IP + UUID + TCP/TLS or TCP/REALITY, fail closed."""
     url = urllib.parse.urlsplit(line.strip())
@@ -290,7 +295,7 @@ def main():
             if (metric['status'] == 'ok' and metric['speed_mbps'] >= MIN_SPEED_MBPS
                     and metric['latency_ms'] <= MAX_LATENCY_MS):
                 config['remarks'] += f" | тест: ≈{metric['speed_mbps']:.2f} Мбит/с · {metric['latency_ms']} мс"
-                good.append((metric['speed_mbps'], config))
+                good.append((quality_score(metric), config))
     confirmed = [config for _, config in mobile_trials
                  if clients.node_key(next(o for o in config['outbounds'] if o.get('protocol') == 'vless'))
                  in mobile_successes]

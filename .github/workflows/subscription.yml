@@ -3,6 +3,9 @@ name: Subscription
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'subscription_experimental.txt'
+      - 'experimental_report.json'
   pull_request:
   workflow_dispatch:
   schedule:

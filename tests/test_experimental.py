@@ -2,7 +2,7 @@ import unittest
 import base64
 from scripts.experimental_vless import (parse_link, source_lines, SOURCES, ROOT,
                                         is_whitelist_profile, MAX_PUBLISHED,
-                                        CURATED_MOBILE_SOURCES)
+                                        CURATED_MOBILE_SOURCES, quality_score)
 from scripts import build_clients as clients
 
 
@@ -60,6 +60,13 @@ class ExperimentalTests(unittest.TestCase):
     def test_foreign_sni_is_not_whitelist_profile(self):
         params = 'security=reality&type=tcp&sni=example.com&pbk=' + 'a' * 43 + '&sid=abcd'
         self.assertFalse(is_whitelist_profile(parse_link(self.link(params=params))))
+
+    def test_candidate_score_rewards_speed_and_low_latency(self):
+        fast = quality_score({'speed_mbps': 10, 'latency_ms': 100})
+        slow = quality_score({'speed_mbps': 5, 'latency_ms': 100})
+        laggy = quality_score({'speed_mbps': 10, 'latency_ms': 900})
+        self.assertGreater(fast, slow)
+        self.assertGreater(fast, laggy)
 
     def test_russian_label_rejected(self):
         with self.assertRaises(ValueError):
