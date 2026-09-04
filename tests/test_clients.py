@@ -5,6 +5,7 @@ import json
 import re
 import unittest
 import urllib.parse
+from unittest.mock import patch
 
 from scripts import build_clients as clients
 
@@ -142,15 +143,18 @@ class ClientTests(unittest.TestCase):
     def test_happ_native_auto_profile_preserved_first(self):
         configs = json.loads(self.outputs['subscription.txt'])
         self.assertIn('Авто', configs[0]['remarks'])
-        self.assertIn('burstObservatory', configs[0])
-        self.assertTrue(configs[0]['routing'].get('balancers'))
-        self.assertGreater(len([o for o in configs[0]['outbounds'] if o['protocol'] == 'vless']), 1)
-        source = next(c for c in self.catalog if 'Авто' in c['remarks'])
-        self.assertEqual(configs[0], source)
+        original = copy.deepcopy(configs[0])
+        original.pop('remarks')
+        self.assertTrue(any({k: v for k, v in c.items() if k != 'remarks'} == original
+                            for c in self.catalog))
+        if configs[0]['routing'].get('balancers'):
+            self.assertIn('burstObservatory', configs[0])
+        else:
+            self.assertIn('Авто недоступен', configs[0]['remarks'])
 
     def test_happ_fastest_second_preserves_native_config(self):
         configs = json.loads(self.outputs['subscription.txt'])
-        self.assertIn('Авто по скорости', configs[1]['remarks'])
+        self.assertIn('Скорость', configs[1]['remarks'])
         source = [c for c in configs[2:] if len([
             o for o in c['outbounds'] if o['protocol'] == 'vless']) == 1]
         self.assertGreaterEqual(len(source), 2)
@@ -171,7 +175,7 @@ class ClientTests(unittest.TestCase):
         for metrics in ({}, {clients.node_key(o): {'status': 'unavailable',
                          'speed_mbps': 999} for c in configs for o in c['outbounds']}):
             fallback = clients.happ_fastest_profile(configs, metrics)
-            self.assertIn('нет замера', fallback['remarks'])
+            self.assertIn('нет свежего замера', fallback['remarks'])
             fallback['remarks'] = configs[0]['remarks']
             self.assertEqual(fallback, configs[0])
 
@@ -187,6 +191,32 @@ class ClientTests(unittest.TestCase):
         catalog = [{'remarks': 'mixed', 'outbounds': [vless, {'protocol': 'hysteria'},
                     {'protocol': 'trojan'}, {'protocol': 'vmess'}, {'protocol': 'shadowsocks'}]}]
         self.assertEqual(clients.nodes(catalog), [('mixed', vless)])
+
+    def test_measurement_expiry(self):
+        report = {'measured_at': '2026-09-04T00:00:00+00:00'}
+        self.assertTrue(clients.measurements_fresh(report, '2026-09-04T05:59:00+00:00'))
+        self.assertFalse(clients.measurements_fresh(report, '2026-09-04T06:01:00+00:00'))
+        self.assertFalse(clients.measurements_fresh(report, '2026-09-03T23:59:00+00:00'))
+        self.assertFalse(clients.measurements_fresh({}, '2026-09-04T00:00:00+00:00'))
+
+    def test_fastest_retains_previous_within_fifteen_percent(self):
+        configs = [{'remarks': str(i), 'outbounds': [{'protocol': 'vless', 'settings': {'id': i}}]}
+                   for i in range(2)]
+        metrics = {clients.node_key(c['outbounds'][0]): {'status': 'ok', 'speed_mbps': speed}
+                   for c, speed in zip(configs, (10, 11))}
+        with patch.object(clients.Path, 'exists', return_value=True), \
+                patch.object(clients, 'read_json', return_value=[configs[1], configs[0]]):
+            self.assertEqual(clients.happ_fastest_profile(configs, metrics)['outbounds'], configs[0]['outbounds'])
+            metrics[clients.node_key(configs[1]['outbounds'][0])]['speed_mbps'] = 12
+            self.assertEqual(clients.happ_fastest_profile(configs, metrics)['outbounds'], configs[1]['outbounds'])
+
+    def test_unknown_registration_is_excluded(self):
+        read = clients.read_json
+        def without_registration(path):
+            return {} if path.name == 'server_registration.json' else read(path)
+        with patch.object(clients, 'read_json', side_effect=without_registration):
+            with self.assertRaisesRegex(ValueError, 'No non-Russian nodes'):
+                clients.foreign_nodes(self.catalog)
 
 
 if __name__ == '__main__':

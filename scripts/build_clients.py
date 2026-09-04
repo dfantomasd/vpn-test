@@ -6,6 +6,7 @@ import argparse
 import base64
 import copy
 import math
+import datetime
 import hashlib
 import ipaddress
 import json
@@ -17,7 +18,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE = "https://raw.githubusercontent.com/dfantomasd/VPN_BEST/main/"
+BASE = "https://raw.githubusercontent.com/dfantomasd/vpn-test/main/"
 GEO_BASE = "https://raw.githubusercontent.com/KaringX/karing-ruleset/sing/geo/"
 RULE_SOURCES = {
     "category-ru.json": GEO_BASE + "geosite/category-ru.json",
@@ -200,6 +201,9 @@ def foreign_nodes(catalog):
             reason = reason or "Russian entry IP (GeoIP RU)"
         if any(registrations.get(str(ip), {}).get("country") == "RU" for ip in addresses):
             reason = reason or "Russian network registration (RDAP RU)"
+        if any(not registrations.get(str(ip), {}).get("country") or
+               registrations.get(str(ip), {}).get("lookup_failed") for ip in addresses):
+            reason = reason or "Unknown network registration country"
         if reason:
             excluded.append({"name": name, "server": host, "reason": reason})
         else:
@@ -209,7 +213,7 @@ def foreign_nodes(catalog):
     return accepted, excluded
 
 
-def happ_json_configs(catalog):
+def happ_json_configs(catalog, as_of=None):
     """Preserve native Happ/Xray configs; filter whole profiles fail-closed.
 
     Removing an outbound from a balancer or whitelist chain can change semantics,
@@ -236,12 +240,33 @@ def happ_json_configs(catalog):
             result.append(config)
     if not result:
         raise ValueError("No safe native Happ profiles remain")
-    if "Авто" not in result[0].get("remarks", ""):
-        raise ValueError("Native auto-balancer must remain first")
     path = ROOT / "measurements.json"
-    metrics = read_json(path).get("nodes", {}) if path.exists() else {}
-    result.insert(1, happ_fastest_profile(result, metrics))
+    report = read_json(path) if path.exists() else {}
+    metrics = report.get("nodes", {}) if measurements_fresh(report, as_of or build_time()) else {}
+    result = copy.deepcopy(result)
+    if result[0].get("routing", {}).get("balancers"):
+        result[0]["remarks"] = "🔄 Авто — низкая задержка"
+    else:
+        result[0]["remarks"] = "🔄 Авто недоступен — резерв | " + result[0]["remarks"]
+    fastest = happ_fastest_profile(result, metrics)
+    if metrics:
+        fastest["remarks"] += " | замер " + report["measured_at"][:16] + " UTC"
+    result.insert(1, fastest)
     return result, excluded_profiles
+
+
+def build_time():
+    path = ROOT / "build_report.json"
+    return (read_json(path).get("generated_at") if path.exists() else None) or datetime.datetime.now(datetime.timezone.utc).isoformat()
+
+
+def measurements_fresh(report, as_of):
+    try:
+        age = (datetime.datetime.fromisoformat(as_of) -
+               datetime.datetime.fromisoformat(report["measured_at"])).total_seconds()
+        return 0 <= age <= 6 * 3600
+    except (KeyError, TypeError, ValueError):
+        return False
 
 
 def happ_fastest_profile(configs, metrics):
@@ -262,11 +287,22 @@ def happ_fastest_profile(configs, metrics):
             candidates.append((speed, config, metric))
     if not candidates:
         profile = copy.deepcopy(configs[0])
-        profile["remarks"] = "⚡ Авто по скорости | нет замера — резерв Авто"
+        profile["remarks"] = "⚡ Скорость | нет свежего замера — резерв Авто"
         return profile
     speed, winner, metric = max(candidates, key=lambda item: item[0])
+    previous_path = ROOT / "subscription.txt"
+    if previous_path.exists():
+        previous = read_json(previous_path)
+        if len(previous) > 1:
+            keys = {node_key(o) for o in previous[1].get("outbounds", []) if o.get("protocol") == "vless"}
+            if len(keys) == 1:
+                for candidate in candidates:
+                    key = next(node_key(o) for o in candidate[1]["outbounds"] if o.get("protocol") == "vless")
+                    if key in keys and candidate[0] * 1.15 >= speed:
+                        speed, winner, metric = candidate
+                        break
     profile = copy.deepcopy(winner)
-    profile["remarks"] = (f"⚡ Авто по скорости | тест GitHub: ≈{speed:.2f} Мбит/с"
+    profile["remarks"] = (f"⚡ Скорость — выбор по тесту GitHub: ≈{speed:.2f} Мбит/с"
                           f" · {metric.get('latency_ms', '?')} мс | {winner['remarks']}")
     return profile
 
@@ -394,13 +430,14 @@ def yaml_document(config):
     return "\n".join(lines) + "\n"
 
 
-def build():
+def build(as_of=None):
+    as_of = as_of or build_time()
     catalog = read_json(ROOT / "whitelist_configs_combined.json")
     policy = routing_policy(catalog)
     selected, russian_excluded = foreign_nodes(catalog)
     selected = ranked_nodes(selected)
     converted = [connection(name, outbound) for name, outbound in selected]
-    happ_configs, happ_excluded = happ_json_configs(catalog)
+    happ_configs, happ_excluded = happ_json_configs(catalog, as_of)
     happ = json_text(happ_configs)
     proxies = [proxy for _, proxy in converted if proxy is not None]
     names = [p["name"] for p in proxies]
@@ -415,7 +452,7 @@ def build():
                                       read_json(ROOT / "rules/geoip-ru.json"))}
     excluded = [urllib.parse.unquote(urllib.parse.urlsplit(link).fragment)
                 for link, proxy in converted if proxy is None]
-    report = {"allowed_protocols": ["vless"], "happ_format": "native Xray JSON array",
+    report = {"generated_at": as_of, "allowed_protocols": ["vless"], "happ_format": "native Xray JSON array",
               "happ_profiles": len(happ_configs), "happ_excluded_profiles": happ_excluded,
               "karing_nodes": len(proxies),
               "karing_rules": len(config["rules"]), "karing_excluded_advanced_xhttp": excluded,
@@ -440,7 +477,7 @@ def main():
         if args.check:
             parser.error("--check does not allow --resolve-servers")
         resolve_server_names()
-    outputs = build()
+    outputs = build(None if args.check else datetime.datetime.now(datetime.timezone.utc).isoformat())
     for filename, content in outputs.items():
         path = ROOT / filename
         if args.check:
@@ -448,6 +485,14 @@ def main():
                 raise SystemExit("Generated file is stale: " + filename)
         else:
             path.write_text(content, encoding="utf-8")
+    if not args.check:
+        readme = ROOT / "README.md"
+        measured = read_json(ROOT / "measurements.json").get("measured_at", "нет")
+        status = ("<!-- refresh-status:start -->\nПоследняя сборка (UTC): "
+                  + json.loads(outputs["build_report.json"])["generated_at"]
+                  + ". Последний замер: " + measured + ".\n<!-- refresh-status:end -->")
+        readme.write_text(re.sub(r'<!-- refresh-status:start -->.*?<!-- refresh-status:end -->',
+                                lambda _: status, readme.read_text(), flags=re.S), encoding="utf-8")
     print("Client subscriptions validated" if args.check else "Client subscriptions generated")
 
 

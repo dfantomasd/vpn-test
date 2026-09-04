@@ -12,6 +12,7 @@ import socket
 import subprocess
 import tempfile
 import time
+import statistics
 from pathlib import Path
 
 try:
@@ -76,12 +77,15 @@ def measure(item, binary):
                 result["reason"] = "latency_probe_failed"
                 return key, result
             result["latency_ms"] = round(ping["time_starttransfer"] * 1000)
-            speed = curl_probe(port, SPEED_URL, DOWNLOAD_BYTES)
-            if speed.get("curl_exit") or speed.get("http_code") != 200 or speed.get("size_download") != DOWNLOAD_BYTES:
+            samples = [curl_probe(port, SPEED_URL, DOWNLOAD_BYTES) for _ in range(3)]
+            speeds = [s["speed_download"] * 8 / 1_000_000 for s in samples
+                      if not s.get("curl_exit") and s.get("http_code") == 200
+                      and s.get("size_download") == DOWNLOAD_BYTES and s.get("speed_download", 0) > 0]
+            if len(speeds) < 2:
                 result["reason"] = "speed_probe_failed"
                 return key, result
-            result.update({"status": "ok", "speed_mbps": round(speed["speed_download"] * 8 / 1_000_000, 2),
-                           "sample_bytes": DOWNLOAD_BYTES})
+            result.update({"status": "ok", "speed_mbps": round(statistics.median(speeds), 2),
+                           "sample_bytes": DOWNLOAD_BYTES, "successful_samples": len(speeds), "samples_mbps": speeds})
         except (OSError, subprocess.TimeoutExpired, KeyError) as exc:
             result["reason"] = type(exc).__name__
         finally:
@@ -113,9 +117,9 @@ def main():
             print(result["name"], result["status"], flush=True)
     report = {"measured_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
               "vantage": "GitHub Actions" if os.environ.get("GITHUB_ACTIONS") else "local machine",
-              "download_bytes_per_node": DOWNLOAD_BYTES,
+              "download_bytes_per_node": DOWNLOAD_BYTES * 3,
               "latency_method": "HTTPS time to first byte through proxy (not ICMP)",
-              "speed_method": "256 KiB bounded HTTPS sample, approximate Mbps",
+              "speed_method": "Median of 3 bounded 256 KiB HTTPS samples; minimum 2 successes",
               "nodes": results}
     (clients.ROOT / "measurements.json").write_text(clients.json_text(report), encoding="utf-8")
 

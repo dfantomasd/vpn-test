@@ -1,0 +1,14 @@
+name: Validate native Happ profiles
+description: Install pinned Xray and validate all profiles without connecting
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        mkdir -p "$RUNNER_TEMP/xray"
+        gh release download v26.3.27 --repo XTLS/Xray-core --pattern Xray-linux-64.zip --dir "$RUNNER_TEMP/xray" --clobber
+        unzip -oq "$RUNNER_TEMP/xray/Xray-linux-64.zip" -d "$RUNNER_TEMP/xray"
+        chmod u+x "$RUNNER_TEMP/xray/xray"
+        python scripts/validate_xray.py --xray "$RUNNER_TEMP/xray/xray" --assets "$RUNNER_TEMP/xray"

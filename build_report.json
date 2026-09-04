@@ -1,10 +1,23 @@
 {
+  "generated_at": "2026-09-04T15:59:54.101699+00:00",
   "allowed_protocols": [
     "vless"
   ],
   "happ_format": "native Xray JSON array",
-  "happ_profiles": 21,
+  "happ_profiles": 18,
   "happ_excluded_profiles": [
+    {
+      "name": "🇪🇺 🚀Авто | Лучший сервер ⚡⚡",
+      "reason": "Contains Russian or location-unknown VLESS endpoint"
+    },
+    {
+      "name": "🇨🇭⚡Швейцария-3 EXTRA",
+      "reason": "Contains Russian or location-unknown VLESS endpoint"
+    },
+    {
+      "name": "🇨🇭⚡Швейцария-4 EXTRA",
+      "reason": "Contains Russian or location-unknown VLESS endpoint"
+    },
     {
       "name": "🇫🇮🎮Финляндия GAMING",
       "reason": "Contains non-VLESS outbound"
@@ -50,10 +63,20 @@
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     }
   ],
-  "karing_nodes": 19,
+  "karing_nodes": 17,
   "karing_rules": 26416,
   "karing_excluded_advanced_xhttp": [],
   "excluded_russian_or_unknown_servers": [
+    {
+      "name": "🇨🇭⚡Швейцария-3 EXTRA",
+      "server": "2604:86c0:f401:a::4",
+      "reason": "Unknown network registration country"
+    },
+    {
+      "name": "🇨🇭⚡Швейцария-4 EXTRA",
+      "server": "263160.aib2bsas.online",
+      "reason": "Unknown network registration country"
+    },
     {
       "name": "🇷🇺💳Россия-1",
       "server": "193.124.128.233",

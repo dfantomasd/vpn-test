@@ -25,6 +25,7 @@ jobs:
           python-version: '3.12'
       - run: python -m unittest discover -s tests -v
       - run: python scripts/build_clients.py --check
+      - uses: ./.github/actions/check-xray
 
   refresh:
     needs: validate
@@ -56,11 +57,12 @@ jobs:
           gh release download v1.19.30 --repo MetaCubeX/mihomo --pattern mihomo-linux-amd64-v1-v1.19.30.gz --dir "$RUNNER_TEMP"
           gzip -d "$RUNNER_TEMP/mihomo-linux-amd64-v1-v1.19.30.gz"
           chmod u+x "$RUNNER_TEMP/mihomo-linux-amd64-v1-v1.19.30"
-      - name: Measure servers (256 KiB maximum download sample per node)
+      - name: Measure servers (three bounded 256 KiB samples per node)
         run: python scripts/measure_nodes.py --mihomo "$RUNNER_TEMP/mihomo-linux-amd64-v1-v1.19.30"
       - name: Publish measured order and annotations
         run: python scripts/build_clients.py
       - run: python -m unittest discover -s tests -v
+      - uses: ./.github/actions/check-xray
       - name: Commit catalog
         run: |
           if git diff --quiet; then
@@ -68,6 +70,6 @@ jobs:
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add whitelist_configs_combined.json subscription.txt subscription_karing.txt routing_russia.json build_report.json measurements.json rules/
+          git add README.md whitelist_configs_combined.json subscription.txt subscription_karing.txt routing_russia.json build_report.json measurements.json rules/
           git commit -m 'Update subscription catalog'
           git push origin HEAD:main
