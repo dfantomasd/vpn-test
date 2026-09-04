@@ -1,0 +1,43 @@
+name: Experimental VLESS
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: subscription-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  trial:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -v
+      - name: Install pinned test cores
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/trial-cores"
+          gh release download v26.3.27 --repo XTLS/Xray-core --pattern Xray-linux-64.zip --dir "$RUNNER_TEMP/trial-cores"
+          unzip -q "$RUNNER_TEMP/trial-cores/Xray-linux-64.zip" -d "$RUNNER_TEMP/trial-cores"
+          gh release download v1.19.30 --repo MetaCubeX/mihomo --pattern mihomo-linux-amd64-v1-v1.19.30.gz --dir "$RUNNER_TEMP/trial-cores"
+          gzip -d "$RUNNER_TEMP/trial-cores/mihomo-linux-amd64-v1-v1.19.30.gz"
+          chmod u+x "$RUNNER_TEMP/trial-cores/xray" "$RUNNER_TEMP/trial-cores/mihomo-linux-amd64-v1-v1.19.30"
+      - name: Measure and build isolated trial subscription
+        run: python scripts/experimental_vless.py --mihomo "$RUNNER_TEMP/trial-cores/mihomo-linux-amd64-v1-v1.19.30" --xray "$RUNNER_TEMP/trial-cores/xray" --assets "$RUNNER_TEMP/trial-cores"
+      - name: Publish only experimental files
+        run: |
+          git diff --exit-code -- subscription.txt subscription_karing.txt
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add subscription_experimental.txt experimental_report.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Refresh experimental VLESS candidates'
+          git push origin HEAD:main
