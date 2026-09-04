@@ -8,15 +8,30 @@
     {
       "name": "Au1rxx",
       "url": "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/v2ray-base64.txt",
-      "sha256": "5f9b5243274be6f986a337ba16426f03d6f1bb8a16b6c0a2e14cc1a893f70641"
+      "sha256": "bfae4923215ab24281d8efe736295176eed6cef9de4a7250bedff75e603da476"
     },
     {
       "name": "morpheus",
       "url": "https://raw.githubusercontent.com/morpheusadam/v2ray-config/main/subs/bundles/reality.txt",
       "sha256": "fdc0fb031e533523a6b9a02ac46b8fcc8abc4e49dd47b7f6defd2583564488d7"
+    },
+    {
+      "name": "Vovaplus",
+      "url": "https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Secure/vless.txt",
+      "sha256": "b69b1d447ba46d7692a2fc955a7c85c0ba8184b0ff9813561056c4155f5b0093"
+    },
+    {
+      "name": "Radikal",
+      "url": "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt",
+      "sha256": "63788c67bce3d783be2c66703d31cb162c80671c893197141e7b77ba255d23ab"
+    },
+    {
+      "name": "aviamasters",
+      "url": "https://raw.githubusercontent.com/aviamastersgh/vpn-free-russia/main/verified_configs.txt",
+      "sha256": "eb70063244c11dc1a5464581102fc2638e9a4bb6c17ae7f7cf5f0d5fca423eed"
     }
   ],
-  "measured_at": "2026-09-04T17:35:46.113693+00:00",
+  "measured_at": "2026-09-04T18:17:12.783087+00:00",
   "vantage": "GitHub Actions",
   "quality_thresholds": {
     "min_speed_mbps": 1.5,
@@ -24,17 +39,45 @@
   },
   "rejected": {
     "igareck:unsupported_or_unsafe": 6,
-    "Au1rxx:unsupported_or_unsafe": 41,
-    "Au1rxx:duplicate_or_existing": 1,
-    "morpheus:unsupported_or_unsafe": 16,
-    "morpheus:russian_geoip": 6,
-    "igareck:russian_unknown_or_mixed_registration": 7,
-    "Au1rxx:russian_unknown_or_mixed_registration": 8,
-    "morpheus:russian_unknown_or_mixed_registration": 3
+    "Au1rxx:unsupported_or_unsafe": 38,
+    "morpheus:unsupported_or_unsafe": 14,
+    "morpheus:russian_geoip": 5,
+    "Vovaplus:unsupported_or_unsafe": 5,
+    "Radikal:unsupported_or_unsafe": 16,
+    "aviamasters:unsupported_or_unsafe": 22,
+    "Au1rxx:russian_unknown_or_mixed_registration": 5,
+    "morpheus:russian_unknown_or_mixed_registration": 2,
+    "Vovaplus:russian_unknown_or_mixed_registration": 4,
+    "Radikal:russian_unknown_or_mixed_registration": 1
   },
   "measurements": [
     {
-      "name": "🧪 igareck · FR · 636c57",
+      "name": "🧪 igareck · FI · 42f82e",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 igareck · FI · 8a84cf",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 igareck · FI · 96cc3c",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 igareck · FI · 2e5efd",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 igareck · FI · 659972",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 morpheus · NL · 0f9cb0",
       "status": "unavailable",
       "reason": "latency_probe_failed"
     },
@@ -44,26 +87,118 @@
       "reason": "latency_probe_failed"
     },
     {
-      "name": "🧪 morpheus · DE · e8f896",
-      "status": "unavailable",
-      "reason": "latency_probe_failed"
-    },
-    {
       "name": "🧪 morpheus · FI · 80445e",
       "status": "unavailable",
       "reason": "latency_probe_failed"
     },
     {
-      "name": "🧪 morpheus · DE · eb0f64",
+      "name": "🧪 Vovaplus · US · a18d04",
+      "status": "ok",
+      "latency_ms": 99,
+      "speed_mbps": 11.15,
+      "sample_bytes": 262144,
+      "successful_samples": 3,
+      "samples_mbps": [
+        10.335224,
+        11.14972,
+        11.193704
+      ]
+    },
+    {
+      "name": "🧪 Radikal · GB · 797336",
+      "status": "ok",
+      "latency_ms": 346,
+      "speed_mbps": 3.0,
+      "sample_bytes": 262144,
+      "successful_samples": 3,
+      "samples_mbps": [
+        3.008824,
+        3.000528,
+        2.932376
+      ]
+    },
+    {
+      "name": "🧪 Radikal · GB · a80e3e",
+      "status": "ok",
+      "latency_ms": 342,
+      "speed_mbps": 3.09,
+      "sample_bytes": 262144,
+      "successful_samples": 3,
+      "samples_mbps": [
+        2.98396,
+        3.090448,
+        3.101928
+      ]
+    },
+    {
+      "name": "🧪 Radikal · NL · 9609e6",
       "status": "unavailable",
       "reason": "latency_probe_failed"
     },
     {
-      "name": "🧪 morpheus · DE · f6fd4c",
+      "name": "🧪 Radikal · NO · 01e23c",
+      "status": "unavailable",
+      "latency_ms": 2891,
+      "reason": "speed_probe_failed"
+    },
+    {
+      "name": "🧪 aviamasters · TR · d7f9f5",
+      "status": "ok",
+      "latency_ms": 752,
+      "speed_mbps": 1.95,
+      "sample_bytes": 262144,
+      "successful_samples": 3,
+      "samples_mbps": [
+        1.950136,
+        1.950048,
+        1.907816
+      ]
+    },
+    {
+      "name": "🧪 aviamasters · FR · 29012d",
       "status": "unavailable",
       "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 aviamasters · FR · 709c96",
+      "status": "ok",
+      "latency_ms": 2347,
+      "speed_mbps": 0.64,
+      "sample_bytes": 262144,
+      "successful_samples": 3,
+      "samples_mbps": [
+        0.643264,
+        0.629256,
+        1.058368
+      ]
+    },
+    {
+      "name": "🧪 aviamasters · US · ac4321",
+      "status": "ok",
+      "latency_ms": 67,
+      "speed_mbps": 11.02,
+      "sample_bytes": 262144,
+      "successful_samples": 3,
+      "samples_mbps": [
+        11.015488,
+        10.584616,
+        14.084672
+      ]
+    },
+    {
+      "name": "🧪 aviamasters · FR · 0429b0",
+      "status": "ok",
+      "latency_ms": 1905,
+      "speed_mbps": 0.94,
+      "sample_bytes": 262144,
+      "successful_samples": 3,
+      "samples_mbps": [
+        1.086088,
+        0.392152,
+        0.936848
+      ]
     }
   ],
-  "published_nodes": 0,
+  "published_nodes": 5,
   "note": "Only resolved TCP VLESS TLS/REALITY subset. Not proof of Telegram access or operator trust."
 }
