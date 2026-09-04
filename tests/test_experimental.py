@@ -82,3 +82,11 @@ class ExperimentalTests(unittest.TestCase):
         self.assertEqual(len(failures['node_keys']), len(set(failures['node_keys'])))
         self.assertTrue(all(len(key) == 64 and set(key) <= set('0123456789abcdef')
                             for key in failures['node_keys']))
+
+    def test_mobile_successes_are_valid_and_not_failed(self):
+        failures = set(clients.read_json(ROOT / 'experimental_mobile_failures.json')['node_keys'])
+        successes = clients.read_json(ROOT / 'experimental_mobile_successes.json')['node_keys']
+        self.assertEqual(len(successes), len(set(successes)))
+        self.assertTrue(all(len(key) == 64 and set(key) <= set('0123456789abcdef')
+                            for key in successes))
+        self.assertFalse(failures & set(successes))

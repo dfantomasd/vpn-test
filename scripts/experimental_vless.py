@@ -189,6 +189,8 @@ def main():
     working = clients.read_json(ROOT / 'whitelist_configs_combined.json')
     failures_path = ROOT / 'experimental_mobile_failures.json'
     mobile_failures = set(clients.read_json(failures_path).get('node_keys', [])) if failures_path.exists() else set()
+    successes_path = ROOT / 'experimental_mobile_successes.json'
+    mobile_successes = set(clients.read_json(successes_path).get('node_keys', [])) if successes_path.exists() else set()
     existing_hosts = {clients.server_host(o) for _, o in clients.nodes(working)}
     nets = [ipaddress.ip_network(n) for rule in clients.read_json(ROOT / 'rules/geoip-ru.json')['rules']
             for n in rule['ip_cidr']]
@@ -265,7 +267,11 @@ def main():
             # Keep a bounded, clearly labelled iPhone trial pool after Xray
             # validates the complete configuration.
             trial = copy.deepcopy(config)
-            trial['remarks'] = f"📱 ПРОВЕРИТЬ iPhone · {country} · {source} · {clients.node_key(outbound)[:6]}"
+            key = clients.node_key(outbound)
+            if key in mobile_successes:
+                trial['remarks'] = f"✅ iPhone Telegram · с задержкой · {country} · {source} · {key[:6]}"
+            else:
+                trial['remarks'] = f"📱 ПРОВЕРИТЬ iPhone · {country} · {source} · {key[:6]}"
             mobile_trials.append((source, trial))
             _, metric = probes.measure((name, outbound), args.mihomo)
             results.append({'name': name, **metric})
@@ -274,9 +280,14 @@ def main():
                     and metric['latency_ms'] <= MAX_LATENCY_MS):
                 config['remarks'] += f" | тест: ≈{metric['speed_mbps']:.2f} Мбит/с · {metric['latency_ms']} мс"
                 good.append((metric['speed_mbps'], config))
-    verified = [config for _, config in sorted(good, key=lambda item: item[0], reverse=True)]
+    confirmed = [config for _, config in mobile_trials
+                 if clients.node_key(next(o for o in config['outbounds'] if o.get('protocol') == 'vless'))
+                 in mobile_successes]
+    verified = [config for _, config in sorted(good, key=lambda item: item[0], reverse=True)
+                if clients.node_key(next(o for o in config['outbounds'] if o.get('protocol') == 'vless'))
+                not in mobile_successes]
     selected_keys = {clients.node_key(next(o for o in c['outbounds'] if o.get('protocol') == 'vless'))
-                     for c in verified}
+                     for c in confirmed + verified}
     curated = [item for item in mobile_trials if item[0] in CURATED_MOBILE_SOURCES]
     other = [item for item in mobile_trials if item[0] not in CURATED_MOBILE_SOURCES]
     fallback = []
@@ -294,7 +305,7 @@ def main():
         if key not in selected_keys:
             fallback.append(config)
             selected_keys.add(key)
-    payload = (verified + fallback)[:MAX_PUBLISHED]
+    payload = (confirmed + verified + fallback)[:MAX_PUBLISHED]
     report = {'sources': [{'name': name, 'url': url, 'sha256': source_hashes.get(name)}
                           for name, url in SOURCES],
               'measured_at': datetime.datetime.now(datetime.timezone.utc).isoformat(),
@@ -302,8 +313,10 @@ def main():
               'quality_thresholds': {'min_speed_mbps': MIN_SPEED_MBPS,
                                      'max_latency_ms': MAX_LATENCY_MS},
               'rejected': dict(rejected), 'measurements': results,
-              'published_nodes': len(payload), 'externally_verified_nodes': len(verified[:MAX_PUBLISHED]),
-              'iphone_trial_nodes': max(0, len(payload) - len(verified[:MAX_PUBLISHED])),
+              'published_nodes': len(payload),
+              'iphone_confirmed_nodes': min(len(confirmed), MAX_PUBLISHED),
+              'externally_verified_nodes': min(len(verified), max(0, MAX_PUBLISHED - len(confirmed))),
+              'iphone_trial_nodes': sum(c['remarks'].startswith('📱') for c in payload),
               'note': ('Foreign VLESS Reality white-list candidates. Names beginning with '
                        '"ПРОВЕРИТЬ iPhone" passed structural/Xray validation but are intentionally '
                        'not claimed to work until tested on Russian mobile access.')}

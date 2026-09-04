@@ -1,0 +1,10 @@
+{
+  "reported_at": "2026-09-05",
+  "network": "iPhone cellular network in Russia",
+  "application": "Telegram",
+  "result": "Connected with noticeable startup delay",
+  "node_keys": [
+    "bfa2757aad8ca689e42dbf32a57082de2fd5573aadb5f5c2e5d0b5e482e5c1bd",
+    "49b90d54763d1f1ba6cd4d2669d2cbba76d402c57090772f2c76d48f8f55c088"
+  ]
+}
