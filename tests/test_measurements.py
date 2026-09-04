@@ -27,12 +27,12 @@ class MeasurementTests(unittest.TestCase):
     def test_ranking_uses_metrics_and_marks_vantage(self):
         first = {'protocol': 'vless', 'settings': {'test': 1}}
         second = {'protocol': 'vless', 'settings': {'test': 2}}
-        metrics = {'nodes': {
+        metrics = {'measured_at': '2026-09-04T00:00:00+00:00', 'nodes': {
             clients.node_key(first): {'status': 'ok', 'speed_mbps': 1, 'latency_ms': 500},
             clients.node_key(second): {'status': 'ok', 'speed_mbps': 10, 'latency_ms': 50},
         }}
         with patch.object(clients.Path, 'exists', return_value=True), patch.object(clients, 'read_json', return_value=metrics):
-            result = clients.ranked_nodes([('first', first), ('second', second)])
+            result = clients.ranked_nodes([('first', first), ('second', second)], '2026-09-04T01:00:00+00:00')
         self.assertIs(result[0][1], second)
         self.assertIn('тест GitHub', result[0][0])
         self.assertIn('10.00 Мбит/с', result[0][0])
@@ -43,3 +43,20 @@ class MeasurementTests(unittest.TestCase):
             ranked = clients.ranked_nodes([('sample', {'protocol': 'vless'})])
         self.assertIn('нет замера', ranked[0][0])
         self.assertNotIn('Мбит/с', ranked[0][0])
+
+    def test_stale_karing_measurements_not_ranked_or_labeled(self):
+        first, second = {'id': 1}, {'id': 2}
+        report = {'measured_at': '2026-09-04T00:00:00+00:00', 'nodes': {
+            clients.node_key(second): {'status': 'ok', 'speed_mbps': 100, 'latency_ms': 1}}}
+        with patch.object(clients.Path, 'exists', return_value=True), \
+                patch.object(clients, 'read_json', return_value=report):
+            result = clients.ranked_nodes([('first', first), ('second', second)], '2026-09-04T07:00:00+00:00')
+        self.assertIs(result[0][1], first)
+        self.assertTrue(all('Мбит/с' not in name for name, _ in result))
+
+    def test_unsupported_measurement_does_not_start_core(self):
+        with patch.object(clients, 'connection', side_effect=ValueError('unsupported')), \
+                patch.object(measure.subprocess, 'Popen') as start:
+            _, result = measure.measure(('test', {'protocol': 'vless'}), 'unused')
+        self.assertEqual(result['reason'], 'unsupported_conversion')
+        start.assert_not_called()

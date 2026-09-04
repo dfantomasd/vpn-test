@@ -204,8 +204,7 @@ class ClientTests(unittest.TestCase):
                    for i in range(2)]
         metrics = {clients.node_key(c['outbounds'][0]): {'status': 'ok', 'speed_mbps': speed}
                    for c, speed in zip(configs, (10, 11))}
-        with patch.object(clients.Path, 'exists', return_value=True), \
-                patch.object(clients, 'read_json', return_value=[configs[1], configs[0]]):
+        with patch.object(clients, 'previous_winner', return_value=clients.node_key(configs[0]['outbounds'][0])):
             self.assertEqual(clients.happ_fastest_profile(configs, metrics)['outbounds'], configs[0]['outbounds'])
             metrics[clients.node_key(configs[1]['outbounds'][0])]['speed_mbps'] = 12
             self.assertEqual(clients.happ_fastest_profile(configs, metrics)['outbounds'], configs[1]['outbounds'])
@@ -217,6 +216,51 @@ class ClientTests(unittest.TestCase):
         with patch.object(clients, 'read_json', side_effect=without_registration):
             with self.assertRaisesRegex(ValueError, 'No non-Russian nodes'):
                 clients.foreign_nodes(self.catalog)
+
+    def test_karing_conversion_failure_does_not_block_happ(self):
+        original = clients.connection
+        calls = []
+        def unsupported_first(name, outbound):
+            calls.append(name)
+            if len(calls) == 1:
+                raise ValueError('Unsupported transport: ws')
+            return original(name, outbound)
+        with patch.object(clients, 'connection', side_effect=unsupported_first):
+            outputs = clients.build()
+        self.assertEqual(outputs['subscription.txt'], self.outputs['subscription.txt'])
+        report = json.loads(outputs['build_report.json'])
+        self.assertEqual(len(report['karing_conversion_excluded']), 1)
+        self.assertGreater(report['karing_nodes'], 0)
+
+    def test_stale_intermediate_build_keeps_winner_state(self):
+        reference = clients.read_json(clients.ROOT / 'measurements.json')['measured_at']
+        stale_time = (clients.datetime.datetime.fromisoformat(reference) +
+                      clients.datetime.timedelta(hours=7)).isoformat()
+        before = clients.previous_winner()
+        stale = clients.build(stale_time)
+        report = json.loads(stale['build_report.json'])
+        self.assertEqual(report['happ_speed_winner'], before)
+        self.assertIn('нет свежего замера', json.loads(stale['subscription.txt'])[1]['remarks'])
+        read = clients.read_json
+        def intermediate(path):
+            if path.name == 'build_report.json':
+                return report
+            if path.name == 'subscription.txt':
+                return json.loads(stale['subscription.txt'])
+            return read(path)
+        with patch.object(clients, 'read_json', side_effect=intermediate):
+            self.assertEqual(clients.previous_winner(), before)
+            refreshed = clients.build(reference)
+        self.assertIn('Мбит/с', json.loads(refreshed['subscription.txt'])[1]['remarks'])
+
+    def test_all_karing_conversions_fail_preserves_previous_file(self):
+        with patch.object(clients, 'connection', side_effect=ValueError('unsupported')):
+            outputs = clients.build()
+        self.assertEqual(outputs['subscription.txt'], self.outputs['subscription.txt'])
+        self.assertEqual(outputs['subscription_karing.txt'],
+                         (clients.ROOT / 'subscription_karing.txt').read_text())
+        self.assertIn('previous subscription retained',
+                      json.loads(outputs['build_report.json'])['karing_publication'])
 
 
 if __name__ == '__main__':

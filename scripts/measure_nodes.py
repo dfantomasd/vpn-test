@@ -43,7 +43,11 @@ def measure(item, binary):
     name, outbound = item
     key = clients.node_key(outbound)
     result = {"name": name, "status": "unavailable"}
-    _, proxy = clients.connection(name, outbound)
+    try:
+        _, proxy = clients.connection(name, outbound)
+    except (ValueError, KeyError, TypeError, IndexError):
+        result["reason"] = "unsupported_conversion"
+        return key, result
     if proxy is None:
         result["reason"] = "unsupported_advanced_xhttp"
         return key, result

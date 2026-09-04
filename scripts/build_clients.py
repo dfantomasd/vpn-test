@@ -44,9 +44,14 @@ def node_key(outbound):
     return hashlib.sha256(data.encode()).hexdigest()
 
 
-def ranked_nodes(selected):
+def fresh_metrics(as_of):
     path = ROOT / "measurements.json"
-    measurements = read_json(path).get("nodes", {}) if path.exists() else {}
+    report = read_json(path) if path.exists() else {}
+    return report.get("nodes", {}) if measurements_fresh(report, as_of) else {}
+
+
+def ranked_nodes(selected, as_of=None):
+    measurements = fresh_metrics(as_of or build_time())
     def score(item):
         metric = measurements.get(node_key(item[1]), {})
         if metric.get("status") != "ok":
@@ -290,21 +295,44 @@ def happ_fastest_profile(configs, metrics):
         profile["remarks"] = "⚡ Скорость | нет свежего замера — резерв Авто"
         return profile
     speed, winner, metric = max(candidates, key=lambda item: item[0])
-    previous_path = ROOT / "subscription.txt"
-    if previous_path.exists():
-        previous = read_json(previous_path)
-        if len(previous) > 1:
-            keys = {node_key(o) for o in previous[1].get("outbounds", []) if o.get("protocol") == "vless"}
-            if len(keys) == 1:
-                for candidate in candidates:
-                    key = next(node_key(o) for o in candidate[1]["outbounds"] if o.get("protocol") == "vless")
-                    if key in keys and candidate[0] * 1.15 >= speed:
-                        speed, winner, metric = candidate
-                        break
+    previous_key = previous_winner()
+    for candidate in candidates:
+        key = next(node_key(o) for o in candidate[1]["outbounds"] if o.get("protocol") == "vless")
+        if key == previous_key and candidate[0] * 1.15 >= speed:
+            speed, winner, metric = candidate
+            break
     profile = copy.deepcopy(winner)
     profile["remarks"] = (f"⚡ Скорость — выбор по тесту GitHub: ≈{speed:.2f} Мбит/с"
                           f" · {metric.get('latency_ms', '?')} мс | {winner['remarks']}")
     return profile
+
+
+def previous_winner():
+    """Persistent selection state is independent of temporary fallback profiles."""
+    path = ROOT / "build_report.json"
+    report = read_json(path) if path.exists() else {}
+    if "happ_speed_winner" in report:
+        return report["happ_speed_winner"]
+    # One-time migration of a measured winner, never of a fallback.
+    path = ROOT / "subscription.txt"
+    previous = read_json(path) if path.exists() else []
+    if len(previous) > 1 and "Мбит/с" in previous[1].get("remarks", ""):
+        proxies = [o for o in previous[1]["outbounds"] if o.get("protocol") == "vless"]
+        if len(proxies) == 1:
+            return node_key(proxies[0])
+    return None
+
+
+def karing_connections(selected):
+    converted, excluded = [], []
+    for name, outbound in selected:
+        try:
+            value = connection(name, outbound)
+        except (ValueError, KeyError, TypeError, IndexError) as exc:
+            excluded.append({"name": name, "reason": "Unsupported conversion: " + type(exc).__name__})
+            continue
+        converted.append(value)
+    return converted, excluded
 
 
 def connection(name, outbound):
@@ -435,9 +463,9 @@ def build(as_of=None):
     catalog = read_json(ROOT / "whitelist_configs_combined.json")
     policy = routing_policy(catalog)
     selected, russian_excluded = foreign_nodes(catalog)
-    selected = ranked_nodes(selected)
-    converted = [connection(name, outbound) for name, outbound in selected]
     happ_configs, happ_excluded = happ_json_configs(catalog, as_of)
+    selected = ranked_nodes(selected, as_of)
+    converted, conversion_excluded = karing_connections(selected)
     happ = json_text(happ_configs)
     proxies = [proxy for _, proxy in converted if proxy is not None]
     names = [p["name"] for p in proxies]
@@ -452,14 +480,28 @@ def build(as_of=None):
                                       read_json(ROOT / "rules/geoip-ru.json"))}
     excluded = [urllib.parse.unquote(urllib.parse.urlsplit(link).fragment)
                 for link, proxy in converted if proxy is None]
-    report = {"generated_at": as_of, "allowed_protocols": ["vless"], "happ_format": "native Xray JSON array",
+    winner_key = previous_winner()
+    if "Мбит/с" in happ_configs[1]["remarks"]:
+        winner_key = next(node_key(o) for o in happ_configs[1]["outbounds"] if o.get("protocol") == "vless")
+    report = {"generated_at": as_of, "happ_speed_winner": winner_key,
+              "karing_conversion_excluded": conversion_excluded,
+              "allowed_protocols": ["vless"], "happ_format": "native Xray JSON array",
               "happ_profiles": len(happ_configs), "happ_excluded_profiles": happ_excluded,
               "karing_nodes": len(proxies),
               "karing_rules": len(config["rules"]), "karing_excluded_advanced_xhttp": excluded,
               "excluded_russian_or_unknown_servers": russian_excluded,
               "measurements_available": (ROOT / "measurements.json").exists(),
               "note": "URI exports expand balancers into individual nodes; Karing XHTTP requires device testing."}
-    return {"subscription.txt": happ, "subscription_karing.txt": yaml_document(config),
+    karing_text = yaml_document(config)
+    report["karing_publication"] = "generated"
+    if not proxies:
+        # Never replace a usable subscription with an empty proxy selector.
+        previous = ROOT / "subscription_karing.txt"
+        if not previous.exists():
+            raise ValueError("No supported Karing nodes and no previous subscription to preserve")
+        karing_text = previous.read_text(encoding="utf-8")
+        report["karing_publication"] = "previous subscription retained: no supported nodes"
+    return {"subscription.txt": happ, "subscription_karing.txt": karing_text,
             "routing_russia.json": json_text(policy), "build_report.json": json_text(report)}
 
 

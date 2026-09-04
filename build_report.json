@@ -1,5 +1,7 @@
 {
-  "generated_at": "2026-09-04T16:02:25.529843+00:00",
+  "generated_at": "2026-09-04T16:11:48.811426+00:00",
+  "happ_speed_winner": "825d05ee33305df684bb2ec6092bcfbf7e9ab4164cc3769cd3e9c335f458cd84",
+  "karing_conversion_excluded": [],
   "allowed_protocols": [
     "vless"
   ],
@@ -109,5 +111,6 @@
     }
   ],
   "measurements_available": true,
-  "note": "URI exports expand balancers into individual nodes; Karing XHTTP requires device testing."
+  "note": "URI exports expand balancers into individual nodes; Karing XHTTP requires device testing.",
+  "karing_publication": "generated"
 }
