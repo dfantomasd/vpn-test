@@ -242,6 +242,17 @@ def main():
             rejected[source + ':russian_unknown_or_mixed_registration'] += 1
         else:
             safe.append((source, outbound, values.pop()))
+    # Public feeds rotate quickly. Keep user-confirmed profiles available even
+    # after their source removes them, unless the user later reports a failure.
+    preserved_path = ROOT / 'experimental_mobile_success_profiles.json'
+    preserved = clients.read_json(preserved_path) if preserved_path.exists() else []
+    safe_keys = {clients.node_key(outbound) for _, outbound, _ in safe}
+    for item in reversed(preserved):
+        outbound = item['outbound']
+        key = clients.node_key(outbound)
+        if key not in mobile_failures and key not in safe_keys:
+            safe.insert(0, (item['source'], outbound, item['country']))
+            safe_keys.add(key)
     policy = clients.routing_policy(working)
     template = clients.read_json(ROOT / 'subscription.txt')[1]
     good, mobile_trials, results = [], [], []

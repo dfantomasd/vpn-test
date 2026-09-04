@@ -90,3 +90,5 @@ class ExperimentalTests(unittest.TestCase):
         self.assertTrue(all(len(key) == 64 and set(key) <= set('0123456789abcdef')
                             for key in successes))
         self.assertFalse(failures & set(successes))
+        profiles = clients.read_json(ROOT / 'experimental_mobile_success_profiles.json')
+        self.assertEqual(set(successes), {clients.node_key(item['outbound']) for item in profiles})

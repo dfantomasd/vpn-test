@@ -1,0 +1,22 @@
+[
+  {
+    "source": "Vovaplus",
+    "country": "AT",
+    "outbound": {
+      "tag": "proxy",
+      "protocol": "vless",
+      "settings": {"vnext": [{"address": "152.53.1.40", "port": 443, "users": [{"id": "edde565e-41f5-400e-84ea-7b87a3e84488", "encryption": "none", "flow": "xtls-rprx-vision"}]}]},
+      "streamSettings": {"network": "tcp", "security": "reality", "realitySettings": {"serverName": "at.quattro-tech.ru", "fingerprint": "", "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc", "shortId": "43dcff53849b81e6", "spiderX": "/"}}
+    }
+  },
+  {
+    "source": "internet-tenshi-whitelist",
+    "country": "FI",
+    "outbound": {
+      "tag": "proxy",
+      "protocol": "vless",
+      "settings": {"vnext": [{"address": "2.26.100.192", "port": 445, "users": [{"id": "40205ae5-d30f-4216-b2e0-0506dbbd382e", "encryption": "none", "flow": "xtls-rprx-vision"}]}]},
+      "streamSettings": {"network": "tcp", "security": "reality", "realitySettings": {"serverName": "ads.x5.ru", "fingerprint": "firefox", "publicKey": "Ku60WZ3HEdE07DoEBJ5I9o_fjcN_bhdK8bTW3RJjBmM", "shortId": "c226283c4de5b1ad", "spiderX": "/"}}
+    }
+  }
+]
