@@ -33,6 +33,8 @@ SOURCES = [
     ('HardVPN-whitelist', 'https://raw.githubusercontent.com/ksenkovsolo/HardVPN-bypass-WhiteLists-/main/vpn-lte/WHITELIST-ALL.txt'),
     ('Generation-Liberty', 'https://raw.githubusercontent.com/gergew452/Generation-Liberty/main/githubmirror/best.txt'),
     ('igareck-white-sni', 'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-SNI-RU-all.txt'),
+    ('AvenCores-whitelist-pool', 'https://raw.githubusercontent.com/AvenCores/goida-vpn-configs/main/githubmirror/26.txt'),
+    ('vpn-config-rkn-checked', 'https://raw.githubusercontent.com/vsvavan2/vpn-config-rkn/main/output/all_working_keys.txt'),
     ('igareck', 'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt'),
     ('Au1rxx', 'https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/v2ray-base64.txt'),
     ('morpheus', 'https://raw.githubusercontent.com/morpheusadam/v2ray-config/main/subs/bundles/reality.txt'),
@@ -48,6 +50,7 @@ MAX_PUBLISHED = 5
 CURATED_MOBILE_SOURCES = {
     'internet-tenshi-whitelist', 'zieng2-whitelist', 'AirLink-whitelist',
     'HardVPN-whitelist', 'Generation-Liberty', 'igareck-white-sni',
+    'AvenCores-whitelist-pool', 'vpn-config-rkn-checked',
 }
 
 # Public services commonly reachable when Russian mobile operators switch to an

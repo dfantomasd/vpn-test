@@ -173,8 +173,8 @@ Happ получает геофайлы по ссылкам профиля из L
 
 `subscription_experimental.txt` — отдельный небольшой список новых VLESS-узлов
 из независимых кандидатов: Internet Tenshi, zieng2, AirLink, HardVPN,
-Generation-Liberty, igareck, Au1rxx, morpheusadam, VovaplusEXP, 0xRadikal и
-aviamastersgh. Источники различаются способом собственных проверок;
+Generation-Liberty, AvenCores, vpn-config-rkn, igareck, Au1rxx, morpheusadam,
+VovaplusEXP, 0xRadikal и aviamastersgh. Источники различаются способом собственных проверок;
 мы не доверяем их заявлениям без повторной проверки нашей сборкой.
 Рабочие `subscription.txt` и `subscription_karing.txt` не изменяются этим процессом.
 Ссылка для импорта:
