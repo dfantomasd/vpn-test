@@ -42,6 +42,10 @@ class ExperimentalTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             parse_link(self.link(params='security=none&type=tcp'))
 
+    def test_raw_is_accepted_as_tcp(self):
+        outbound = parse_link(self.link(params='security=tls&type=raw&sni=example.com'))
+        self.assertEqual(outbound['streamSettings']['network'], 'tcp')
+
     def test_russian_label_rejected(self):
         with self.assertRaises(ValueError):
             parse_link(self.link() + '#RU server')

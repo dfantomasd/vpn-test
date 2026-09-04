@@ -32,6 +32,9 @@ SOURCES = [
     ('morpheus', 'https://raw.githubusercontent.com/morpheusadam/v2ray-config/main/subs/bundles/reality.txt'),
 ]
 PER_SOURCE_LIMIT = 8
+MAX_SOURCE_BYTES = 4_000_000
+MIN_SPEED_MBPS = 1.5
+MAX_LATENCY_MS = 1500
 
 
 def parse_link(line):
@@ -59,7 +62,8 @@ def parse_link(line):
     if set(pairs) - allowed or any(len(v) != 1 for v in pairs.values()):
         raise ValueError('unsupported_parameters')
     q = {k: v[0] for k, v in pairs.items()}
-    if (q.get('type', 'tcp') != 'tcp' or q.get('headerType', 'none') != 'none'
+    transport = q.get('type', 'tcp')
+    if (transport not in ('tcp', 'raw') or q.get('headerType', 'none') != 'none'
             or q.get('encryption', 'none') != 'none'
             or q.get('security') not in ('tls', 'reality')
             or any(q.get(k, '0').lower() not in ('0', 'false', '') for k in ('insecure', 'allowInsecure'))):
@@ -92,7 +96,7 @@ def parse_link(line):
 
 def registration(ip):
     try:
-        with urllib.request.urlopen('https://rdap.db.ripe.net/ip/' + ip, timeout=10) as response:
+        with urllib.request.urlopen('https://rdap.org/ip/' + ip, timeout=10) as response:
             country = json.load(response).get('country', '')
         return ip, country if re.fullmatch('[A-Z]{2}', country or '') else None
     except Exception:
@@ -135,8 +139,8 @@ def main():
     candidates, seen, source_hashes = [], set(), {}
     for source, url in SOURCES:
         with urllib.request.urlopen(url, timeout=30) as response:
-            raw = response.read(2_000_001)
-        if len(raw) > 2_000_000:
+            raw = response.read(MAX_SOURCE_BYTES + 1)
+        if len(raw) > MAX_SOURCE_BYTES:
             rejected[source + ':source_too_large'] += 1
             continue
         source_hashes[source] = hashlib.sha256(raw).hexdigest()
@@ -196,13 +200,16 @@ def main():
             _, metric = probes.measure((name, outbound), args.mihomo)
             results.append({'name': name, **metric})
             print(f'{index}/{len(safe)} {name}: {metric["status"]}', flush=True)
-            if metric['status'] == 'ok':
+            if (metric['status'] == 'ok' and metric['speed_mbps'] >= MIN_SPEED_MBPS
+                    and metric['latency_ms'] <= MAX_LATENCY_MS):
                 config['remarks'] += f" | тест: ≈{metric['speed_mbps']:.2f} Мбит/с · {metric['latency_ms']} мс"
                 good.append((metric['speed_mbps'], config))
     report = {'sources': [{'name': name, 'url': url, 'sha256': source_hashes.get(name)}
                           for name, url in SOURCES],
               'measured_at': datetime.datetime.now(datetime.timezone.utc).isoformat(),
               'vantage': 'GitHub Actions' if os.environ.get('GITHUB_ACTIONS') else 'local machine',
+              'quality_thresholds': {'min_speed_mbps': MIN_SPEED_MBPS,
+                                     'max_latency_ms': MAX_LATENCY_MS},
               'rejected': dict(rejected), 'measurements': results, 'published_nodes': min(len(good), 10),
               'note': 'Only resolved TCP VLESS TLS/REALITY subset. Not proof of Telegram access or operator trust.'}
     if not good:
