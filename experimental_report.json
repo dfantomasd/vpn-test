@@ -1,0 +1,186 @@
+{
+  "source": "https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/vless.txt",
+  "source_sha256": "1d2933e2bb9550a15614e71c7ee89d8baff8626c8c3f33643824e88ddfe4f4c8",
+  "measured_at": "2026-09-04T17:05:47.805235+00:00",
+  "vantage": "GitHub Actions",
+  "rejected": {
+    "unsupported_or_unsafe_link": 298,
+    "russian_geoip": 1,
+    "duplicate_or_existing_host": 4,
+    "russian_or_unknown_registration": 5
+  },
+  "measurements": [
+    {
+      "name": "🧪 DE · a68e04",
+      "status": "unavailable",
+      "latency_ms": 598,
+      "reason": "speed_probe_failed"
+    },
+    {
+      "name": "🧪 DE · 0a3eff",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 SE · 747d7d",
+      "status": "unavailable",
+      "latency_ms": 654,
+      "reason": "speed_probe_failed"
+    },
+    {
+      "name": "🧪 FI · 2c8397",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 HU · 5d59f7",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 FR · 7df794",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 DE · b35b43",
+      "status": "ok",
+      "latency_ms": 648,
+      "speed_mbps": 1.68,
+      "sample_bytes": 262144,
+      "successful_samples": 3,
+      "samples_mbps": [
+        1.678712,
+        1.661928,
+        1.678232
+      ]
+    },
+    {
+      "name": "🧪 LT · 076b27",
+      "status": "ok",
+      "latency_ms": 2736,
+      "speed_mbps": 1.0,
+      "sample_bytes": 262144,
+      "successful_samples": 3,
+      "samples_mbps": [
+        0.999528,
+        0.739504,
+        1.031512
+      ]
+    },
+    {
+      "name": "🧪 IT · 5eb3cd",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 LV · 78578b",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 DE · e0bc1c",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 TR · e7be7a",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 NL · ec870e",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 CH · 1f1dfc",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 LT · 794280",
+      "status": "ok",
+      "latency_ms": 603,
+      "speed_mbps": 1.71,
+      "sample_bytes": 262144,
+      "successful_samples": 3,
+      "samples_mbps": [
+        1.741,
+        1.709096,
+        1.658856
+      ]
+    },
+    {
+      "name": "🧪 DE · 04b22a",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 PL · 1f5b81",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 US · a90470",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 DE · a06565",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 US · 0dd7eb",
+      "status": "ok",
+      "latency_ms": 314,
+      "speed_mbps": 3.16,
+      "sample_bytes": 262144,
+      "successful_samples": 3,
+      "samples_mbps": [
+        2.203344,
+        3.161072,
+        3.38148
+      ]
+    },
+    {
+      "name": "🧪 NL · 1e81e1",
+      "status": "ok",
+      "latency_ms": 575,
+      "speed_mbps": 1.68,
+      "sample_bytes": 262144,
+      "successful_samples": 3,
+      "samples_mbps": [
+        1.307184,
+        1.726288,
+        1.680136
+      ]
+    },
+    {
+      "name": "🧪 NL · 997ff7",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 DE · da3f00",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
+    },
+    {
+      "name": "🧪 FI · 799ce8",
+      "status": "ok",
+      "latency_ms": 650,
+      "speed_mbps": 1.53,
+      "sample_bytes": 262144,
+      "successful_samples": 3,
+      "samples_mbps": [
+        1.526784,
+        1.527088,
+        1.5214
+      ]
+    }
+  ],
+  "published_nodes": 6,
+  "note": "Only public-IP TCP VLESS TLS/REALITY subset. Not proof of Telegram access or operator trust."
+}
