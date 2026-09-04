@@ -27,6 +27,12 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES = [
+    ('internet-tenshi-whitelist', 'https://internet-tenshi.kangel.tech/whitelist'),
+    ('zieng2-whitelist', 'https://raw.githubusercontent.com/zieng2/wl/main/vless_universal.txt'),
+    ('AirLink-whitelist', 'https://raw.githubusercontent.com/AirLinkVPN1/AirLinkVPN/main/rkn_white_list'),
+    ('HardVPN-whitelist', 'https://raw.githubusercontent.com/ksenkovsolo/HardVPN-bypass-WhiteLists-/main/vpn-lte/WHITELIST-ALL.txt'),
+    ('Generation-Liberty', 'https://raw.githubusercontent.com/gergew452/Generation-Liberty/main/githubmirror/best.txt'),
+    ('igareck-white-sni', 'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-SNI-RU-all.txt'),
     ('igareck', 'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt'),
     ('Au1rxx', 'https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/v2ray-base64.txt'),
     ('morpheus', 'https://raw.githubusercontent.com/morpheusadam/v2ray-config/main/subs/bundles/reality.txt'),
@@ -38,6 +44,26 @@ PER_SOURCE_LIMIT = 5
 MAX_SOURCE_BYTES = 4_000_000
 MIN_SPEED_MBPS = 1.5
 MAX_LATENCY_MS = 1500
+
+# Public services commonly reachable when Russian mobile operators switch to an
+# allow-list. This is only a candidate fingerprint, not proof of reachability.
+WHITELIST_SNI_SUFFIXES = (
+    '.ru', '.yandex.net', '.yandex.com', '.vk.com', '.vk-portal.net',
+    '.ok.ru', '.mail.ru', '.ozone.ru', '.sirius.online', '.gosuslugi.ru',
+    '.tbank.ru', '.sberbank.ru', '.wb.ru', '.rutube.ru', '.2gis.com',
+    '.lmru.tech',
+)
+
+
+def is_whitelist_profile(outbound):
+    """Select the Reality/TCP-or-XHTTP shape seen in working mobile profiles."""
+    stream = outbound['streamSettings']
+    tls = stream.get('realitySettings', {})
+    sni = tls.get('serverName', '').lower().rstrip('.')
+    return (stream.get('security') == 'reality'
+            and stream.get('network') in ('tcp', 'xhttp')
+            and any(sni == suffix[1:] or sni.endswith(suffix)
+                    for suffix in WHITELIST_SNI_SUFFIXES))
 
 
 def parse_link(line):
@@ -61,12 +87,13 @@ def parse_link(line):
         raise ValueError('invalid_port')
     pairs = urllib.parse.parse_qs(url.query, keep_blank_values=True)
     allowed = {'security', 'encryption', 'type', 'headerType', 'fp', 'flow', 'sni',
-               'pbk', 'sid', 'spx', 'alpn', 'allowInsecure', 'insecure'}
+               'pbk', 'sid', 'spx', 'alpn', 'allowInsecure', 'insecure',
+               'path', 'host', 'mode', 'extra'}
     if set(pairs) - allowed or any(len(v) != 1 for v in pairs.values()):
         raise ValueError('unsupported_parameters')
     q = {k: v[0] for k, v in pairs.items()}
     transport = q.get('type', 'tcp')
-    if (transport not in ('tcp', 'raw') or q.get('headerType', 'none') != 'none'
+    if (transport not in ('tcp', 'raw', 'xhttp') or q.get('headerType', 'none') != 'none'
             or q.get('encryption', 'none') != 'none'
             or q.get('security') not in ('tls', 'reality')
             or any(q.get(k, '0').lower() not in ('0', 'false', '') for k in ('insecure', 'allowInsecure'))):
@@ -91,10 +118,26 @@ def parse_link(line):
         if q['flow'] != 'xtls-rprx-vision':
             raise ValueError('unsupported_flow')
         user['flow'] = q['flow']
+    network = 'tcp' if transport == 'raw' else transport
+    stream = {'network': network, 'security': q['security'],
+              ('realitySettings' if q['security'] == 'reality' else 'tlsSettings'): tls}
+    if network == 'xhttp':
+        mode = q.get('mode', 'auto')
+        if mode not in ('auto', 'packet-up', 'stream-up', 'stream-one'):
+            raise ValueError('invalid_xhttp_mode')
+        xhttp = {'path': q.get('path', '/'), 'host': q.get('host', ''), 'mode': mode}
+        if q.get('extra'):
+            try:
+                extra = json.loads(q['extra'])
+            except json.JSONDecodeError as exc:
+                raise ValueError('invalid_xhttp_extra') from exc
+            if not isinstance(extra, dict):
+                raise ValueError('invalid_xhttp_extra')
+            xhttp['extra'] = extra
+        stream['xhttpSettings'] = xhttp
     return {'tag': 'proxy', 'protocol': 'vless',
             'settings': {'vnext': [{'address': host, 'port': port, 'users': [user]}]},
-            'streamSettings': {'network': 'tcp', 'security': q['security'],
-                               ('realitySettings' if q['security'] == 'reality' else 'tlsSettings'): tls}}
+            'streamSettings': stream}
 
 
 def registration(ip):
@@ -153,6 +196,9 @@ def main():
         for line in source_lines(raw)[:20000]:
             try:
                 outbound = parse_link(line)
+                if not is_whitelist_profile(outbound):
+                    rejected[source + ':not_mobile_whitelist_profile'] += 1
+                    continue
                 host = clients.server_host(outbound)
                 identity = clients.node_key(outbound)
                 if identity in mobile_failures:

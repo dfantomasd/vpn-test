@@ -1,6 +1,6 @@
 import unittest
 import base64
-from scripts.experimental_vless import parse_link, source_lines, SOURCES, ROOT
+from scripts.experimental_vless import parse_link, source_lines, SOURCES, ROOT, is_whitelist_profile
 from scripts import build_clients as clients
 
 
@@ -47,6 +47,18 @@ class ExperimentalTests(unittest.TestCase):
         outbound = parse_link(self.link(params='security=tls&type=raw&sni=example.com'))
         self.assertEqual(outbound['streamSettings']['network'], 'tcp')
 
+    def test_xhttp_profile_is_preserved(self):
+        params = ('security=reality&type=xhttp&sni=api.yandex.ru&pbk=' + 'a' * 43
+                  + '&sid=abcd&path=%2Fapi&mode=stream-one&fp=firefox')
+        outbound = parse_link(self.link(params=params))
+        self.assertEqual(outbound['streamSettings']['network'], 'xhttp')
+        self.assertEqual(outbound['streamSettings']['xhttpSettings']['path'], '/api')
+        self.assertTrue(is_whitelist_profile(outbound))
+
+    def test_foreign_sni_is_not_whitelist_profile(self):
+        params = 'security=reality&type=tcp&sni=example.com&pbk=' + 'a' * 43 + '&sid=abcd'
+        self.assertFalse(is_whitelist_profile(parse_link(self.link(params=params))))
+
     def test_russian_label_rejected(self):
         with self.assertRaises(ValueError):
             parse_link(self.link() + '#RU server')
@@ -58,7 +70,7 @@ class ExperimentalTests(unittest.TestCase):
     def test_source_names_and_urls_are_unique_https(self):
         self.assertEqual(len({name for name, _ in SOURCES}), len(SOURCES))
         self.assertEqual(len({url for _, url in SOURCES}), len(SOURCES))
-        self.assertTrue(all(url.startswith('https://raw.githubusercontent.com/') for _, url in SOURCES))
+        self.assertTrue(all(url.startswith('https://') for _, url in SOURCES))
 
     def test_mobile_failure_keys_are_full_node_hashes(self):
         failures = clients.read_json(ROOT / 'experimental_mobile_failures.json')
