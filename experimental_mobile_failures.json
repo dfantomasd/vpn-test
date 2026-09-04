@@ -1,13 +1,18 @@
 {
-  "reported_at": "2026-09-04",
+  "reported_at": "2026-09-05",
   "network": "iPhone cellular network in Russia",
   "application": "Telegram",
-  "result": "None of the five profiles connected Telegram",
+  "result": "None of the ten tested profiles connected Telegram",
   "node_keys": [
     "a18d04ca1809d7bec51211191a0ee61bfde12734f0b01c1356b74c1984e7313a",
     "ac432102ef3cf86e5e39234ab1fc795af694718c44ddb2758baa0fb43f4de6a8",
     "a80e3e8947eb6f43d3706504c86de659e07c8120f6946509a72adcdc8c6af21d",
     "79733629de74b615bc956a7b029688f6eb330f3bc4859b4b02f94b6306cf1196",
-    "d7f9f5f16599e5ca3bb39e1b553ed6f29691499850c612ef500e1823fe318c5f"
+    "d7f9f5f16599e5ca3bb39e1b553ed6f29691499850c612ef500e1823fe318c5f",
+    "c47865d0887a467bddce0898dfc11bae5751dcd87590b95076764eea584ace7d",
+    "55de540ec3c70fab00df1c3439fb31df0b482b6576d2aeac7d588376843c0bde",
+    "db4e0b8d035d27d012835ef98f53fd76f521e132d671be8ef2be90c5c91a6551",
+    "a0d085a49591b4a2798f55e70438ae9be4f194075c1796fbff0c9f49fd4d2a38",
+    "6db51d91e162b1d74079c6c356bb8f306bac09eb1bc196ba5ca5c721120509f8"
   ]
 }
