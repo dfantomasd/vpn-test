@@ -192,7 +192,7 @@ def main():
     existing_hosts = {clients.server_host(o) for _, o in clients.nodes(working)}
     nets = [ipaddress.ip_network(n) for rule in clients.read_json(ROOT / 'rules/geoip-ru.json')['rules']
             for n in rule['ip_cidr']]
-    candidates, seen, source_hashes = [], set(), {}
+    candidates, seen, seen_candidate_hosts, source_hashes = [], set(), set(), {}
     for source, url in SOURCES:
         with urllib.request.urlopen(url, timeout=30) as response:
             raw = response.read(MAX_SOURCE_BYTES + 1)
@@ -212,7 +212,7 @@ def main():
                 if identity in mobile_failures:
                     rejected[source + ':failed_iphone_telegram'] += 1
                     continue
-                if host in existing_hosts or identity in seen:
+                if host in existing_hosts or host in seen_candidate_hosts or identity in seen:
                     rejected[source + ':duplicate_or_existing'] += 1
                     continue
                 addresses = endpoint_ips(host)
@@ -223,6 +223,7 @@ def main():
                     rejected[source + ':russian_geoip'] += 1
                     continue
                 seen.add(identity)
+                seen_candidate_hosts.add(host)
                 candidates.append((source, outbound, addresses))
                 accepted += 1
             except (ValueError, TypeError, AttributeError):
