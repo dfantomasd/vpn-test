@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-04T16:14:17.900323+00:00",
-  "happ_speed_winner": "8c1f23fd0611491f3c696f01b156b6d3c9ddc5b792d3679119b0e434124c3c2a",
+  "generated_at": "2026-09-04T16:26:29.192442+00:00",
+  "happ_mode": "one device-side auto profile plus manual servers",
   "karing_conversion_excluded": [],
   "allowed_protocols": [
     "vless"

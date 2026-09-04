@@ -1,11 +1,9 @@
-"""Generate Happ URI subscription and Karing Clash YAML from one catalog.
+"""Generate native Happ JSON and Karing Clash YAML from one catalog.
 
 No VPN connections are made. --refresh-rules downloads public classification data.
 """
 import argparse
-import base64
 import copy
-import math
 import datetime
 import hashlib
 import ipaddress
@@ -245,19 +243,51 @@ def happ_json_configs(catalog, as_of=None):
             result.append(config)
     if not result:
         raise ValueError("No safe native Happ profiles remain")
-    path = ROOT / "measurements.json"
-    report = read_json(path) if path.exists() else {}
-    metrics = report.get("nodes", {}) if measurements_fresh(report, as_of or build_time()) else {}
-    result = copy.deepcopy(result)
-    if result[0].get("routing", {}).get("balancers"):
-        result[0]["remarks"] = "🔄 Авто — низкая задержка"
-    else:
-        result[0]["remarks"] = "🔄 Авто недоступен — резерв | " + result[0]["remarks"]
-    fastest = happ_fastest_profile(result, metrics)
-    if metrics:
-        fastest["remarks"] += " | замер " + report["measured_at"][:16] + " UTC"
-    result.insert(1, fastest)
-    return result, excluded_profiles
+    singles = []
+    for config in result:
+        proxies = [o for o in config['outbounds'] if o.get('protocol') == 'vless']
+        if (len(proxies) == 1 and not config['routing'].get('balancers')
+                and not proxies[0].get('proxySettings')
+                and not proxies[0].get('streamSettings', {}).get('sockopt', {}).get('dialerProxy')):
+            singles.append(copy.deepcopy(config))
+    if len(singles) < 2:
+        raise ValueError('At least two safe standalone VLESS profiles required for real auto-selection')
+    policy = routing_policy(catalog)
+    for config in singles:
+        proxy = next(o for o in config['outbounds'] if o['protocol'] == 'vless')
+        config['routing'] = happ_routing(policy, {'outboundTag': proxy['tag']})
+    auto = copy.deepcopy(singles[0])
+    auto['remarks'] = '🔄 Авто'
+    proxies = []
+    for index, config in enumerate(singles):
+        outbound = copy.deepcopy(next(o for o in config['outbounds'] if o['protocol'] == 'vless'))
+        outbound['tag'] = f'auto-node-{index:03d}'
+        proxies.append(outbound)
+    auto['outbounds'] = proxies + [o for o in auto['outbounds'] if o['protocol'] != 'vless']
+    auto['routing'] = happ_routing(policy, {'balancerTag': 'Auto_Balancer'})
+    auto['routing']['balancers'] = [{
+        'tag': 'Auto_Balancer', 'selector': ['auto-node-'],
+        'strategy': {'type': 'leastLoad', 'settings': {'expected': 1, 'maxRTT': '3s'}},
+        'fallbackTag': proxies[0]['tag'],
+    }]
+    auto.pop('observatory', None)
+    auto['burstObservatory'] = {
+        'subjectSelector': ['auto-node-'],
+        'pingConfig': {'destination': 'https://www.gstatic.com/generate_204',
+                       'interval': '1m', 'timeout': '3s', 'sampling': 2},
+    }
+    return [auto] + singles, excluded_profiles
+
+
+def happ_routing(policy, target):
+    """Telegram takes priority over RU lists; default traffic stays in VPN."""
+    return {'domainStrategy': 'IPIfNonMatch', 'rules': [
+        {'type': 'field', 'domain': ['geosite:telegram', 'domain:t.me', 'domain:telegram.org'], **target},
+        {'type': 'field', 'ip': ['geoip:telegram'], **target},
+        {'type': 'field', 'domain': policy['DirectSites'], 'outboundTag': 'direct'},
+        {'type': 'field', 'ip': policy['DirectIp'], 'outboundTag': 'direct'},
+        {'type': 'field', 'network': 'tcp,udp', **target},
+    ]}
 
 
 def build_time():
@@ -272,55 +302,6 @@ def measurements_fresh(report, as_of):
         return 0 <= age <= 6 * 3600
     except (KeyError, TypeError, ValueError):
         return False
-
-
-def happ_fastest_profile(configs, metrics):
-    """Select by measured throughput only; never rewrite native routing/DNS.
-
-    Inputs are already filtered safe profiles. Selection updates on rebuild,
-    not through an unsupported on-device bandwidth balancer.
-    """
-    candidates = []
-    for config in configs:
-        proxies = [o for o in config["outbounds"] if o.get("protocol") == "vless"]
-        if len(proxies) != 1:
-            continue
-        metric = metrics.get(node_key(proxies[0]), {})
-        speed = metric.get("speed_mbps")
-        if (metric.get("status") == "ok" and isinstance(speed, (int, float))
-                and not isinstance(speed, bool) and math.isfinite(speed) and speed > 0):
-            candidates.append((speed, config, metric))
-    if not candidates:
-        profile = copy.deepcopy(configs[0])
-        profile["remarks"] = "⚡ Скорость | нет свежего замера — резерв Авто"
-        return profile
-    speed, winner, metric = max(candidates, key=lambda item: item[0])
-    previous_key = previous_winner()
-    for candidate in candidates:
-        key = next(node_key(o) for o in candidate[1]["outbounds"] if o.get("protocol") == "vless")
-        if key == previous_key and candidate[0] * 1.15 >= speed:
-            speed, winner, metric = candidate
-            break
-    profile = copy.deepcopy(winner)
-    profile["remarks"] = (f"⚡ Скорость — выбор по тесту GitHub: ≈{speed:.2f} Мбит/с"
-                          f" · {metric.get('latency_ms', '?')} мс | {winner['remarks']}")
-    return profile
-
-
-def previous_winner():
-    """Persistent selection state is independent of temporary fallback profiles."""
-    path = ROOT / "build_report.json"
-    report = read_json(path) if path.exists() else {}
-    if "happ_speed_winner" in report:
-        return report["happ_speed_winner"]
-    # One-time migration of a measured winner, never of a fallback.
-    path = ROOT / "subscription.txt"
-    previous = read_json(path) if path.exists() else []
-    if len(previous) > 1 and "Мбит/с" in previous[1].get("remarks", ""):
-        proxies = [o for o in previous[1]["outbounds"] if o.get("protocol") == "vless"]
-        if len(proxies) == 1:
-            return node_key(proxies[0])
-    return None
 
 
 def karing_connections(selected):
@@ -480,10 +461,7 @@ def build(as_of=None):
                                       read_json(ROOT / "rules/geoip-ru.json"))}
     excluded = [urllib.parse.unquote(urllib.parse.urlsplit(link).fragment)
                 for link, proxy in converted if proxy is None]
-    winner_key = previous_winner()
-    if "Мбит/с" in happ_configs[1]["remarks"]:
-        winner_key = next(node_key(o) for o in happ_configs[1]["outbounds"] if o.get("protocol") == "vless")
-    report = {"generated_at": as_of, "happ_speed_winner": winner_key,
+    report = {"generated_at": as_of, "happ_mode": "one device-side auto profile plus manual servers",
               "karing_conversion_excluded": conversion_excluded,
               "allowed_protocols": ["vless"], "happ_format": "native Xray JSON array",
               "happ_profiles": len(happ_configs), "happ_excluded_profiles": happ_excluded,

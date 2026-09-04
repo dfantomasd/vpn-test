@@ -142,42 +142,17 @@ class ClientTests(unittest.TestCase):
 
     def test_happ_native_auto_profile_preserved_first(self):
         configs = json.loads(self.outputs['subscription.txt'])
-        self.assertIn('Авто', configs[0]['remarks'])
-        original = copy.deepcopy(configs[0])
-        original.pop('remarks')
-        self.assertTrue(any({k: v for k, v in c.items() if k != 'remarks'} == original
-                            for c in self.catalog))
-        if configs[0]['routing'].get('balancers'):
-            self.assertIn('burstObservatory', configs[0])
-        else:
-            self.assertIn('Авто недоступен', configs[0]['remarks'])
-
-    def test_happ_fastest_second_preserves_native_config(self):
-        configs = json.loads(self.outputs['subscription.txt'])
-        self.assertIn('Скорость', configs[1]['remarks'])
-        source = [c for c in configs[2:] if len([
-            o for o in c['outbounds'] if o['protocol'] == 'vless']) == 1]
-        self.assertGreaterEqual(len(source), 2)
-        metrics = {}
-        for config, speed, latency in zip(source[:2], (5, 10), (1, 2000)):
-            outbound = next(o for o in config['outbounds'] if o['protocol'] == 'vless')
-            metrics[clients.node_key(outbound)] = {
-                'status': 'ok', 'speed_mbps': speed, 'latency_ms': latency}
-        before = copy.deepcopy(source)
-        winner = clients.happ_fastest_profile([configs[0]] + source[:2], metrics)
-        self.assertIn('10.00 Мбит/с', winner['remarks'])
-        winner['remarks'] = source[1]['remarks']
-        self.assertEqual(winner, source[1])
-        self.assertEqual(source, before)
-
-    def test_happ_fastest_missing_or_failed_measurements(self):
-        configs = json.loads(self.outputs['subscription.txt'])
-        for metrics in ({}, {clients.node_key(o): {'status': 'unavailable',
-                         'speed_mbps': 999} for c in configs for o in c['outbounds']}):
-            fallback = clients.happ_fastest_profile(configs, metrics)
-            self.assertIn('нет свежего замера', fallback['remarks'])
-            fallback['remarks'] = configs[0]['remarks']
-            self.assertEqual(fallback, configs[0])
+        auto = configs[0]
+        self.assertEqual(auto['remarks'], '🔄 Авто')
+        proxies = [o for o in auto['outbounds'] if o['protocol'] == 'vless']
+        self.assertGreaterEqual(len(proxies), 2)
+        self.assertEqual(len({o['tag'] for o in proxies}), len(proxies))
+        balancer = auto['routing']['balancers'][0]
+        self.assertIn(balancer['fallbackTag'], {o['tag'] for o in proxies})
+        self.assertTrue(all(o['tag'].startswith('auto-node-') for o in proxies))
+        self.assertEqual(auto['burstObservatory']['subjectSelector'], ['auto-node-'])
+        safe, _ = clients.foreign_nodes(self.catalog)
+        self.assertLessEqual({clients.node_key(o) for o in proxies}, {clients.node_key(o) for _, o in safe})
 
     def test_happ_excludes_unsafe_profiles_whole(self):
         configs, excluded = clients.happ_json_configs(self.catalog)
@@ -198,16 +173,6 @@ class ClientTests(unittest.TestCase):
         self.assertFalse(clients.measurements_fresh(report, '2026-09-04T06:01:00+00:00'))
         self.assertFalse(clients.measurements_fresh(report, '2026-09-03T23:59:00+00:00'))
         self.assertFalse(clients.measurements_fresh({}, '2026-09-04T00:00:00+00:00'))
-
-    def test_fastest_retains_previous_within_fifteen_percent(self):
-        configs = [{'remarks': str(i), 'outbounds': [{'protocol': 'vless', 'settings': {'id': i}}]}
-                   for i in range(2)]
-        metrics = {clients.node_key(c['outbounds'][0]): {'status': 'ok', 'speed_mbps': speed}
-                   for c, speed in zip(configs, (10, 11))}
-        with patch.object(clients, 'previous_winner', return_value=clients.node_key(configs[0]['outbounds'][0])):
-            self.assertEqual(clients.happ_fastest_profile(configs, metrics)['outbounds'], configs[0]['outbounds'])
-            metrics[clients.node_key(configs[1]['outbounds'][0])]['speed_mbps'] = 12
-            self.assertEqual(clients.happ_fastest_profile(configs, metrics)['outbounds'], configs[1]['outbounds'])
 
     def test_unknown_registration_is_excluded(self):
         read = clients.read_json
@@ -236,22 +201,35 @@ class ClientTests(unittest.TestCase):
         reference = clients.read_json(clients.ROOT / 'measurements.json')['measured_at']
         stale_time = (clients.datetime.datetime.fromisoformat(reference) +
                       clients.datetime.timedelta(hours=7)).isoformat()
-        before = clients.previous_winner()
         stale = clients.build(stale_time)
-        report = json.loads(stale['build_report.json'])
-        self.assertEqual(report['happ_speed_winner'], before)
-        self.assertIn('нет свежего замера', json.loads(stale['subscription.txt'])[1]['remarks'])
-        read = clients.read_json
-        def intermediate(path):
-            if path.name == 'build_report.json':
-                return report
-            if path.name == 'subscription.txt':
-                return json.loads(stale['subscription.txt'])
-            return read(path)
-        with patch.object(clients, 'read_json', side_effect=intermediate):
-            self.assertEqual(clients.previous_winner(), before)
-            refreshed = clients.build(reference)
-        self.assertIn('Мбит/с', json.loads(refreshed['subscription.txt'])[1]['remarks'])
+        self.assertEqual(stale['subscription.txt'], self.outputs['subscription.txt'])
+        self.assertNotIn('Мбит/с', stale['subscription_karing.txt'])
+
+    def test_happ_telegram_priority_and_russia_routes(self):
+        for config in json.loads(self.outputs['subscription.txt']):
+            rules = config['routing']['rules']
+            self.assertIn('geosite:telegram', rules[0]['domain'])
+            self.assertIn('geoip:telegram', rules[1]['ip'])
+            self.assertNotEqual(rules[0].get('outboundTag'), 'direct')
+            self.assertIn('domain:ru', rules[2]['domain'])
+            self.assertIn('geoip:ru', rules[3]['ip'])
+            self.assertEqual(rules[2]['outboundTag'], 'direct')
+            self.assertEqual(rules[3]['outboundTag'], 'direct')
+            self.assertNotEqual(rules[-1].get('outboundTag'), 'direct')
+            self.assertNotIn('domain:ifconfig.me', rules[2]['domain'])
+            self.assertFalse(any(r.get('outboundTag') == 'block' for r in rules))
+
+    def test_no_fake_auto_when_only_one_safe_server(self):
+        manual = json.loads(self.outputs['subscription.txt'])[1]
+        with self.assertRaisesRegex(ValueError, 'At least two'):
+            clients.happ_json_configs([manual])
+
+    def test_happ_manual_connection_and_dns_preserved(self):
+        for config in json.loads(self.outputs['subscription.txt'])[1:]:
+            source = next(c for c in self.catalog if c['remarks'] == config['remarks'])
+            self.assertEqual(config['outbounds'], source['outbounds'])
+            self.assertEqual(config.get('dns'), source.get('dns'))
+            self.assertEqual(config.get('inbounds'), source.get('inbounds'))
 
     def test_all_karing_conversions_fail_preserves_previous_file(self):
         with patch.object(clients, 'connection', side_effect=ValueError('unsupported')):
