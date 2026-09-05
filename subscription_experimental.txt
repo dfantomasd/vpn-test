@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Vovaplus · DE · ba0ffa | тест: ≈1.76 Мбит/с · 399 мс",
+    "remarks": "🧪 Vovaplus · DE · ba0ffa | тест: ≈1.87 Мбит/с · 549 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
