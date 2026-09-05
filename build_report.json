@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T10:36:11.755161+00:00",
+  "generated_at": "2026-09-05T13:52:31.493510+00:00",
   "happ_mode": "one device-side auto profile plus manual servers",
   "karing_conversion_excluded": [],
   "allowed_protocols": [
@@ -25,11 +25,11 @@
       "reason": "Contains non-VLESS outbound"
     },
     {
-      "name": "🇨🇭🎮Швейцария GAMING",
+      "name": "🇳🇱🎮Нидерланды GAMING",
       "reason": "Contains non-VLESS outbound"
     },
     {
-      "name": "🇳🇱🎮Нидерланды GAMING",
+      "name": "🇨🇭🎮Швейцария GAMING",
       "reason": "Contains non-VLESS outbound"
     },
     {
