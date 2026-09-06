@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T05:57:55.046148+00:00",
+  "generated_at": "2026-09-06T10:56:24.216251+00:00",
   "happ_mode": "one device-side auto profile plus manual servers",
   "karing_conversion_excluded": [],
   "allowed_protocols": [
@@ -45,15 +45,15 @@
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
+      "name": "🇩🇪⚪Германия (БС-7)☁️",
+      "reason": "Contains Russian or location-unknown VLESS endpoint"
+    },
+    {
       "name": "🇨🇭⚪Швейцария (БС-1)☁️",
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
       "name": "🇨🇭⚪Швейцария (БС-2)☁️",
-      "reason": "Contains Russian or location-unknown VLESS endpoint"
-    },
-    {
-      "name": "🇩🇪⚪Германия (БС-7)☁️",
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
@@ -99,6 +99,11 @@
     },
     {
       "name": "⬇️ Обходы белых списков ⬇️ / endpoint 2",
+      "server": "87.242.127.82",
+      "reason": "Russian entry IP (GeoIP RU)"
+    },
+    {
+      "name": "🇩🇪⚪Германия (БС-7)☁️ / endpoint 2",
       "server": "188.72.103.4",
       "reason": "Russian network registration (RDAP RU)"
     },
@@ -120,11 +125,6 @@
     {
       "name": "🇹🇷⚪Турция (БС-5)☁️ / endpoint 2",
       "server": "188.225.46.126",
-      "reason": "Russian entry IP (GeoIP RU)"
-    },
-    {
-      "name": "🇹🇷⚪Турция (БС-6)☁️ / endpoint 2",
-      "server": "87.242.127.82",
       "reason": "Russian entry IP (GeoIP RU)"
     }
   ],
