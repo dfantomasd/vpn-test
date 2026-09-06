@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Vovaplus · DE · ba0ffa | тест: ≈2.05 Мбит/с · 391 мс",
+    "remarks": "🧪 Vovaplus · DE · ba0ffa | тест: ≈2.17 Мбит/с · 445 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · DE · AvenCores-whitelist-pool · 60fe76",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · PL · internet-tenshi-whitelist · 070388",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,11 +2438,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "161.97.160.224",
+              "address": "185.32.6.80",
               "port": 443,
               "users": [
                 {
-                  "id": "b81b4d1b-7f20-48f1-82dc-d24bef898cab",
+                  "id": "953e3703-4ddc-49a7-a087-c96049d22340",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -2454,10 +2454,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "passport.yandex.ru",
-            "fingerprint": "",
-            "publicKey": "33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0",
-            "shortId": "e6",
+            "serverName": "storage.yandex.net",
+            "fingerprint": "firefox",
+            "publicKey": "lCCvbwGOEkx6IuK3eFd4RtmBi6UInWoMyt0QtfsOjwk",
+            "shortId": "99fe1ec015fde70c",
             "spiderX": "/"
           }
         }
