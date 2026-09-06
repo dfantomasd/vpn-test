@@ -59,10 +59,15 @@
     "name": "NET-31-56-150-0-24",
     "url": "https://rdap.db.ripe.net/ip/31.56.150.221"
   },
-  "31.56.150.26": {
+  "31.56.150.234": {
     "country": "AM",
     "name": "NET-31-56-150-0-24",
-    "url": "https://rdap.db.ripe.net/ip/31.56.150.26"
+    "url": "https://rdap.db.ripe.net/ip/31.56.150.234"
+  },
+  "31.56.150.245": {
+    "country": "AM",
+    "name": "NET-31-56-150-0-24",
+    "url": "https://rdap.db.ripe.net/ip/31.56.150.245"
   },
   "31.56.150.43": {
     "country": "AM",
@@ -83,11 +88,6 @@
     "country": "AM",
     "name": "NET-31-56-150-0-24",
     "url": "https://rdap.db.ripe.net/ip/31.56.150.6"
-  },
-  "31.56.150.67": {
-    "country": "AM",
-    "name": "NET-31-56-150-0-24",
-    "url": "https://rdap.db.ripe.net/ip/31.56.150.67"
   },
   "31.56.150.72": {
     "country": "AM",
