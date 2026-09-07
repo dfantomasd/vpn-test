@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Vovaplus · DE · ba0ffa | тест: ≈2.61 Мбит/с · 382 мс",
+    "remarks": "🧪 Au1rxx · DE · ba0ffa | тест: ≈2.70 Мбит/с · 368 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · internet-tenshi-whitelist · 423491",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · EU · internet-tenshi-whitelist · 14813d",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,11 +2438,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "150.241.101.80",
-              "port": 8443,
+              "address": "185.58.207.249",
+              "port": 443,
               "users": [
                 {
-                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
+                  "id": "e24cf9d3-e936-4a90-9932-33931b6a9b45",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -2454,10 +2454,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "yandex.net",
+            "serverName": "yandex.ru",
             "fingerprint": "chrome",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "6ba85179e30d4fc2",
+            "publicKey": "7sFZz7V1r5qtysLzjw07rOOA2P8NG7kvVX5BxFfc-Xc",
+            "shortId": "db39",
             "spiderX": "/"
           }
         }
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · DE · AvenCores-whitelist-pool · 60fe76",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · NL · igareck · dd56d6",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,27 +3238,31 @@
         "settings": {
           "vnext": [
             {
-              "address": "161.97.160.224",
-              "port": 443,
+              "address": "unlimited.gruztrack.online",
+              "port": 8080,
               "users": [
                 {
-                  "id": "b81b4d1b-7f20-48f1-82dc-d24bef898cab",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
+                  "id": "6e34a4ea-f950-490d-92f6-51b64ad5c133",
+                  "encryption": "none"
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "tcp",
+          "network": "xhttp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "passport.yandex.ru",
-            "fingerprint": "",
-            "publicKey": "33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0",
-            "shortId": "e6",
+            "serverName": "max.ru",
+            "fingerprint": "android",
+            "publicKey": "0iAwNpu3TAZxNlRX8gSiYPbx-S-P12fYe5h_xAxoWAQ",
+            "shortId": "6d6f13013d3e1d0c",
             "spiderX": "/"
+          },
+          "xhttpSettings": {
+            "path": "/",
+            "host": "",
+            "mode": "packet-up"
           }
         }
       },
