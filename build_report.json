@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-07T15:55:24.820146+00:00",
+  "generated_at": "2026-09-07T19:58:37.556088+00:00",
   "happ_mode": "one device-side auto profile plus manual servers",
   "karing_conversion_excluded": [],
   "allowed_protocols": [
     "vless"
   ],
   "happ_format": "native Xray JSON array",
-  "happ_profiles": 18,
+  "happ_profiles": 19,
   "happ_excluded_profiles": [
     {
       "name": "🇪🇺 🚀Авто | Лучший сервер ⚡⚡",
@@ -69,7 +69,7 @@
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     }
   ],
-  "karing_nodes": 17,
+  "karing_nodes": 18,
   "karing_rules": 26388,
   "karing_excluded_advanced_xhttp": [],
   "excluded_russian_or_unknown_servers": [
@@ -95,7 +95,7 @@
     },
     {
       "name": "⬇️ Обходы белых списков ⬇️ / endpoint 2",
-      "server": "188.225.46.126",
+      "server": "87.242.127.82",
       "reason": "Russian entry IP (GeoIP RU)"
     },
     {
@@ -104,8 +104,8 @@
       "reason": "Russian entry IP (GeoIP RU)"
     },
     {
-      "name": "🇹🇷⚪Турция (БС-5)☁️ / endpoint 2",
-      "server": "87.242.127.82",
+      "name": "🇹🇷⚪Турция (БС-4)☁️ / endpoint 2",
+      "server": "188.225.46.126",
       "reason": "Russian entry IP (GeoIP RU)"
     },
     {

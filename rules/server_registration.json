@@ -128,5 +128,10 @@
     "country": "EU",
     "name": "IPXO-GTT",
     "url": "https://rdap.db.ripe.net/ip/87.84.224.249"
+  },
+  "94.183.241.25": {
+    "country": "JP",
+    "name": "HostesLLC",
+    "url": "https://rdap.db.ripe.net/ip/94.183.241.25"
   }
 }
