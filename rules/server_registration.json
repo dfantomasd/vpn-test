@@ -34,6 +34,11 @@
     "name": "GLOBALTELEHOST-FRA",
     "url": "https://rdap.db.ripe.net/ip/2604:86c0:f401:b::2"
   },
+  "31.56.150.1": {
+    "country": "AM",
+    "name": "NET-31-56-150-0-24",
+    "url": "https://rdap.db.ripe.net/ip/31.56.150.1"
+  },
   "31.56.150.109": {
     "country": "AM",
     "name": "NET-31-56-150-0-24",
@@ -53,6 +58,11 @@
     "country": "AM",
     "name": "NET-31-56-150-0-24",
     "url": "https://rdap.db.ripe.net/ip/31.56.150.172"
+  },
+  "31.56.150.18": {
+    "country": "AM",
+    "name": "NET-31-56-150-0-24",
+    "url": "https://rdap.db.ripe.net/ip/31.56.150.18"
   },
   "31.56.150.21": {
     "country": "AM",
@@ -78,16 +88,6 @@
     "country": "AM",
     "name": "NET-31-56-150-0-24",
     "url": "https://rdap.db.ripe.net/ip/31.56.150.43"
-  },
-  "31.56.150.54": {
-    "country": "AM",
-    "name": "NET-31-56-150-0-24",
-    "url": "https://rdap.db.ripe.net/ip/31.56.150.54"
-  },
-  "31.56.150.6": {
-    "country": "AM",
-    "name": "NET-31-56-150-0-24",
-    "url": "https://rdap.db.ripe.net/ip/31.56.150.6"
   },
   "31.56.150.65": {
     "country": "AM",
