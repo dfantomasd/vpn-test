@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T01:15:27.740179+00:00",
+  "generated_at": "2026-09-09T06:01:00.603969+00:00",
   "happ_mode": "one device-side auto profile plus manual servers",
   "karing_conversion_excluded": [],
   "allowed_protocols": [
@@ -41,15 +41,7 @@
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
-      "name": "🇹🇷⚪Турция (БС-3)☁️",
-      "reason": "Contains Russian or location-unknown VLESS endpoint"
-    },
-    {
-      "name": "🇹🇷⚪Турция (БС-4)☁️",
-      "reason": "Contains Russian or location-unknown VLESS endpoint"
-    },
-    {
-      "name": "🇹🇷⚪Турция (БС-5)☁️",
+      "name": "🇩🇪⚪Германия (БС-6)☁️",
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
@@ -61,7 +53,15 @@
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
-      "name": "🇩🇪⚪Германия (БС-6)☁️",
+      "name": "🇹🇷⚪Турция (БС-3)☁️",
+      "reason": "Contains Russian or location-unknown VLESS endpoint"
+    },
+    {
+      "name": "🇹🇷⚪Турция (БС-4)☁️",
+      "reason": "Contains Russian or location-unknown VLESS endpoint"
+    },
+    {
+      "name": "🇹🇷⚪Турция (БС-5)☁️",
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     }
   ],
@@ -86,6 +86,21 @@
     },
     {
       "name": "⬇️ Обходы белых списков ⬇️ / endpoint 2",
+      "server": "46.243.142.212",
+      "reason": "Russian entry IP (GeoIP RU)"
+    },
+    {
+      "name": "🇩🇪⚪Германия (БС-6)☁️ / endpoint 2",
+      "server": "188.72.103.4",
+      "reason": "Russian network registration (RDAP RU)"
+    },
+    {
+      "name": "🇨🇭⚪Швейцария (БС-1)☁️ / endpoint 2",
+      "server": "46.243.142.42",
+      "reason": "Russian entry IP (GeoIP RU)"
+    },
+    {
+      "name": "🇹🇷⚪Турция (БС-3)☁️ / endpoint 2",
       "server": "87.242.127.82",
       "reason": "Russian entry IP (GeoIP RU)"
     },
@@ -98,21 +113,6 @@
       "name": "🇹🇷⚪Турция (БС-5)☁️ / endpoint 2",
       "server": "87.242.127.82",
       "reason": "Russian entry IP (GeoIP RU)"
-    },
-    {
-      "name": "🇨🇭⚪Швейцария (БС-1)☁️ / endpoint 2",
-      "server": "46.243.142.42",
-      "reason": "Russian entry IP (GeoIP RU)"
-    },
-    {
-      "name": "🇨🇭⚪Швейцария (БС-2)☁️ / endpoint 2",
-      "server": "46.243.142.212",
-      "reason": "Russian entry IP (GeoIP RU)"
-    },
-    {
-      "name": "🇩🇪⚪Германия (БС-6)☁️ / endpoint 2",
-      "server": "188.72.103.4",
-      "reason": "Russian network registration (RDAP RU)"
     }
   ],
   "measurements_available": true,
