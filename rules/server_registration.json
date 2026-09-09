@@ -29,11 +29,6 @@
     "name": "GLOBALTELEHOST-FRA",
     "url": "https://rdap.db.ripe.net/ip/2604:86c0:f401:b::2"
   },
-  "31.56.150.1": {
-    "country": "AM",
-    "name": "NET-31-56-150-0-24",
-    "url": "https://rdap.db.ripe.net/ip/31.56.150.1"
-  },
   "31.56.150.109": {
     "country": "AM",
     "name": "NET-31-56-150-0-24",
@@ -59,15 +54,15 @@
     "name": "NET-31-56-150-0-24",
     "url": "https://rdap.db.ripe.net/ip/31.56.150.158"
   },
+  "31.56.150.2": {
+    "country": "AM",
+    "name": "NET-31-56-150-0-24",
+    "url": "https://rdap.db.ripe.net/ip/31.56.150.2"
+  },
   "31.56.150.21": {
     "country": "AM",
     "name": "NET-31-56-150-0-24",
     "url": "https://rdap.db.ripe.net/ip/31.56.150.21"
-  },
-  "31.56.150.213": {
-    "country": "AM",
-    "name": "NET-31-56-150-0-24",
-    "url": "https://rdap.db.ripe.net/ip/31.56.150.213"
   },
   "31.56.150.245": {
     "country": "AM",
@@ -84,15 +79,20 @@
     "name": "NET-31-56-150-0-24",
     "url": "https://rdap.db.ripe.net/ip/31.56.150.43"
   },
+  "31.56.150.47": {
+    "country": "AM",
+    "name": "NET-31-56-150-0-24",
+    "url": "https://rdap.db.ripe.net/ip/31.56.150.47"
+  },
   "31.56.150.51": {
     "country": "AM",
     "name": "NET-31-56-150-0-24",
     "url": "https://rdap.db.ripe.net/ip/31.56.150.51"
   },
-  "31.56.150.72": {
+  "31.56.150.69": {
     "country": "AM",
     "name": "NET-31-56-150-0-24",
-    "url": "https://rdap.db.ripe.net/ip/31.56.150.72"
+    "url": "https://rdap.db.ripe.net/ip/31.56.150.69"
   },
   "31.56.150.84": {
     "country": "AM",
@@ -118,11 +118,6 @@
     "country": "RU",
     "name": "RU-CLOUDRU-20050722",
     "url": "https://rdap.db.ripe.net/ip/87.242.127.82"
-  },
-  "87.84.224.249": {
-    "country": "EU",
-    "name": "IPXO-GTT",
-    "url": "https://rdap.db.ripe.net/ip/87.84.224.249"
   },
   "94.183.241.25": {
     "country": "JP",
