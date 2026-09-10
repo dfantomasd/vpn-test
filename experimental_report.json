@@ -3,17 +3,17 @@
     {
       "name": "internet-tenshi-whitelist",
       "url": "https://internet-tenshi.kangel.tech/whitelist",
-      "sha256": "bc7be3c3b9daff3eb29568bf2de53555f6b15a11d17432e505ec482882e25caa"
+      "sha256": "27b3a8dad22e62a39f5b56f560cf865d8b036e1fbe07cba84220fc6dc67a1e5a"
     },
     {
       "name": "zieng2-whitelist",
       "url": "https://raw.githubusercontent.com/zieng2/wl/main/vless_universal.txt",
-      "sha256": "e4aa21bde8274024acf64d0e2b1cbbd4270457ec6ea136d25fbd2d20ca48d140"
+      "sha256": "e71f4427efbef229b6c9e89fc729d91ec4369f8b946d3a23aa59a46d9193ef81"
     },
     {
       "name": "AirLink-whitelist",
       "url": "https://raw.githubusercontent.com/AirLinkVPN1/AirLinkVPN/main/rkn_white_list",
-      "sha256": "14714a0a012ad162496412604f5022d1527da61251e94a310b640b61a0c581ff"
+      "sha256": "9b5bcb5261703103eb077ff895681b204484c90ee1ef94456e812d5596983e80"
     },
     {
       "name": "HardVPN-whitelist",
@@ -28,27 +28,27 @@
     {
       "name": "igareck-white-sni",
       "url": "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-SNI-RU-all.txt",
-      "sha256": "6b91b6190383784f657755fcdd63322352c10a0025426a79e8d9cc27b63adf93"
+      "sha256": "873672812c6ea9a1c3cb929122b057774951d07dea49d6e5d601cd06b43ec2ef"
     },
     {
       "name": "AvenCores-whitelist-pool",
       "url": "https://raw.githubusercontent.com/AvenCores/goida-vpn-configs/main/githubmirror/26.txt",
-      "sha256": "103338ef0f6be0f61236bea785b7a43fe4f06e7521815f928721b22558895047"
+      "sha256": "28bafd2ae4a2f0abb11831007e8224bd88524e5953c8807529f55d302b6399b7"
     },
     {
       "name": "vpn-config-rkn-checked",
       "url": "https://raw.githubusercontent.com/vsvavan2/vpn-config-rkn/main/output/all_working_keys.txt",
-      "sha256": "fedbecb9765d3534bdc5c2b884f7198080ee3d390e01517154a708f8548784fc"
+      "sha256": "4e8e926806b870bd9c6cd80875cf052cacf94ada96e732574a7d1911efc70c17"
     },
     {
       "name": "igareck",
       "url": "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt",
-      "sha256": "1c72419d994390d2da1ceb6fb019563830d8d52d60564002451e296b8816f68d"
+      "sha256": "7d1e1a4e0ed90ad9d8e9c15d01f99dbddb2d41a1fcf44c4ae875247f8e0b0420"
     },
     {
       "name": "Au1rxx",
       "url": "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/v2ray-base64.txt",
-      "sha256": "e55c34f57c696acc495f3b34c21f58a12e92fc10d8d4c55bdda0deda19fabafd"
+      "sha256": "816aa88ba7734ebcf0dff6ec6a2740b2655f23248557fa17760cfb89f7f0bcb0"
     },
     {
       "name": "morpheus",
@@ -63,15 +63,15 @@
     {
       "name": "Radikal",
       "url": "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt",
-      "sha256": "0373fde455d2d31931b1d6bb09f478bb3631e00ce2a5d694b2ec70133128b60d"
+      "sha256": "c2c2d816e8237d9110a95d6ec2ce84b0ded3fd5448e5d6572ecb370dad87144c"
     },
     {
       "name": "aviamasters",
       "url": "https://raw.githubusercontent.com/aviamastersgh/vpn-free-russia/main/verified_configs.txt",
-      "sha256": "5fa1c1fa89fde6d69aeeda2d6642db1ec81f08985d1786f97145e56d0231193a"
+      "sha256": "22f345246bdb73d16b8870f07c868d327135d0f03dda3236e1acdae8f58dfb65"
     }
   ],
-  "measured_at": "2026-09-10T21:15:53.309919+00:00",
+  "measured_at": "2026-09-10T23:26:49.717703+00:00",
   "vantage": "GitHub Actions",
   "quality_thresholds": {
     "min_speed_mbps": 1.5,
@@ -83,82 +83,76 @@
     "internet-tenshi-whitelist:not_mobile_whitelist_profile": 1,
     "internet-tenshi-whitelist:duplicate_or_existing": 1,
     "zieng2-whitelist:unsupported_or_unsafe": 38,
-    "zieng2-whitelist:not_mobile_whitelist_profile": 36,
+    "zieng2-whitelist:not_mobile_whitelist_profile": 27,
     "zieng2-whitelist:russian_geoip": 29,
-    "AirLink-whitelist:unsupported_or_unsafe": 51,
-    "AirLink-whitelist:not_mobile_whitelist_profile": 33,
-    "AirLink-whitelist:russian_geoip": 29,
+    "AirLink-whitelist:unsupported_or_unsafe": 40,
+    "AirLink-whitelist:not_mobile_whitelist_profile": 27,
+    "AirLink-whitelist:russian_geoip": 27,
     "HardVPN-whitelist:unsupported_or_unsafe": 3,
     "HardVPN-whitelist:not_mobile_whitelist_profile": 2,
     "Generation-Liberty:unsupported_or_unsafe": 45,
     "Generation-Liberty:russian_geoip": 1,
     "Generation-Liberty:not_mobile_whitelist_profile": 3,
-    "igareck-white-sni:unsupported_or_unsafe": 35,
-    "AvenCores-whitelist-pool:unsupported_or_unsafe": 13,
+    "igareck-white-sni:unsupported_or_unsafe": 27,
+    "AvenCores-whitelist-pool:unsupported_or_unsafe": 15,
     "AvenCores-whitelist-pool:russian_geoip": 2,
-    "AvenCores-whitelist-pool:not_mobile_whitelist_profile": 1,
-    "vpn-config-rkn-checked:unsupported_or_unsafe": 288,
-    "vpn-config-rkn-checked:not_mobile_whitelist_profile": 18,
-    "vpn-config-rkn-checked:duplicate_or_existing": 3,
-    "vpn-config-rkn-checked:russian_geoip": 4,
-    "igareck:unsupported_or_unsafe": 13,
-    "igareck:not_mobile_whitelist_profile": 2,
-    "Au1rxx:unsupported_or_unsafe": 683,
-    "Au1rxx:not_mobile_whitelist_profile": 760,
-    "Au1rxx:duplicate_or_existing": 7,
+    "vpn-config-rkn-checked:unsupported_or_unsafe": 244,
+    "vpn-config-rkn-checked:not_mobile_whitelist_profile": 13,
+    "igareck:unsupported_or_unsafe": 89,
+    "igareck:not_mobile_whitelist_profile": 12,
+    "igareck:duplicate_or_existing": 5,
+    "Au1rxx:unsupported_or_unsafe": 791,
+    "Au1rxx:not_mobile_whitelist_profile": 652,
+    "Au1rxx:duplicate_or_existing": 5,
     "morpheus:unsupported_or_unsafe": 65,
     "morpheus:not_mobile_whitelist_profile": 42,
     "morpheus:russian_geoip": 10,
     "Vovaplus:not_mobile_whitelist_profile": 135,
     "Vovaplus:unsupported_or_unsafe": 36,
     "Vovaplus:duplicate_or_existing": 5,
-    "Radikal:unsupported_or_unsafe": 401,
-    "Radikal:not_mobile_whitelist_profile": 148,
-    "aviamasters:unsupported_or_unsafe": 253,
-    "aviamasters:not_mobile_whitelist_profile": 95,
+    "Radikal:unsupported_or_unsafe": 412,
+    "Radikal:not_mobile_whitelist_profile": 137,
+    "aviamasters:unsupported_or_unsafe": 144,
+    "aviamasters:not_mobile_whitelist_profile": 38,
     "aviamasters:russian_geoip": 3,
-    "aviamasters:duplicate_or_existing": 2,
-    "internet-tenshi-whitelist:russian_unknown_or_mixed_registration": 3,
+    "aviamasters:duplicate_or_existing": 1,
+    "internet-tenshi-whitelist:russian_unknown_or_mixed_registration": 4,
     "Generation-Liberty:russian_unknown_or_mixed_registration": 1,
     "AvenCores-whitelist-pool:russian_unknown_or_mixed_registration": 3,
-    "vpn-config-rkn-checked:russian_unknown_or_mixed_registration": 1,
+    "vpn-config-rkn-checked:russian_unknown_or_mixed_registration": 5,
     "igareck:russian_unknown_or_mixed_registration": 1,
-    "Au1rxx:russian_unknown_or_mixed_registration": 3,
+    "Au1rxx:russian_unknown_or_mixed_registration": 4,
     "morpheus:russian_unknown_or_mixed_registration": 3,
     "Vovaplus:russian_unknown_or_mixed_registration": 1,
-    "Radikal:russian_unknown_or_mixed_registration": 2,
+    "Radikal:russian_unknown_or_mixed_registration": 5,
     "aviamasters:russian_unknown_or_mixed_registration": 4
   },
   "measurements": [
     {
       "name": "🧪 internet-tenshi-whitelist · FI · 49b90d",
       "status": "ok",
-      "latency_ms": 5293,
-      "speed_mbps": 0.67,
+      "latency_ms": 680,
+      "speed_mbps": 1.5,
       "sample_bytes": 262144,
-      "successful_samples": 2,
+      "successful_samples": 3,
       "samples_mbps": [
-        0.943088,
-        0.393656
+        1.528904,
+        1.485072,
+        1.497416
       ]
     },
     {
       "name": "🧪 internet-tenshi-whitelist · EE · 423491",
       "status": "ok",
-      "latency_ms": 820,
-      "speed_mbps": 1.31,
+      "latency_ms": 742,
+      "speed_mbps": 1.55,
       "sample_bytes": 262144,
       "successful_samples": 3,
       "samples_mbps": [
-        1.168296,
-        1.380632,
-        1.31236
+        1.344728,
+        1.552896,
+        1.563216
       ]
-    },
-    {
-      "name": "🧪 internet-tenshi-whitelist · FI · 9afdfd",
-      "status": "unavailable",
-      "reason": "latency_probe_failed"
     },
     {
       "name": "🧪 AvenCores-whitelist-pool · DE · 60fe76",
@@ -171,58 +165,17 @@
       "reason": "latency_probe_failed"
     },
     {
-      "name": "🧪 igareck · DE · 989538",
-      "status": "ok",
-      "latency_ms": 1416,
-      "speed_mbps": 1.08,
-      "sample_bytes": 262144,
-      "successful_samples": 3,
-      "samples_mbps": [
-        1.12312,
-        1.076592,
-        0.835496
-      ]
-    },
-    {
-      "name": "🧪 igareck · DE · 133e5c",
-      "status": "unavailable",
-      "reason": "latency_probe_failed"
-    },
-    {
-      "name": "🧪 igareck · DE · 27b52f",
-      "status": "unavailable",
-      "reason": "latency_probe_failed"
-    },
-    {
-      "name": "🧪 igareck · DE · b12fc0",
-      "status": "ok",
-      "latency_ms": 740,
-      "speed_mbps": 1.5,
-      "sample_bytes": 262144,
-      "successful_samples": 3,
-      "samples_mbps": [
-        1.48488,
-        1.503184,
-        1.496616
-      ]
-    },
-    {
       "name": "🧪 Au1rxx · DE · ba0ffa",
       "status": "ok",
-      "latency_ms": 614,
-      "speed_mbps": 1.6,
+      "latency_ms": 594,
+      "speed_mbps": 1.72,
       "sample_bytes": 262144,
       "successful_samples": 3,
       "samples_mbps": [
-        1.598328,
-        1.626624,
-        1.582848
+        1.723064,
+        1.703536,
+        1.728368
       ]
-    },
-    {
-      "name": "🧪 Au1rxx · IT · 46434c",
-      "status": "unavailable",
-      "reason": "latency_probe_failed"
     },
     {
       "name": "🧪 morpheus · FI · 381f36",
@@ -245,32 +198,9 @@
       "reason": "latency_probe_failed"
     },
     {
-      "name": "🧪 Radikal · DE · 8795f5",
+      "name": "🧪 aviamasters · DE · 0355a7",
       "status": "unavailable",
       "reason": "latency_probe_failed"
-    },
-    {
-      "name": "🧪 Radikal · TR · e6ffc1",
-      "status": "unavailable",
-      "reason": "latency_probe_failed"
-    },
-    {
-      "name": "🧪 Radikal · NL · f0ec7a",
-      "status": "unavailable",
-      "reason": "latency_probe_failed"
-    },
-    {
-      "name": "🧪 aviamasters · DE · 073a49",
-      "status": "ok",
-      "latency_ms": 756,
-      "speed_mbps": 1.44,
-      "sample_bytes": 262144,
-      "successful_samples": 3,
-      "samples_mbps": [
-        1.299912,
-        1.444632,
-        1.514544
-      ]
     }
   ],
   "published_nodes": 5,
