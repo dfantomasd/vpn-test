@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · DE · ba0ffa | тест: ≈2.70 Мбит/с · 368 мс",
+    "remarks": "🧪 Au1rxx · DE · fca5e4 | тест: ≈2.56 Мбит/с · 403 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1655,7 +1655,7 @@
           "security": "reality",
           "realitySettings": {
             "serverName": "eu-central.cendora.ru",
-            "fingerprint": "chrome",
+            "fingerprint": "random",
             "publicKey": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
             "shortId": "00bca5982f82d083",
             "spiderX": "/"
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · EU · internet-tenshi-whitelist · 14813d",
+    "remarks": "🧪 internet-tenshi-whitelist · EE · 423491 | тест: ≈1.81 Мбит/с · 585 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,11 +2438,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "185.58.207.249",
-              "port": 443,
+              "address": "150.241.101.80",
+              "port": 8443,
               "users": [
                 {
-                  "id": "e24cf9d3-e936-4a90-9932-33931b6a9b45",
+                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -2454,10 +2454,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "yandex.ru",
+            "serverName": "yandex.net",
             "fingerprint": "chrome",
-            "publicKey": "7sFZz7V1r5qtysLzjw07rOOA2P8NG7kvVX5BxFfc-Xc",
-            "shortId": "db39",
+            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+            "shortId": "6ba85179e30d4fc2",
             "spiderX": "/"
           }
         }
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · NL · igareck · dd56d6",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · DE · AvenCores-whitelist-pool · 60fe76",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,31 +3238,27 @@
         "settings": {
           "vnext": [
             {
-              "address": "unlimited.gruztrack.online",
-              "port": 8080,
+              "address": "161.97.160.224",
+              "port": 443,
               "users": [
                 {
-                  "id": "6e34a4ea-f950-490d-92f6-51b64ad5c133",
-                  "encryption": "none"
+                  "id": "b81b4d1b-7f20-48f1-82dc-d24bef898cab",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "xhttp",
+          "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "max.ru",
-            "fingerprint": "android",
-            "publicKey": "0iAwNpu3TAZxNlRX8gSiYPbx-S-P12fYe5h_xAxoWAQ",
-            "shortId": "6d6f13013d3e1d0c",
+            "serverName": "passport.yandex.ru",
+            "fingerprint": "",
+            "publicKey": "33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0",
+            "shortId": "e6",
             "spiderX": "/"
-          },
-          "xhttpSettings": {
-            "path": "/",
-            "host": "",
-            "mode": "packet-up"
           }
         }
       },
