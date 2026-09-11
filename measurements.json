@@ -1,242 +1,226 @@
 {
-  "measured_at": "2026-09-10T22:36:41.629879+00:00",
+  "measured_at": "2026-09-11T01:05:21.246697+00:00",
   "vantage": "GitHub Actions",
   "download_bytes_per_node": 786432,
   "latency_method": "HTTPS time to first byte through proxy (not ICMP)",
   "speed_method": "Median of 3 bounded 256 KiB HTTPS samples; minimum 2 successes",
   "nodes": {
-    "9b93698313d388a9518b32bf793df9b88b1f675b2f87dae077bd12a0992530b9": {
-      "name": "🇨🇭⚡Швейцария-1",
-      "status": "ok",
-      "latency_ms": 594,
-      "speed_mbps": 1.69,
-      "sample_bytes": 262144,
-      "successful_samples": 3,
-      "samples_mbps": [
-        1.688592,
-        1.694832,
-        1.703464
-      ]
+    "a917364541ce0e564b6163d23ca17823a7553d23e5bd8d9cdb99f76b978841d6": {
+      "name": "🇫🇷⚡Франция",
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
     },
-    "e3a350ddd572aa1b12a61b682e757b71ba5a62549803eb31e56699b2838ae347": {
-      "name": "🇨🇭⚡Швейцария-3",
-      "status": "ok",
-      "latency_ms": 597,
-      "speed_mbps": 1.67,
-      "sample_bytes": 262144,
-      "successful_samples": 3,
-      "samples_mbps": [
-        1.703032,
-        1.63996,
-        1.670688
-      ]
-    },
-    "677586e40b647c9d0e71c3dc7cf6b2ee7e37acdf5f564953c33a2cd79f90b9ab": {
-      "name": "🇪🇸⚡Испания",
-      "status": "ok",
-      "latency_ms": 689,
-      "speed_mbps": 0.57,
-      "sample_bytes": 262144,
-      "successful_samples": 3,
-      "samples_mbps": [
-        0.587944,
-        0.565312,
-        0.509504
-      ]
-    },
-    "359f5ee87c94d2fff0d8350bb49f77086de5e02b7741d0da56b036fff9d30e54": {
+    "e228b57d1ce1c505dda9b7ddbc9e9a2e72aeab045cc97e0776698bc715c312e9": {
       "name": "🇭🇺⚡Венгрия",
-      "status": "ok",
-      "latency_ms": 652,
-      "speed_mbps": 1.52,
-      "sample_bytes": 262144,
-      "successful_samples": 3,
-      "samples_mbps": [
-        1.520296,
-        1.55772,
-        1.513024
-      ]
+      "status": "unavailable",
+      "reason": "latency_probe_failed"
     },
-    "35ac1dd367076990c39423518be758b4ec28bf8ebdae696083683bbea45f08c1": {
-      "name": "🇫🇮⚡Финляндия-1",
-      "status": "ok",
-      "latency_ms": 673,
-      "speed_mbps": 1.5,
-      "sample_bytes": 262144,
-      "successful_samples": 3,
-      "samples_mbps": [
-        0.861448,
-        1.524552,
-        1.496016
-      ]
-    },
-    "b4e1162f5ee54c7736ae6f0a04dbd754079aef3910b9f1f0d8a786729f5ee8fd": {
+    "ac064b2f565e040768c77eb1e1077f3ca2a86d385aa6131a31805446f32a5bfd": {
       "name": "🇫🇮⚡Финляндия-2",
       "status": "ok",
-      "latency_ms": 691,
-      "speed_mbps": 1.41,
+      "latency_ms": 565,
+      "speed_mbps": 1.66,
       "sample_bytes": 262144,
       "successful_samples": 3,
       "samples_mbps": [
-        1.407992,
-        1.398752,
-        1.419256
+        1.669896,
+        1.599392,
+        1.655808
+      ]
+    },
+    "803efd9475a5f01228b7e86c61d9e34047f92ea4b40d8194cc10b7af4e9c9d78": {
+      "name": "🇩🇪⚡Германия",
+      "status": "ok",
+      "latency_ms": 504,
+      "speed_mbps": 1.93,
+      "sample_bytes": 262144,
+      "successful_samples": 3,
+      "samples_mbps": [
+        1.805336,
+        1.930792,
+        2.058344
+      ]
+    },
+    "5d9529f2daea2d36b8ecf98e8b6e2379db9c9083e11f21c5108ffc4c38becb07": {
+      "name": "🇫🇮⚡Финляндия-1",
+      "status": "ok",
+      "latency_ms": 5116,
+      "speed_mbps": 1.82,
+      "sample_bytes": 262144,
+      "successful_samples": 3,
+      "samples_mbps": [
+        1.777512,
+        1.828632,
+        1.816304
+      ]
+    },
+    "08dc6f380621f9daaeb3481ed4926f2db66d9d681d83986621aed9001573a64d": {
+      "name": "🇵🇱⚡Польша",
+      "status": "ok",
+      "latency_ms": 591,
+      "speed_mbps": 1.66,
+      "sample_bytes": 262144,
+      "successful_samples": 3,
+      "samples_mbps": [
+        1.661352,
+        1.620288,
+        1.733176
       ]
     },
     "03807dbb920ecc4ef19c69b9e402fed97cdca36746aa93f80baef3b8cf04e57a": {
       "name": "🇳🇱⚡Нидерланды",
       "status": "ok",
-      "latency_ms": 576,
-      "speed_mbps": 1.68,
+      "latency_ms": 523,
+      "speed_mbps": 1.97,
       "sample_bytes": 262144,
       "successful_samples": 3,
       "samples_mbps": [
-        1.668088,
-        1.710616,
-        1.683896
+        1.624584,
+        2.083968,
+        1.96692
       ]
     },
-    "238b07603a4133f2ed1de5cb29c1261ec17f5d7239a6419fea22d9e216384e76": {
-      "name": "🇸🇪⚡Швеция",
+    "8e1211ea3aa9f901b455f6a3d64f3e33bf5934ff951c11c9bc32f89e1cd20315": {
+      "name": "🇪🇸⚡Испания",
       "status": "ok",
-      "latency_ms": 1031,
-      "speed_mbps": 1.31,
+      "latency_ms": 600,
+      "speed_mbps": 0.69,
       "sample_bytes": 262144,
       "successful_samples": 3,
       "samples_mbps": [
-        1.286664,
-        1.307776,
-        1.311168
+        0.726336,
+        0.693144,
+        0.667296
       ]
     },
-    "5e4a97f2ffe41e938dfd6a4e9fc8c959eef36f81689407ad76d91bd08a039ff3": {
-      "name": "🇵🇱⚡Польша",
+    "70f682ce3c3b830ca7f1b94fad71559985227c3e9a69a9f8563d2ebd4a0ef2f5": {
+      "name": "🇨🇭⚡Швейцария-1",
       "status": "ok",
-      "latency_ms": 684,
-      "speed_mbps": 1.44,
+      "latency_ms": 502,
+      "speed_mbps": 1.99,
       "sample_bytes": 262144,
       "successful_samples": 3,
       "samples_mbps": [
-        1.35216,
-        1.44464,
-        1.475552
+        1.927376,
+        2.018792,
+        1.991752
       ]
     },
-    "e68ad7e15c28b8c1aa3afa786a2f7c71f6a1b41a7e03cccc5ea014f7982aa73b": {
+    "e3a350ddd572aa1b12a61b682e757b71ba5a62549803eb31e56699b2838ae347": {
+      "name": "🇨🇭⚡Швейцария-3",
+      "status": "ok",
+      "latency_ms": 534,
+      "speed_mbps": 2.02,
+      "sample_bytes": 262144,
+      "successful_samples": 3,
+      "samples_mbps": [
+        2.016256,
+        2.038432,
+        1.88148
+      ]
+    },
+    "6e5e467158aa29e405c57683f685bd8999ceba2290eafff71eb84fa47ed01297": {
       "name": "🇬🇧⚡Англия-1",
       "status": "ok",
-      "latency_ms": 645,
-      "speed_mbps": 1.59,
+      "latency_ms": 550,
+      "speed_mbps": 1.87,
       "sample_bytes": 262144,
       "successful_samples": 3,
       "samples_mbps": [
-        1.573536,
-        1.594808,
-        1.594592
+        1.913712,
+        1.874128,
+        1.763992
       ]
     },
-    "5b2776cf7d2f8f4b7264116601c9e32c9d67146c41b9193306dea23dcce866a4": {
-      "name": "🇫🇷⚡Франция",
+    "32e56b4e2c66a4041ab2e9d0fcfc68ca6c21cb7f421420a13b6307c8384ef68f": {
+      "name": "🇸🇪⚡Швеция",
       "status": "ok",
-      "latency_ms": 603,
-      "speed_mbps": 1.68,
-      "sample_bytes": 262144,
-      "successful_samples": 3,
-      "samples_mbps": [
-        1.715584,
-        1.67848,
-        1.679824
-      ]
-    },
-    "002ca867a6c75b0d76f7c824ca3d629e9d07a26f090cf8b11455ae8664d9c7e1": {
-      "name": "🇩🇪⚡Германия",
-      "status": "ok",
-      "latency_ms": 586,
-      "speed_mbps": 1.63,
-      "sample_bytes": 262144,
-      "successful_samples": 3,
-      "samples_mbps": [
-        1.631864,
-        1.66488,
-        1.603
-      ]
-    },
-    "0b7301f6fccae213977cbb666b69ac43948eb124d5ab6999686a1f85b95cfab6": {
-      "name": "🇹🇷💳Турция Torrent",
-      "status": "ok",
-      "latency_ms": 777,
+      "latency_ms": 1075,
       "speed_mbps": 1.35,
       "sample_bytes": 262144,
       "successful_samples": 3,
       "samples_mbps": [
-        0.966096,
-        1.3862,
-        1.347768
+        1.354984,
+        1.407216,
+        1.292336
       ]
     },
-    "1ef28e0bf8def6b5baccf19c3e83b947cd43e898318e0f802ce69ea2ab9e28eb": {
-      "name": "🇨🇦Канада Torrent",
+    "ea0f52b4f0a559ef803e2e48187652b01f581738b3625b756e14bc54ffd349c3": {
+      "name": "🇹🇷💳Турция Torrent",
       "status": "ok",
-      "latency_ms": 1033,
-      "speed_mbps": 1.08,
+      "latency_ms": 686,
+      "speed_mbps": 1.3,
       "sample_bytes": 262144,
       "successful_samples": 3,
       "samples_mbps": [
-        1.084128,
-        1.028832,
-        1.087832
+        1.299216,
+        1.172312,
+        1.327568
       ]
     },
-    "ef81ce3304a127afd10635da4015f9125d3e4dbe53ddbfd5b6a2ea6843dd2798": {
-      "name": "🇧🇪Бельгия",
+    "bf50a79b9e6432f3f7f49893aa34d12d214ea804c84d4f42c47d92352ac16a9d": {
+      "name": "🇮🇹Италия Torrent",
       "status": "ok",
-      "latency_ms": 555,
-      "speed_mbps": 1.77,
+      "latency_ms": 563,
+      "speed_mbps": 1.95,
       "sample_bytes": 262144,
       "successful_samples": 3,
       "samples_mbps": [
-        1.765376,
-        1.829328,
-        1.747984
+        1.966176,
+        1.931536,
+        1.951912
       ]
     },
-    "43270da82198eadb72ad023a18fef40495802aae0df735f261bb08a97d616638": {
+    "5d90c7e78558afaa503494d8a33f2bf620d3fc8c1c597a93b6650a529689ff22": {
       "name": "🇺🇸США Torrent",
       "status": "ok",
-      "latency_ms": 1190,
-      "speed_mbps": 0.83,
+      "latency_ms": 1096,
+      "speed_mbps": 0.93,
       "sample_bytes": 262144,
       "successful_samples": 3,
       "samples_mbps": [
-        0.832144,
-        0.856352,
-        0.833544
+        0.942352,
+        0.925544,
+        0.928888
       ]
     },
     "39f1c35da33ff6219a558b6f4f890be328d5522f8fb9da0e3d7c376d344540c5": {
       "name": "🇯🇵Япония",
       "status": "ok",
-      "latency_ms": 664,
+      "latency_ms": 553,
       "speed_mbps": 1.58,
       "sample_bytes": 262144,
       "successful_samples": 3,
       "samples_mbps": [
-        1.575224,
-        1.563112,
-        1.577992
+        1.511912,
+        1.954648,
+        1.58376
       ]
     },
-    "a77c073de1f98b94827be5f7252a463e1f2ef42f1b0e84d3ae9beec28393f05c": {
-      "name": "🇮🇹Италия Torrent",
+    "ef81ce3304a127afd10635da4015f9125d3e4dbe53ddbfd5b6a2ea6843dd2798": {
+      "name": "🇧🇪Бельгия",
       "status": "ok",
-      "latency_ms": 653,
-      "speed_mbps": 1.6,
+      "latency_ms": 470,
+      "speed_mbps": 2.14,
       "sample_bytes": 262144,
       "successful_samples": 3,
       "samples_mbps": [
-        1.601056,
-        1.627768,
-        1.599848
+        2.049416,
+        2.194352,
+        2.141152
+      ]
+    },
+    "d664eb6b70014f62c37dffa861ec409950c359783a01f62ed830a949a0b0bbb4": {
+      "name": "🇨🇦Канада Torrent",
+      "status": "ok",
+      "latency_ms": 951,
+      "speed_mbps": 1.18,
+      "sample_bytes": 262144,
+      "successful_samples": 3,
+      "samples_mbps": [
+        1.151736,
+        1.202488,
+        1.176352
       ]
     }
   }
