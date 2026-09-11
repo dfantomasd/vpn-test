@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · DE · ba0ffa | тест: ≈1.72 Мбит/с · 594 мс",
+    "remarks": "🧪 Vovaplus · DE · ba0ffa | тест: ≈2.57 Мбит/с · 383 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 internet-tenshi-whitelist · EE · 423491 | тест: ≈1.55 Мбит/с · 742 мс",
+    "remarks": "🧪 internet-tenshi-whitelist · EE · 423491 | тест: ≈1.92 Мбит/с · 586 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · DE · AvenCores-whitelist-pool · 60fe76",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · LT · internet-tenshi-whitelist · 963e64",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,13 +3238,12 @@
         "settings": {
           "vnext": [
             {
-              "address": "161.97.160.224",
+              "address": "144.31.243.248",
               "port": 443,
               "users": [
                 {
-                  "id": "b81b4d1b-7f20-48f1-82dc-d24bef898cab",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
+                  "id": "4cec0315-d5d4-4b29-afe4-7f8b8dd94f36",
+                  "encryption": "none"
                 }
               ]
             }
@@ -3254,10 +3253,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "passport.yandex.ru",
-            "fingerprint": "",
-            "publicKey": "33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0",
-            "shortId": "e6",
+            "serverName": "x5.ru",
+            "fingerprint": "firefox",
+            "publicKey": "Snqizwey11Sp7A3JOzYATE-bcWTOPz1uFblMUiZToVY",
+            "shortId": "f3836ba5541bdc9e",
             "spiderX": "/"
           }
         }
