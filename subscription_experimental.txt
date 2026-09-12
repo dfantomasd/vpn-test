@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 igareck · NL · 831641 | тест: ≈1.82 Мбит/с · 601 мс",
+    "remarks": "🧪 Au1rxx · DE · 2cd592 | тест: ≈1.83 Мбит/с · 559 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1638,11 +1638,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "nethgio.2clash.ru",
+              "address": "144.31.168.95",
               "port": 443,
               "users": [
                 {
-                  "id": "3b6a9df3-f1d1-4bc1-94a5-0d8f2d5512b1",
+                  "id": "423b1d79-08c4-403f-9d5e-c541f791b55f",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -1654,10 +1654,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "nethgio.2clash.ru",
-            "fingerprint": "firefox",
-            "publicKey": "vREd4uEheT5kCusYCZEGTh3ql4uFpHp4sk_3W0_lang",
-            "shortId": "1999",
+            "serverName": "eu-central.cendora.ru",
+            "fingerprint": "qq",
+            "publicKey": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
+            "shortId": "00bca5982f82d083",
             "spiderX": "/"
           }
         }
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · DE · ba0ffa | тест: ≈1.71 Мбит/с · 600 мс",
+    "remarks": "🧪 igareck · FI · 8edf72 | тест: ≈1.56 Мбит/с · 687 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,27 +2438,31 @@
         "settings": {
           "vnext": [
             {
-              "address": "144.31.168.95",
+              "address": "178.17.53.38",
               "port": 443,
               "users": [
                 {
-                  "id": "423b1d79-08c4-403f-9d5e-c541f791b55f",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
+                  "id": "eb0e3aec-f67f-4fa2-8577-b0bff0484e77",
+                  "encryption": "none"
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "tcp",
+          "network": "xhttp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "eu-central.cendora.ru",
-            "fingerprint": "chrome",
-            "publicKey": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
-            "shortId": "00bca5982f82d083",
+            "serverName": "sstats.vk-portal.net",
+            "fingerprint": "firefox",
+            "publicKey": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
+            "shortId": "f79448a30d",
             "spiderX": "/"
+          },
+          "xhttpSettings": {
+            "path": "/assets/v2/pkg",
+            "host": "",
+            "mode": "auto"
           }
         }
       },
