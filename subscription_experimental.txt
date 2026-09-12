@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Vovaplus · DE · ba0ffa | тест: ≈2.67 Мбит/с · 382 мс",
+    "remarks": "🧪 Au1rxx · DE · fca5e4 | тест: ≈1.59 Мбит/с · 643 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1655,7 +1655,7 @@
           "security": "reality",
           "realitySettings": {
             "serverName": "eu-central.cendora.ru",
-            "fingerprint": "chrome",
+            "fingerprint": "random",
             "publicKey": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
             "shortId": "00bca5982f82d083",
             "spiderX": "/"
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 internet-tenshi-whitelist · EE · 423491 | тест: ≈1.79 Мбит/с · 580 мс",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · internet-tenshi-whitelist · 423491",
     "inbounds": [
       {
         "listen": "127.0.0.1",
