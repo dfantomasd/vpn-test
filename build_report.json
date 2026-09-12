@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T05:47:17.635769+00:00",
+  "generated_at": "2026-09-12T10:45:45.690783+00:00",
   "happ_mode": "one device-side auto profile plus manual servers",
   "karing_conversion_excluded": [],
   "allowed_protocols": [
@@ -25,15 +25,15 @@
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
+      "name": "🇫🇮🎮Финляндия GAMING",
+      "reason": "Contains non-VLESS outbound"
+    },
+    {
       "name": "🇨🇭🎮Швейцария GAMING",
       "reason": "Contains non-VLESS outbound"
     },
     {
       "name": "🇳🇱🎮Нидерланды GAMING",
-      "reason": "Contains non-VLESS outbound"
-    },
-    {
-      "name": "🇫🇮🎮Финляндия GAMING",
       "reason": "Contains non-VLESS outbound"
     },
     {
@@ -49,11 +49,11 @@
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
-      "name": "🇨🇭⚪Швейцария (БС-1)☁️",
+      "name": "🇹🇷⚪Турция (БС-3)☁️",
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
-      "name": "🇨🇭⚪Швейцария (БС-2)☁️",
+      "name": "🇹🇷⚪Турция (БС-4)☁️",
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
@@ -61,11 +61,11 @@
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
-      "name": "🇹🇷⚪Турция (БС-3)☁️",
+      "name": "🇨🇭⚪Швейцария (БС-1)☁️",
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
-      "name": "🇹🇷⚪Турция (БС-4)☁️",
+      "name": "🇨🇭⚪Швейцария (БС-2)☁️",
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     }
   ],
@@ -95,17 +95,17 @@
     },
     {
       "name": "⬇️ Обходы белых списков ⬇️ / endpoint 2",
-      "server": "87.242.95.40",
-      "reason": "Russian entry IP (GeoIP RU)"
-    },
-    {
-      "name": "🇨🇭⚪Швейцария (БС-1)☁️ / endpoint 2",
       "server": "shprcdn.xyz",
       "reason": "Russian entry IP (GeoIP RU)"
     },
     {
-      "name": "🇨🇭⚪Швейцария (БС-2)☁️ / endpoint 2",
-      "server": "shprcdn.homes",
+      "name": "🇹🇷⚪Турция (БС-3)☁️ / endpoint 2",
+      "server": "87.242.95.40",
+      "reason": "Russian entry IP (GeoIP RU)"
+    },
+    {
+      "name": "🇹🇷⚪Турция (БС-4)☁️ / endpoint 2",
+      "server": "87.242.95.40",
       "reason": "Russian entry IP (GeoIP RU)"
     },
     {
@@ -114,8 +114,8 @@
       "reason": "Russian network registration (RDAP RU)"
     },
     {
-      "name": "🇹🇷⚪Турция (БС-4)☁️ / endpoint 2",
-      "server": "87.242.95.40",
+      "name": "🇨🇭⚪Швейцария (БС-2)☁️ / endpoint 2",
+      "server": "shprcdn.homes",
       "reason": "Russian entry IP (GeoIP RU)"
     }
   ],
