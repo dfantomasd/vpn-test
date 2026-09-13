@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T20:50:52.256006+00:00",
+  "generated_at": "2026-09-13T23:10:59.738433+00:00",
   "happ_mode": "one device-side auto profile plus manual servers",
   "karing_conversion_excluded": [],
   "allowed_protocols": [
@@ -25,15 +25,15 @@
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
+      "name": "🇳🇱🎮Нидерланды GAMING",
+      "reason": "Contains non-VLESS outbound"
+    },
+    {
       "name": "🇫🇮🎮Финляндия GAMING",
       "reason": "Contains non-VLESS outbound"
     },
     {
       "name": "🇨🇭🎮Швейцария GAMING",
-      "reason": "Contains non-VLESS outbound"
-    },
-    {
-      "name": "🇳🇱🎮Нидерланды GAMING",
       "reason": "Contains non-VLESS outbound"
     },
     {
