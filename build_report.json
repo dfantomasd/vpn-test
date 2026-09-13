@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T00:03:08.985561+00:00",
+  "generated_at": "2026-09-13T04:47:09.045588+00:00",
   "happ_mode": "one device-side auto profile plus manual servers",
   "karing_conversion_excluded": [],
   "allowed_protocols": [
@@ -13,15 +13,15 @@
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
-      "name": "🇬🇧⚡Англия-2 EXTRA",
-      "reason": "Contains Russian or location-unknown VLESS endpoint"
-    },
-    {
       "name": "🇨🇭⚡Швейцария-2 EXTRA",
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
       "name": "🇨🇭⚡Швейцария-4 EXTRA",
+      "reason": "Contains Russian or location-unknown VLESS endpoint"
+    },
+    {
+      "name": "🇬🇧⚡Англия-2 EXTRA",
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
@@ -74,11 +74,6 @@
   "karing_excluded_advanced_xhttp": [],
   "excluded_russian_or_unknown_servers": [
     {
-      "name": "🇬🇧⚡Англия-2 EXTRA",
-      "server": "234604.aib2bsas.online",
-      "reason": "Unknown network registration country"
-    },
-    {
       "name": "🇨🇭⚡Швейцария-2 EXTRA",
       "server": "2604:86c0:f401:a::4",
       "reason": "Unknown network registration country"
@@ -86,6 +81,11 @@
     {
       "name": "🇨🇭⚡Швейцария-4 EXTRA",
       "server": "263160.aib2bsas.online",
+      "reason": "Unknown network registration country"
+    },
+    {
+      "name": "🇬🇧⚡Англия-2 EXTRA",
+      "server": "234604.aib2bsas.online",
       "reason": "Unknown network registration country"
     },
     {
