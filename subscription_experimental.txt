@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · DE · 2cd592 | тест: ≈1.83 Мбит/с · 559 мс",
+    "remarks": "🧪 Au1rxx · DE · fca5e4 | тест: ≈1.66 Мбит/с · 613 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1655,7 +1655,7 @@
           "security": "reality",
           "realitySettings": {
             "serverName": "eu-central.cendora.ru",
-            "fingerprint": "qq",
+            "fingerprint": "random",
             "publicKey": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
             "shortId": "00bca5982f82d083",
             "spiderX": "/"
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 igareck · FI · 8edf72 | тест: ≈1.56 Мбит/с · 687 мс",
+    "remarks": "🧪 AvenCores-whitelist-pool · FI · a8722b | тест: ≈1.53 Мбит/с · 720 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,31 +2438,27 @@
         "settings": {
           "vnext": [
             {
-              "address": "178.17.53.38",
-              "port": 443,
+              "address": "109.107.155.189",
+              "port": 8443,
               "users": [
                 {
-                  "id": "eb0e3aec-f67f-4fa2-8577-b0bff0484e77",
-                  "encryption": "none"
+                  "id": "482aed33-c5ae-4e1d-bff4-8b0bdb72fb81",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "xhttp",
+          "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "sstats.vk-portal.net",
+            "serverName": "max.ru",
             "fingerprint": "firefox",
-            "publicKey": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
-            "shortId": "f79448a30d",
+            "publicKey": "yg8AxPPiKD1wQ-AlxB8Iwo0w59A4QTVob_FVAl4iuRw",
+            "shortId": "e7d8f0aa",
             "spiderX": "/"
-          },
-          "xhttpSettings": {
-            "path": "/assets/v2/pkg",
-            "host": "",
-            "mode": "auto"
           }
         }
       },
