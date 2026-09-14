@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T01:05:02.737262+00:00",
+  "generated_at": "2026-09-14T06:17:57.676462+00:00",
   "happ_mode": "one device-side auto profile plus manual servers",
   "karing_conversion_excluded": [],
   "allowed_protocols": [
@@ -95,7 +95,7 @@
     },
     {
       "name": "⬇️ Обходы белых списков ⬇️ / endpoint 2",
-      "server": "shprcdn.homes",
+      "server": "87.242.95.40",
       "reason": "Russian entry IP (GeoIP RU)"
     },
     {
@@ -104,8 +104,8 @@
       "reason": "Russian entry IP (GeoIP RU)"
     },
     {
-      "name": "🇹🇷⚪Турция (БС-3)☁️ / endpoint 2",
-      "server": "87.242.95.40",
+      "name": "🇨🇭⚪Швейцария (БС-2)☁️ / endpoint 2",
+      "server": "shprcdn.homes",
       "reason": "Russian entry IP (GeoIP RU)"
     },
     {
