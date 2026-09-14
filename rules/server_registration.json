@@ -1,4 +1,19 @@
 {
+  "154.222.132.10": {
+    "country": "DE",
+    "name": null,
+    "url": "https://rdap.db.ripe.net/ip/154.222.132.10"
+  },
+  "154.222.132.100": {
+    "country": "DE",
+    "name": null,
+    "url": "https://rdap.db.ripe.net/ip/154.222.132.100"
+  },
+  "154.222.132.101": {
+    "country": "DE",
+    "name": null,
+    "url": "https://rdap.db.ripe.net/ip/154.222.132.101"
+  },
   "154.222.132.141": {
     "country": "DE",
     "name": null,
@@ -73,6 +88,16 @@
     "country": null,
     "name": "GLOBALTELEHOST-FRA",
     "url": "https://rdap.db.ripe.net/ip/2604:86c0:f401:b::2"
+  },
+  "31.56.150.100": {
+    "country": "AM",
+    "name": "NET-31-56-150-0-24",
+    "url": "https://rdap.db.ripe.net/ip/31.56.150.100"
+  },
+  "31.56.150.101": {
+    "country": "AM",
+    "name": "NET-31-56-150-0-24",
+    "url": "https://rdap.db.ripe.net/ip/31.56.150.101"
   },
   "31.56.150.146": {
     "country": "AM",
