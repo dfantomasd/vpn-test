@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T12:58:18.284804+00:00",
+  "generated_at": "2026-09-14T18:39:21.999233+00:00",
   "happ_mode": "one device-side auto profile plus manual servers",
   "karing_conversion_excluded": [],
   "allowed_protocols": [
@@ -45,15 +45,15 @@
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
-      "name": "🇬🇧Англия SS",
-      "reason": "Contains non-VLESS outbound"
-    },
-    {
       "name": "🇮🇹Италия SS",
       "reason": "Contains non-VLESS outbound"
     },
     {
       "name": "🇨🇦Канада SS",
+      "reason": "Contains non-VLESS outbound"
+    },
+    {
+      "name": "🇬🇧Англия SS",
       "reason": "Contains non-VLESS outbound"
     },
     {
@@ -107,11 +107,6 @@
     },
     {
       "name": "⬇️ Обходы белых списков ⬇️ / endpoint 2",
-      "server": "shprcdn.homes",
-      "reason": "Russian entry IP (GeoIP RU)"
-    },
-    {
-      "name": "🇹🇷⚪Турция (БС-3)☁️ / endpoint 2",
       "server": "87.242.95.40",
       "reason": "Russian entry IP (GeoIP RU)"
     },
@@ -123,6 +118,11 @@
     {
       "name": "🇨🇭⚪Швейцария (БС-1)☁️ / endpoint 2",
       "server": "shprcdn.xyz",
+      "reason": "Russian entry IP (GeoIP RU)"
+    },
+    {
+      "name": "🇨🇭⚪Швейцария (БС-2)☁️ / endpoint 2",
+      "server": "shprcdn.homes",
       "reason": "Russian entry IP (GeoIP RU)"
     },
     {
