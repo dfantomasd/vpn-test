@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · DE · ba0ffa | тест: ≈1.66 Мбит/с · 616 мс",
+    "remarks": "🧪 Au1rxx · DE · ba0ffa | тест: ≈2.32 Мбит/с · 446 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 igareck · DE · 9b60cf | тест: ≈1.76 Мбит/с · 679 мс",
+    "remarks": "🧪 Vovaplus · AT · 1ece6f | тест: ≈2.10 Мбит/с · 523 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,11 +2438,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "gr2.serverslocal.ru",
+              "address": "152.53.1.40",
               "port": 443,
               "users": [
                 {
-                  "id": "446c208b-c993-43f3-b5f9-0138ede17f15",
+                  "id": "edde565e-41f5-400e-84ea-7b87a3e84488",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -2454,10 +2454,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "gr2.serverslocal.ru",
-            "fingerprint": "firefox",
-            "publicKey": "8H-YQe-nSd_aL2FwWIFNV2-anUb4v3cY_n5QcEEjGEs",
-            "shortId": "eeed325908a87d9f",
+            "serverName": "at.quattro-tech.ru",
+            "fingerprint": "chrome",
+            "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
+            "shortId": "43dcff53849b81e6",
             "spiderX": "/"
           }
         }
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "🧪 Vovaplus · AT · 1ece6f | тест: ≈1.65 Мбит/с · 649 мс",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · NL · internet-tenshi-whitelist · 9f5d5e",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,13 +3238,12 @@
         "settings": {
           "vnext": [
             {
-              "address": "152.53.1.40",
-              "port": 443,
+              "address": "147.45.134.184",
+              "port": 8443,
               "users": [
                 {
-                  "id": "edde565e-41f5-400e-84ea-7b87a3e84488",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
+                  "id": "9fd78c11-d331-4c1d-ba6c-046e970c1464",
+                  "encryption": "none"
                 }
               ]
             }
@@ -3254,10 +3253,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "at.quattro-tech.ru",
-            "fingerprint": "chrome",
-            "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-            "shortId": "43dcff53849b81e6",
+            "serverName": "dzen.ru",
+            "fingerprint": "firefox",
+            "publicKey": "FnoA9F_919MbdRH1bFYENR1Yl9C0MeDdb47rZ4R-IGo",
+            "shortId": "dd910a5b30",
             "spiderX": "/"
           }
         }
