@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · DE · f73b1e | тест: ≈1.64 Мбит/с · 608 мс",
+    "remarks": "🧪 Au1rxx · DE · f73b1e | тест: ≈1.69 Мбит/с · 611 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · DE · HardVPN-whitelist · 20d1f6",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · DE · AvenCores-whitelist-pool · 60fe76",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,11 +3238,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "185.126.67.52",
+              "address": "161.97.160.224",
               "port": 443,
               "users": [
                 {
-                  "id": "8ff62004-b728-4be5-b7e9-5f5c85489921",
+                  "id": "b81b4d1b-7f20-48f1-82dc-d24bef898cab",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -3254,10 +3254,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "www.vk.com",
-            "fingerprint": "qq",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "",
+            "serverName": "passport.yandex.ru",
+            "fingerprint": "",
+            "publicKey": "33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0",
+            "shortId": "e6",
             "spiderX": "/"
           }
         }
