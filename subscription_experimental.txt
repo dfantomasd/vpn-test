@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Vovaplus · AT · 1ece6f | тест: ≈1.51 Мбит/с · 699 мс",
+    "remarks": "🧪 Au1rxx · DE · ba0ffa | тест: ≈1.61 Мбит/с · 648 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1638,11 +1638,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "152.53.1.40",
+              "address": "144.31.168.95",
               "port": 443,
               "users": [
                 {
-                  "id": "edde565e-41f5-400e-84ea-7b87a3e84488",
+                  "id": "423b1d79-08c4-403f-9d5e-c541f791b55f",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -1654,10 +1654,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "at.quattro-tech.ru",
+            "serverName": "eu-central.cendora.ru",
             "fingerprint": "chrome",
-            "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-            "shortId": "43dcff53849b81e6",
+            "publicKey": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
+            "shortId": "00bca5982f82d083",
             "spiderX": "/"
           }
         }
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · DE · igareck · a4f4b7",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · DE · morpheus · b4c952",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,11 +3238,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "151.240.151.33",
-              "port": 8443,
+              "address": "work.kadamilab.ru",
+              "port": 443,
               "users": [
                 {
-                  "id": "5dec24d0-89b5-457a-81fd-7992e4c09e30",
+                  "id": "b9964fbf-7ea3-4883-9a3b-cca80ba8602d",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -3254,10 +3254,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "slfs5.ardor-cloud.ru",
-            "fingerprint": "firefox",
-            "publicKey": "uH92KlqQX8T1Hv_zFvVgZN3LeHHZ6hPGUoyWHzdDwlY",
-            "shortId": "eb86eee811af1de0",
+            "serverName": "hb.ru-msk.vkcloud-storage.ru",
+            "fingerprint": "chrome",
+            "publicKey": "LJsl2DgOqknCTlIUAJ9RIp5-2L5chl_sOycmWzmeWgY",
+            "shortId": "",
             "spiderX": "/"
           }
         }
