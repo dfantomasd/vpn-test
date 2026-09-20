@@ -81,7 +81,7 @@ def quality_score(metric):
 
 
 def parse_link(line):
-    """Only literal public IP + UUID + TCP/TLS or TCP/REALITY, fail closed."""
+    """Accept public IP or hostname + UUID + supported TLS/REALITY transports, fail closed."""
     url = urllib.parse.urlsplit(line.strip())
     if url.scheme != 'vless' or url.password:
         raise ValueError('not_vless')
@@ -341,6 +341,19 @@ def main():
             fallback.append(config)
             selected_keys.add(key)
     payload = (confirmed + verified + fallback)[:MAX_PUBLISHED]
+    previous_payload_path = ROOT / 'subscription_experimental.txt'
+    retained_previous = False
+    if not payload and previous_payload_path.exists():
+        try:
+            previous_payload = clients.read_json(previous_payload_path)
+        except (OSError, ValueError, TypeError, json.JSONDecodeError):
+            previous_payload = []
+        if previous_payload:
+            payload = previous_payload
+            retained_previous = True
+            rejected['publication:retained_previous_nonempty_subscription'] += 1
+            print('No qualifying experimental profiles; retaining previous non-empty subscription',
+                  flush=True)
     report = {'sources': [{'name': name, 'url': url, 'sha256': source_hashes.get(name)}
                           for name, url in SOURCES],
               'measured_at': datetime.datetime.now(datetime.timezone.utc).isoformat(),
@@ -349,15 +362,18 @@ def main():
                                      'max_latency_ms': MAX_LATENCY_MS},
               'rejected': dict(rejected), 'measurements': results,
               'published_nodes': len(payload),
+              'retained_previous_subscription': retained_previous,
               'iphone_confirmed_nodes': min(len(confirmed), MAX_PUBLISHED),
               'externally_verified_nodes': min(len(verified), max(0, MAX_PUBLISHED - len(confirmed))),
               'iphone_trial_nodes': sum(c['remarks'].startswith('📱') for c in payload),
               'note': ('Foreign VLESS Reality white-list candidates. Names beginning with '
                        '"ПРОВЕРИТЬ iPhone" passed structural/Xray validation but are intentionally '
                        'not claimed to work until tested on Russian mobile access.')}
-    (ROOT / 'subscription_experimental.txt').write_text(clients.json_text(payload), encoding='utf-8')
+    if not retained_previous:
+        previous_payload_path.write_text(clients.json_text(payload), encoding='utf-8')
     (ROOT / 'experimental_report.json').write_text(clients.json_text(report), encoding='utf-8')
-    print(f'Published {len(payload)} qualifying experimental profiles; working feeds untouched')
+    action = 'Retained' if retained_previous else 'Published'
+    print(f'{action} {len(payload)} experimental profiles; working feeds untouched')
 
 
 if __name__ == '__main__':
