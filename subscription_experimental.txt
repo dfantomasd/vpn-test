@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · DE · ba0ffa | тест: ≈1.61 Мбит/с · 648 мс",
+    "remarks": "🧪 Vovaplus · AT · 1ece6f | тест: ≈1.70 Мбит/с · 616 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1638,11 +1638,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "144.31.168.95",
+              "address": "152.53.1.40",
               "port": 443,
               "users": [
                 {
-                  "id": "423b1d79-08c4-403f-9d5e-c541f791b55f",
+                  "id": "edde565e-41f5-400e-84ea-7b87a3e84488",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -1654,10 +1654,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "eu-central.cendora.ru",
+            "serverName": "at.quattro-tech.ru",
             "fingerprint": "chrome",
-            "publicKey": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
-            "shortId": "00bca5982f82d083",
+            "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
+            "shortId": "43dcff53849b81e6",
             "spiderX": "/"
           }
         }
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · DE · morpheus · b4c952",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · HardVPN-whitelist · 727f16",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,13 +3238,12 @@
         "settings": {
           "vnext": [
             {
-              "address": "work.kadamilab.ru",
-              "port": 443,
+              "address": "93.89.220.7",
+              "port": 8443,
               "users": [
                 {
-                  "id": "b9964fbf-7ea3-4883-9a3b-cca80ba8602d",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
+                  "id": "6eefb4c5-96c2-4b41-a8e3-3dd13e8e09d0",
+                  "encryption": "none"
                 }
               ]
             }
@@ -3254,10 +3253,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "hb.ru-msk.vkcloud-storage.ru",
-            "fingerprint": "chrome",
-            "publicKey": "LJsl2DgOqknCTlIUAJ9RIp5-2L5chl_sOycmWzmeWgY",
-            "shortId": "",
+            "serverName": "eh.vk.com",
+            "fingerprint": "ios",
+            "publicKey": "GzQr6fDhigtRAr0n2Y7Nk3snhdytYyOvaYo9zYe1Xn4",
+            "shortId": "b3a1cc510a2001c6",
             "spiderX": "/"
           }
         }
