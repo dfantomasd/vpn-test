@@ -27,9 +27,19 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           mkdir -p "$RUNNER_TEMP/trial-cores"
-          gh release download v26.3.27 --repo XTLS/Xray-core --pattern Xray-linux-64.zip --dir "$RUNNER_TEMP/trial-cores"
+          for attempt in 1 2 3; do
+            rm -f "$RUNNER_TEMP/trial-cores/Xray-linux-64.zip"
+            gh release download v26.3.27 --repo XTLS/Xray-core --pattern Xray-linux-64.zip --dir "$RUNNER_TEMP/trial-cores" && break
+            test "$attempt" -eq 3 && exit 1
+            sleep $((attempt * 5))
+          done
           unzip -q "$RUNNER_TEMP/trial-cores/Xray-linux-64.zip" -d "$RUNNER_TEMP/trial-cores"
-          gh release download v1.19.30 --repo MetaCubeX/mihomo --pattern mihomo-linux-amd64-v1-v1.19.30.gz --dir "$RUNNER_TEMP/trial-cores"
+          for attempt in 1 2 3; do
+            rm -f "$RUNNER_TEMP/trial-cores/mihomo-linux-amd64-v1-v1.19.30.gz"
+            gh release download v1.19.30 --repo MetaCubeX/mihomo --pattern mihomo-linux-amd64-v1-v1.19.30.gz --dir "$RUNNER_TEMP/trial-cores" && break
+            test "$attempt" -eq 3 && exit 1
+            sleep $((attempt * 5))
+          done
           gzip -d "$RUNNER_TEMP/trial-cores/mihomo-linux-amd64-v1-v1.19.30.gz"
           chmod u+x "$RUNNER_TEMP/trial-cores/xray" "$RUNNER_TEMP/trial-cores/mihomo-linux-amd64-v1-v1.19.30"
       - name: Measure and build isolated trial subscription
