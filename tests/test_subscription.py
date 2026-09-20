@@ -35,6 +35,12 @@ class SubscriptionTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             sub.validate([], 0, self.domains)
 
+    def test_suspicious_catalog_shrink_rejected(self):
+        previous_count = max(10, len(self.catalog))
+        tiny = copy.deepcopy(self.catalog[:2])
+        with self.assertRaisesRegex(RuntimeError, 'suspicious catalog shrink'):
+            sub.validate(tiny, len(tiny), self.domains, previous_count)
+
     def test_normalization_idempotent(self):
         catalog = copy.deepcopy(self.catalog)
         for entry in catalog:
