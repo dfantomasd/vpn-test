@@ -1,10 +1,10 @@
 {
   "category-ru.json": {
     "url": "https://raw.githubusercontent.com/KaringX/karing-ruleset/sing/geo/geosite/category-ru.json",
-    "sha256": "4aaf924c25a787ec9571884964ae28a5deb4f067fc4ee92f98e5dc0652ebda66"
+    "sha256": "9f7ddc40fcd057515d0bf47f9ba29cc4a16adb0ddf9f8c9553bcd7d473c08b30"
   },
   "geoip-ru.json": {
     "url": "https://raw.githubusercontent.com/KaringX/karing-ruleset/sing/geo/geoip/ru.json",
-    "sha256": "d39e1113cf60cb9b63f5c40dd95329f7bcbf905353cacf08d03294f3d5dbc193"
+    "sha256": "935aba37e10c2bbf5b6a1b523d315c32bd880f4ed131fab5b47fc1ec3c0914e9"
   }
 }

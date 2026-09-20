@@ -1,31 +1,28 @@
 mode: "rule"
 proxies:
-  - {"name": "🇩🇪⚡Германия | тест GitHub: ≈2.54 Мбит/с · 400 мс", "udp": true, "type": "vless", "server": "31.56.150.146", "port": 8443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "nYrWjkzhBoGSNusIv7c-32q9M3-CmUcZRQT7WKURL0Y", "short-id": "b0714e4df864209c"}}
-  - {"name": "🇨🇭⚡Швейцария-3 | тест GitHub: ≈2.48 Мбит/с · 404 мс", "udp": true, "type": "vless", "server": "154.222.132.17", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "r3LWtIVIAzCZoRM7tSlM7akmgCDcYpMtmvfISlS4oWc", "short-id": "f9423ec69a9f688f"}}
-  - {"name": "🇨🇭⚡Швейцария-1 | тест GitHub: ≈2.48 Мбит/с · 412 мс", "udp": true, "type": "vless", "server": "154.222.69.44", "port": 8443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "ur0hPeVOiN-1EwdJKQ7sLa8kDNMmkLuxt5v7epB6_2c", "short-id": "2db2f7357d0b7b54"}}
-  - {"name": "🇳🇱⚡Нидерланды | тест GitHub: ≈2.38 Мбит/с · 412 мс", "udp": true, "type": "vless", "server": "31.56.150.171", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "2NtvNsBpKxbXdM10sXCDOedKkdZ3gwAs3WUnwqbv5Hs", "short-id": "5d735047b2e6654a"}}
-  - {"name": "🇧🇪Бельгия | тест GitHub: ≈2.33 Мбит/с · 426 мс", "udp": true, "type": "vless", "server": "154.222.132.167", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "k6rz_-vWxwgMf8VwXhW0mksond9nH7fEzfcqIp-8kk4", "short-id": "6b4a5232431f933a"}}
-  - {"name": "🇫🇷⚡Франция | тест GitHub: ≈2.32 Мбит/с · 434 мс", "udp": true, "type": "vless", "server": "154.222.132.99", "port": 8443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "rWRM2cPptEBzNrJ0UGmTJ5yzE7jzDueFBG7N26IQ6Bw", "short-id": "056f72096595b549"}}
-  - {"name": "🇮🇹Италия Torrent | тест GitHub: ≈2.31 Мбит/с · 454 мс", "udp": true, "type": "vless", "server": "31.56.150.181", "port": 8443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "zrKZwkypVvTg2qwqg3cY_Y0MdBwDfenxVCDVNeyBI1Q", "short-id": "efd53bdaf5172bcb"}}
-  - {"name": "🇬🇧⚡Англия-1 | тест GitHub: ≈2.32 Мбит/с · 460 мс", "udp": true, "type": "vless", "server": "31.56.150.34", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "ObdaDJ1-OGV8eq3pV3uw7CX1LR9snkN9YDkaCqfxtik", "short-id": "0265f106aef18b4f"}}
-  - {"name": "🇫🇮⚡Финляндия-1 | тест GitHub: ≈2.13 Мбит/с · 450 мс", "udp": true, "type": "vless", "server": "31.56.150.246", "port": 8443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "DyaJbQTstATDS6roBW3zGNndY4NmGmGiO0Nxr-pD4gU", "short-id": "80f982b21ebbf718"}}
-  - {"name": "🇫🇮⚡Финляндия-2 | тест GitHub: ≈2.11 Мбит/с · 456 мс", "udp": true, "type": "vless", "server": "154.222.132.27", "port": 8443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "aVgexqDLnJJzvD2O_S-N6qDdzFxSliDEwRkvCUq-khY", "short-id": "8e7cadcd09e6718c"}}
-  - {"name": "🇭🇺⚡Венгрия | тест GitHub: ≈2.14 Мбит/с · 487 мс", "udp": true, "type": "vless", "server": "31.56.150.33", "port": 8443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "3L3i_4b1jo-cCwx3TwIEjjOxQIMm6ysblH3AvTlvgBk", "short-id": "e237ebeb055e5ef0"}}
-  - {"name": "🇵🇱⚡Польша | тест GitHub: ≈2.01 Мбит/с · 487 мс", "udp": true, "type": "vless", "server": "154.222.69.69", "port": 8443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "a4E6GoR8p4OH_5ktTgRgdJfhS98lbTCzmf_B0JdgOT8", "short-id": "bf34f93fe1b01263"}}
-  - {"name": "🇭🇰Гонконг | тест GitHub: ≈2.02 Мбит/с · 543 мс", "udp": true, "type": "vless", "server": "154.222.132.101", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "wbtr_JuN9J6aAqvSJp2JtMGbBMQ4Pl_wH0eVKlKBCGw", "short-id": "c1394d51f6a713ab"}}
-  - {"name": "🇰🇿💳Казахстан | тест GitHub: ≈1.65 Мбит/с · 484 мс", "udp": true, "type": "vless", "server": "31.56.150.100", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "-q97GmwI_UXqbG2u5IMWjXz8fgOg_yDfZA9yQqWj6mc", "short-id": "4ed971532c4701c6"}}
-  - {"name": "🇹🇷💳Турция Torrent | тест GitHub: ≈1.83 Мбит/с · 579 мс", "udp": true, "type": "vless", "server": "154.222.132.141", "port": 8443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "dQX4kiGNJiB7zrun7Fx3ZYN447_IRaPHlVm1ysM2lBY", "short-id": "253aec37585b8717"}}
-  - {"name": "🇯🇵Япония | тест GitHub: ≈1.87 Мбит/с · 608 мс", "udp": true, "type": "vless", "server": "154.222.69.164", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "KIcDFvV5yAPDS2cMYMYu5iJ3qCzbzpDw37DEOQ-KJFc", "short-id": "61afabb4fa1fc965"}}
-  - {"name": "🇧🇷💳Бразилия | тест GitHub: ≈1.52 Мбит/с · 597 мс", "udp": true, "type": "vless", "server": "154.222.132.10", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "0tTVSDFx38GghBBU2CtojH8T8mfr18Wrr6JXA5lVjVY", "short-id": "f0bde62dc62f6c31"}}
-  - {"name": "🇸🇪⚡Швеция | тест GitHub: ≈1.62 Мбит/с · 748 мс", "udp": true, "type": "vless", "server": "31.56.150.8", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "JjHZYImPLSxYd-hVQ-jazFoAGoveZeb74nNFLH5dAnI", "short-id": "85d18a81c4102556"}}
-  - {"name": "🇮🇳💳Индия | тест GitHub: ≈1.47 Мбит/с · 798 мс", "udp": true, "type": "vless", "server": "154.222.132.100", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "tG_N47Tmpu9e2kBdiDhoWvMDdpbFlCq4GqfvFvlNhlo", "short-id": "920a5dfd0cbc665d"}}
-  - {"name": "🇨🇦Канада Torrent | тест GitHub: ≈1.32 Мбит/с · 800 мс", "udp": true, "type": "vless", "server": "154.222.132.81", "port": 8443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "h58QamOIqDou70WaOwo_X22rO-CMA_gZ6SxSRAdmLg4", "short-id": "42635a8a355805bc"}}
-  - {"name": "🇲🇩Молдова | тест GitHub: ≈1.14 Мбит/с · 842 мс", "udp": true, "type": "vless", "server": "31.56.150.101", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "uIH7gOx_hHxyTJeu8JHfa4JIypRplsEVZnOIin4s9jI", "short-id": "1badba6921aeda9f"}}
-  - {"name": "🇺🇸США Torrent | тест GitHub: ≈0.98 Мбит/с · 962 мс", "udp": true, "type": "vless", "server": "154.222.132.7", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "aIccmJzVSmtgQbNjTMPPm88BTb39llloNV-y2hyltAM", "short-id": "1d015e575937c349"}}
-  - {"name": "🇪🇸⚡Испания | тест GitHub: ≈0.50 Мбит/с · 503 мс", "udp": true, "type": "vless", "server": "154.222.69.144", "port": 8443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cs605123.vk.me", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "ORFKlz-2ycrEzhqrILJHADpdAtEIBtkTIMz7XWW2MDM", "short-id": "d313df353016962b"}}
+  - {"name": "🇨🇭⚡Швейцария-3 | тест GitHub: ≈2.03 Мбит/с · 501 мс", "udp": true, "type": "vless", "server": "31.56.4.66", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "kombo.mail.ru", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "r3LWtIVIAzCZoRM7tSlM7akmgCDcYpMtmvfISlS4oWc", "short-id": "379af2e59f8c3805"}}
+  - {"name": "🇳🇱⚡Нидерланды | тест GitHub: ≈1.96 Мбит/с · 498 мс", "udp": true, "type": "vless", "server": "31.56.4.104", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "games.mail.ru", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "2NtvNsBpKxbXdM10sXCDOedKkdZ3gwAs3WUnwqbv5Hs", "short-id": "01bd983cc160a26a"}}
+  - {"name": "🇧🇪Бельгия | тест GitHub: ≈1.95 Мбит/с · 517 мс", "udp": true, "type": "vless", "server": "154.222.132.30", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "2018.mail.ru", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "k6rz_-vWxwgMf8VwXhW0mksond9nH7fEzfcqIp-8kk4", "short-id": "6b4a5232431f933a"}}
+  - {"name": "🇨🇭⚡Швейцария-1 | тест GitHub: ≈1.94 Мбит/с · 529 мс", "udp": true, "type": "vless", "server": "154.222.132.113", "port": 8443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "quantum.mail.ru", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "ur0hPeVOiN-1EwdJKQ7sLa8kDNMmkLuxt5v7epB6_2c", "short-id": "10c43c153aba897a"}}
+  - {"name": "🇫🇷⚡Франция | тест GitHub: ≈1.94 Мбит/с · 550 мс", "udp": true, "type": "vless", "server": "31.56.4.32", "port": 8443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "nonstandard.sales.mail.ru", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "rWRM2cPptEBzNrJ0UGmTJ5yzE7jzDueFBG7N26IQ6Bw", "short-id": "89591b85d5a04e32"}}
+  - {"name": "🇬🇧⚡Англия-1 | тест GitHub: ≈1.90 Мбит/с · 558 мс", "udp": true, "type": "vless", "server": "31.56.4.59", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "bratva-mr.mail.ru", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "ObdaDJ1-OGV8eq3pV3uw7CX1LR9snkN9YDkaCqfxtik", "short-id": "d52706e0677ceb7d"}}
+  - {"name": "🇮🇹Италия Torrent | тест GitHub: ≈1.92 Мбит/с · 567 мс", "udp": true, "type": "vless", "server": "31.56.4.42", "port": 8443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "notes.mail.ru", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "zrKZwkypVvTg2qwqg3cY_Y0MdBwDfenxVCDVNeyBI1Q", "short-id": "b4560cf2afb967f8"}}
+  - {"name": "🇫🇮⚡Финляндия-2 | тест GitHub: ≈1.61 Мбит/с · 553 мс", "udp": true, "type": "vless", "server": "31.56.4.93", "port": 8443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "support.tech.mail.ru", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "aVgexqDLnJJzvD2O_S-N6qDdzFxSliDEwRkvCUq-khY", "short-id": "17b36276292e81f3"}}
+  - {"name": "🇲🇩Молдова | тест GitHub: ≈1.62 Мбит/с · 562 мс", "udp": true, "type": "vless", "server": "31.56.4.4", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "cars.mail.ru", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "uIH7gOx_hHxyTJeu8JHfa4JIypRplsEVZnOIin4s9jI", "short-id": "13eaf1db88af6b37"}}
+  - {"name": "🇵🇱⚡Польша | тест GitHub: ≈1.62 Мбит/с · 586 мс", "udp": true, "type": "vless", "server": "154.222.69.120", "port": 8443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "rm.mail.ru", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "a4E6GoR8p4OH_5ktTgRgdJfhS98lbTCzmf_B0JdgOT8", "short-id": "7b22aae93cc895cf"}}
+  - {"name": "🇸🇪⚡Швеция | тест GitHub: ≈1.69 Мбит/с · 620 мс", "udp": true, "type": "vless", "server": "31.56.4.10", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "nonstandard.sales.mail.ru", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "JjHZYImPLSxYd-hVQ-jazFoAGoveZeb74nNFLH5dAnI", "short-id": "5150547f3a338b31"}}
+  - {"name": "🇭🇰Гонконг | тест GitHub: ≈1.66 Мбит/с · 616 мс", "udp": true, "type": "vless", "server": "154.222.69.187", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "1l-view.mail.ru", "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "wbtr_JuN9J6aAqvSJp2JtMGbBMQ4Pl_wH0eVKlKBCGw", "short-id": "399197142d2728f0"}}
+  - {"name": "🇯🇵Япония | тест GitHub: ≈1.61 Мбит/с · 680 мс", "udp": true, "type": "vless", "server": "154.222.132.102", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "www.pubg.mail.ru", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "KIcDFvV5yAPDS2cMYMYu5iJ3qCzbzpDw37DEOQ-KJFc", "short-id": "75c955b88a42e4f0"}}
+  - {"name": "🇨🇦Канада Torrent | тест GitHub: ≈1.18 Мбит/с · 877 мс", "udp": true, "type": "vless", "server": "31.56.4.167", "port": 8443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "www.mail.ru", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "h58QamOIqDou70WaOwo_X22rO-CMA_gZ6SxSRAdmLg4", "short-id": "f274e6db6f3b01ca"}}
+  - {"name": "🇮🇳💳Индия | тест GitHub: ≈1.06 Мбит/с · 949 мс", "udp": true, "type": "vless", "server": "154.222.69.36", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "dev3.mail.ru", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "tG_N47Tmpu9e2kBdiDhoWvMDdpbFlCq4GqfvFvlNhlo", "short-id": "1de4ec62ffd84b1f"}}
+  - {"name": "🇧🇷💳Бразилия | тест GitHub: ≈0.98 Мбит/с · 887 мс", "udp": true, "type": "vless", "server": "31.56.4.225", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "blackfriday.mail.ru", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "0tTVSDFx38GghBBU2CtojH8T8mfr18Wrr6JXA5lVjVY", "short-id": "9d7fbff0cfa83bc0"}}
+  - {"name": "🇺🇸США Torrent | тест GitHub: ≈0.91 Мбит/с · 1068 мс", "udp": true, "type": "vless", "server": "154.222.69.51", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "rl.mail.ru", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "aIccmJzVSmtgQbNjTMPPm88BTb39llloNV-y2hyltAM", "short-id": "c86c2d4130e41b6a"}}
+  - {"name": "🇪🇸⚡Испания | тест GitHub: ≈0.47 Мбит/с · 592 мс", "udp": true, "type": "vless", "server": "31.56.150.161", "port": 8443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "dev2.mail.ru", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "ORFKlz-2ycrEzhqrILJHADpdAtEIBtkTIMz7XWW2MDM", "short-id": "d313df353016962b"}}
+  - {"name": "🇰🇿💳Казахстан | тест GitHub: ≈0.66 Мбит/с · 987 мс", "udp": true, "type": "vless", "server": "31.56.4.19", "port": 443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "warheaven.mail.ru", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "-q97GmwI_UXqbG2u5IMWjXz8fgOg_yDfZA9yQqWj6mc", "short-id": "49f4f0005482d8ee"}}
+  - {"name": "🇭🇺⚡Венгрия | тест GitHub: нет замера", "udp": true, "type": "vless", "server": "31.56.4.121", "port": 8443, "uuid": "da3aae94-ebbe-49b4-91cb-d5a5ace37d44", "network": "tcp", "tls": true, "servername": "static.operator.mail.ru", "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "reality-opts": {"public-key": "3L3i_4b1jo-cCwx3TwIEjjOxQIMm6ysblH3AvTlvgBk", "short-id": "54d4120352ec07fe"}}
 proxy-groups:
-  - {"name": "VPN_BEST", "type": "select", "proxies": ["🏆 Автовыбор на устройстве", "🇩🇪⚡Германия | тест GitHub: ≈2.54 Мбит/с · 400 мс", "🇨🇭⚡Швейцария-3 | тест GitHub: ≈2.48 Мбит/с · 404 мс", "🇨🇭⚡Швейцария-1 | тест GitHub: ≈2.48 Мбит/с · 412 мс", "🇳🇱⚡Нидерланды | тест GitHub: ≈2.38 Мбит/с · 412 мс", "🇧🇪Бельгия | тест GitHub: ≈2.33 Мбит/с · 426 мс", "🇫🇷⚡Франция | тест GitHub: ≈2.32 Мбит/с · 434 мс", "🇮🇹Италия Torrent | тест GitHub: ≈2.31 Мбит/с · 454 мс", "🇬🇧⚡Англия-1 | тест GitHub: ≈2.32 Мбит/с · 460 мс", "🇫🇮⚡Финляндия-1 | тест GitHub: ≈2.13 Мбит/с · 450 мс", "🇫🇮⚡Финляндия-2 | тест GitHub: ≈2.11 Мбит/с · 456 мс", "🇭🇺⚡Венгрия | тест GitHub: ≈2.14 Мбит/с · 487 мс", "🇵🇱⚡Польша | тест GitHub: ≈2.01 Мбит/с · 487 мс", "🇭🇰Гонконг | тест GitHub: ≈2.02 Мбит/с · 543 мс", "🇰🇿💳Казахстан | тест GitHub: ≈1.65 Мбит/с · 484 мс", "🇹🇷💳Турция Torrent | тест GitHub: ≈1.83 Мбит/с · 579 мс", "🇯🇵Япония | тест GitHub: ≈1.87 Мбит/с · 608 мс", "🇧🇷💳Бразилия | тест GitHub: ≈1.52 Мбит/с · 597 мс", "🇸🇪⚡Швеция | тест GitHub: ≈1.62 Мбит/с · 748 мс", "🇮🇳💳Индия | тест GitHub: ≈1.47 Мбит/с · 798 мс", "🇨🇦Канада Torrent | тест GitHub: ≈1.32 Мбит/с · 800 мс", "🇲🇩Молдова | тест GitHub: ≈1.14 Мбит/с · 842 мс", "🇺🇸США Torrent | тест GitHub: ≈0.98 Мбит/с · 962 мс", "🇪🇸⚡Испания | тест GitHub: ≈0.50 Мбит/с · 503 мс"]}
-  - {"name": "🏆 Автовыбор на устройстве", "type": "url-test", "proxies": ["🇩🇪⚡Германия | тест GitHub: ≈2.54 Мбит/с · 400 мс", "🇨🇭⚡Швейцария-3 | тест GitHub: ≈2.48 Мбит/с · 404 мс", "🇨🇭⚡Швейцария-1 | тест GitHub: ≈2.48 Мбит/с · 412 мс", "🇳🇱⚡Нидерланды | тест GitHub: ≈2.38 Мбит/с · 412 мс", "🇧🇪Бельгия | тест GitHub: ≈2.33 Мбит/с · 426 мс", "🇫🇷⚡Франция | тест GitHub: ≈2.32 Мбит/с · 434 мс", "🇮🇹Италия Torrent | тест GitHub: ≈2.31 Мбит/с · 454 мс", "🇬🇧⚡Англия-1 | тест GitHub: ≈2.32 Мбит/с · 460 мс", "🇫🇮⚡Финляндия-1 | тест GitHub: ≈2.13 Мбит/с · 450 мс", "🇫🇮⚡Финляндия-2 | тест GitHub: ≈2.11 Мбит/с · 456 мс", "🇭🇺⚡Венгрия | тест GitHub: ≈2.14 Мбит/с · 487 мс", "🇵🇱⚡Польша | тест GitHub: ≈2.01 Мбит/с · 487 мс", "🇭🇰Гонконг | тест GitHub: ≈2.02 Мбит/с · 543 мс", "🇰🇿💳Казахстан | тест GitHub: ≈1.65 Мбит/с · 484 мс", "🇹🇷💳Турция Torrent | тест GitHub: ≈1.83 Мбит/с · 579 мс", "🇯🇵Япония | тест GitHub: ≈1.87 Мбит/с · 608 мс", "🇧🇷💳Бразилия | тест GitHub: ≈1.52 Мбит/с · 597 мс", "🇸🇪⚡Швеция | тест GitHub: ≈1.62 Мбит/с · 748 мс", "🇮🇳💳Индия | тест GitHub: ≈1.47 Мбит/с · 798 мс", "🇨🇦Канада Torrent | тест GitHub: ≈1.32 Мбит/с · 800 мс", "🇲🇩Молдова | тест GitHub: ≈1.14 Мбит/с · 842 мс", "🇺🇸США Torrent | тест GitHub: ≈0.98 Мбит/с · 962 мс", "🇪🇸⚡Испания | тест GitHub: ≈0.50 Мбит/с · 503 мс"], "url": "https://www.gstatic.com/generate_204", "interval": 600, "tolerance": 50}
+  - {"name": "VPN_BEST", "type": "select", "proxies": ["🏆 Автовыбор на устройстве", "🇨🇭⚡Швейцария-3 | тест GitHub: ≈2.03 Мбит/с · 501 мс", "🇳🇱⚡Нидерланды | тест GitHub: ≈1.96 Мбит/с · 498 мс", "🇧🇪Бельгия | тест GitHub: ≈1.95 Мбит/с · 517 мс", "🇨🇭⚡Швейцария-1 | тест GitHub: ≈1.94 Мбит/с · 529 мс", "🇫🇷⚡Франция | тест GitHub: ≈1.94 Мбит/с · 550 мс", "🇬🇧⚡Англия-1 | тест GitHub: ≈1.90 Мбит/с · 558 мс", "🇮🇹Италия Torrent | тест GitHub: ≈1.92 Мбит/с · 567 мс", "🇫🇮⚡Финляндия-2 | тест GitHub: ≈1.61 Мбит/с · 553 мс", "🇲🇩Молдова | тест GitHub: ≈1.62 Мбит/с · 562 мс", "🇵🇱⚡Польша | тест GitHub: ≈1.62 Мбит/с · 586 мс", "🇸🇪⚡Швеция | тест GitHub: ≈1.69 Мбит/с · 620 мс", "🇭🇰Гонконг | тест GitHub: ≈1.66 Мбит/с · 616 мс", "🇯🇵Япония | тест GitHub: ≈1.61 Мбит/с · 680 мс", "🇨🇦Канада Torrent | тест GitHub: ≈1.18 Мбит/с · 877 мс", "🇮🇳💳Индия | тест GitHub: ≈1.06 Мбит/с · 949 мс", "🇧🇷💳Бразилия | тест GitHub: ≈0.98 Мбит/с · 887 мс", "🇺🇸США Torrent | тест GitHub: ≈0.91 Мбит/с · 1068 мс", "🇪🇸⚡Испания | тест GitHub: ≈0.47 Мбит/с · 592 мс", "🇰🇿💳Казахстан | тест GitHub: ≈0.66 Мбит/с · 987 мс", "🇭🇺⚡Венгрия | тест GitHub: нет замера"]}
+  - {"name": "🏆 Автовыбор на устройстве", "type": "url-test", "proxies": ["🇨🇭⚡Швейцария-3 | тест GitHub: ≈2.03 Мбит/с · 501 мс", "🇳🇱⚡Нидерланды | тест GitHub: ≈1.96 Мбит/с · 498 мс", "🇧🇪Бельгия | тест GitHub: ≈1.95 Мбит/с · 517 мс", "🇨🇭⚡Швейцария-1 | тест GitHub: ≈1.94 Мбит/с · 529 мс", "🇫🇷⚡Франция | тест GitHub: ≈1.94 Мбит/с · 550 мс", "🇬🇧⚡Англия-1 | тест GitHub: ≈1.90 Мбит/с · 558 мс", "🇮🇹Италия Torrent | тест GitHub: ≈1.92 Мбит/с · 567 мс", "🇫🇮⚡Финляндия-2 | тест GitHub: ≈1.61 Мбит/с · 553 мс", "🇲🇩Молдова | тест GitHub: ≈1.62 Мбит/с · 562 мс", "🇵🇱⚡Польша | тест GitHub: ≈1.62 Мбит/с · 586 мс", "🇸🇪⚡Швеция | тест GitHub: ≈1.69 Мбит/с · 620 мс", "🇭🇰Гонконг | тест GitHub: ≈1.66 Мбит/с · 616 мс", "🇯🇵Япония | тест GitHub: ≈1.61 Мбит/с · 680 мс", "🇨🇦Канада Torrent | тест GitHub: ≈1.18 Мбит/с · 877 мс", "🇮🇳💳Индия | тест GitHub: ≈1.06 Мбит/с · 949 мс", "🇧🇷💳Бразилия | тест GitHub: ≈0.98 Мбит/с · 887 мс", "🇺🇸США Torrent | тест GitHub: ≈0.91 Мбит/с · 1068 мс", "🇪🇸⚡Испания | тест GitHub: ≈0.47 Мбит/с · 592 мс", "🇰🇿💳Казахстан | тест GitHub: ≈0.66 Мбит/с · 987 мс", "🇭🇺⚡Венгрия | тест GitHub: нет замера"], "url": "https://www.gstatic.com/generate_204", "interval": 600, "tolerance": 50}
 rules:
   - "DOMAIN,1l-hit.mail.ru,DIRECT"
   - "DOMAIN,1l-hit.vkplay.ru,DIRECT"
@@ -1538,7 +1535,15 @@ rules:
   - "IP-CIDR,109.120.180.0/22,DIRECT"
   - "IP-CIDR,109.120.188.0/22,DIRECT"
   - "IP-CIDR,109.122.192.0/23,DIRECT"
-  - "IP-CIDR,109.122.198.0/23,DIRECT"
+  - "IP-CIDR,109.122.198.0/31,DIRECT"
+  - "IP-CIDR,109.122.198.128/25,DIRECT"
+  - "IP-CIDR,109.122.198.16/28,DIRECT"
+  - "IP-CIDR,109.122.198.2/32,DIRECT"
+  - "IP-CIDR,109.122.198.32/27,DIRECT"
+  - "IP-CIDR,109.122.198.4/30,DIRECT"
+  - "IP-CIDR,109.122.198.64/26,DIRECT"
+  - "IP-CIDR,109.122.198.8/29,DIRECT"
+  - "IP-CIDR,109.122.199.0/24,DIRECT"
   - "IP-CIDR,109.123.128.0/18,DIRECT"
   - "IP-CIDR,109.124.0.0/17,DIRECT"
   - "IP-CIDR,109.124.192.0/18,DIRECT"
@@ -1953,7 +1958,7 @@ rules:
   - "IP-CIDR,138.124.13.0/24,DIRECT"
   - "IP-CIDR,138.124.14.0/24,DIRECT"
   - "IP-CIDR,138.124.254.0/23,DIRECT"
-  - "IP-CIDR,138.124.68.0/23,DIRECT"
+  - "IP-CIDR,138.124.69.0/24,DIRECT"
   - "IP-CIDR,138.124.76.0/23,DIRECT"
   - "IP-CIDR,138.16.128.0/21,DIRECT"
   - "IP-CIDR,138.16.136.0/23,DIRECT"
@@ -1965,7 +1970,6 @@ rules:
   - "IP-CIDR,138.249.120.0/24,DIRECT"
   - "IP-CIDR,138.249.122.0/24,DIRECT"
   - "IP-CIDR,138.249.124.0/24,DIRECT"
-  - "IP-CIDR,138.249.126.0/24,DIRECT"
   - "IP-CIDR,138.249.129.0/24,DIRECT"
   - "IP-CIDR,138.249.130.0/24,DIRECT"
   - "IP-CIDR,138.249.16.0/24,DIRECT"
@@ -2376,6 +2380,7 @@ rules:
   - "IP-CIDR,153.51.188.0/23,DIRECT"
   - "IP-CIDR,153.51.190.0/24,DIRECT"
   - "IP-CIDR,153.51.32.0/19,DIRECT"
+  - "IP-CIDR,153.51.88.0/21,DIRECT"
   - "IP-CIDR,153.51.96.0/19,DIRECT"
   - "IP-CIDR,153.56.206.0/23,DIRECT"
   - "IP-CIDR,153.72.27.0/25,DIRECT"
@@ -2460,6 +2465,8 @@ rules:
   - "IP-CIDR,158.255.80.0/21,DIRECT"
   - "IP-CIDR,158.46.0.0/17,DIRECT"
   - "IP-CIDR,158.46.142.0/24,DIRECT"
+  - "IP-CIDR,158.46.160.0/23,DIRECT"
+  - "IP-CIDR,158.46.164.0/22,DIRECT"
   - "IP-CIDR,158.46.180.0/24,DIRECT"
   - "IP-CIDR,158.46.186.0/23,DIRECT"
   - "IP-CIDR,158.46.224.0/19,DIRECT"
@@ -2564,7 +2571,8 @@ rules:
   - "IP-CIDR,166.1.70.0/23,DIRECT"
   - "IP-CIDR,167.104.64.0/22,DIRECT"
   - "IP-CIDR,167.114.239.210/32,DIRECT"
-  - "IP-CIDR,168.113.176.0/20,DIRECT"
+  - "IP-CIDR,168.113.144.0/20,DIRECT"
+  - "IP-CIDR,168.113.160.0/19,DIRECT"
   - "IP-CIDR,168.113.192.0/20,DIRECT"
   - "IP-CIDR,168.113.208.0/22,DIRECT"
   - "IP-CIDR,168.113.212.0/23,DIRECT"
@@ -2710,7 +2718,6 @@ rules:
   - "IP-CIDR,172.69.50.0/24,DIRECT"
   - "IP-CIDR,172.69.8.0/24,DIRECT"
   - "IP-CIDR,172.70.136.0/24,DIRECT"
-  - "IP-CIDR,172.70.152.0/24,DIRECT"
   - "IP-CIDR,172.71.184.0/24,DIRECT"
   - "IP-CIDR,172.94.123.0/24,DIRECT"
   - "IP-CIDR,174.35.107.0/24,DIRECT"
@@ -3271,7 +3278,15 @@ rules:
   - "IP-CIDR,178.236.208.0/20,DIRECT"
   - "IP-CIDR,178.236.24.0/21,DIRECT"
   - "IP-CIDR,178.236.240.0/22,DIRECT"
-  - "IP-CIDR,178.236.244.0/23,DIRECT"
+  - "IP-CIDR,178.236.244.0/24,DIRECT"
+  - "IP-CIDR,178.236.245.0/28,DIRECT"
+  - "IP-CIDR,178.236.245.128/25,DIRECT"
+  - "IP-CIDR,178.236.245.16/31,DIRECT"
+  - "IP-CIDR,178.236.245.18/32,DIRECT"
+  - "IP-CIDR,178.236.245.20/30,DIRECT"
+  - "IP-CIDR,178.236.245.24/29,DIRECT"
+  - "IP-CIDR,178.236.245.32/27,DIRECT"
+  - "IP-CIDR,178.236.245.64/26,DIRECT"
   - "IP-CIDR,178.236.249.0/24,DIRECT"
   - "IP-CIDR,178.236.250.0/23,DIRECT"
   - "IP-CIDR,178.236.252.0/23,DIRECT"
@@ -3338,6 +3353,7 @@ rules:
   - "IP-CIDR,178.78.0.0/18,DIRECT"
   - "IP-CIDR,178.83.159.0/24,DIRECT"
   - "IP-CIDR,178.83.58.0/24,DIRECT"
+  - "IP-CIDR,178.95.125.0/24,DIRECT"
   - "IP-CIDR,182.112.224.0/23,DIRECT"
   - "IP-CIDR,185.0.12.0/22,DIRECT"
   - "IP-CIDR,185.0.44.0/22,DIRECT"
@@ -3618,7 +3634,7 @@ rules:
   - "IP-CIDR,185.133.40.0/22,DIRECT"
   - "IP-CIDR,185.134.120.0/22,DIRECT"
   - "IP-CIDR,185.134.148.0/22,DIRECT"
-  - "IP-CIDR,185.134.200.0/21,DIRECT"
+  - "IP-CIDR,185.134.204.0/22,DIRECT"
   - "IP-CIDR,185.134.232.0/22,DIRECT"
   - "IP-CIDR,185.134.32.0/21,DIRECT"
   - "IP-CIDR,185.134.72.0/22,DIRECT"
@@ -15948,7 +15964,8 @@ rules:
   - "IP-CIDR,201.34.134.0/23,DIRECT"
   - "IP-CIDR,201.34.136.0/22,DIRECT"
   - "IP-CIDR,201.34.140.0/23,DIRECT"
-  - "IP-CIDR,201.34.148.0/24,DIRECT"
+  - "IP-CIDR,201.34.148.0/23,DIRECT"
+  - "IP-CIDR,201.34.150.0/24,DIRECT"
   - "IP-CIDR,201.4.102.0/24,DIRECT"
   - "IP-CIDR,201.4.107.0/24,DIRECT"
   - "IP-CIDR,201.4.108.0/24,DIRECT"
@@ -16092,6 +16109,8 @@ rules:
   - "IP-CIDR,212.192.14.0/24,DIRECT"
   - "IP-CIDR,212.192.192.0/20,DIRECT"
   - "IP-CIDR,212.192.224.0/20,DIRECT"
+  - "IP-CIDR,212.192.246.0/23,DIRECT"
+  - "IP-CIDR,212.192.248.0/23,DIRECT"
   - "IP-CIDR,212.192.32.0/19,DIRECT"
   - "IP-CIDR,212.192.64.0/18,DIRECT"
   - "IP-CIDR,212.193.128.0/17,DIRECT"
@@ -16698,7 +16717,6 @@ rules:
   - "IP-CIDR,23.75.20.0/24,DIRECT"
   - "IP-CIDR,23.90.128.0/20,DIRECT"
   - "IP-CIDR6,2400:cb00:158::/48,DIRECT"
-  - "IP-CIDR6,2400:cb00:284::/48,DIRECT"
   - "IP-CIDR6,2400:cb00:404::/48,DIRECT"
   - "IP-CIDR6,2400:cb00:87::/48,DIRECT"
   - "IP-CIDR6,2400:cb00:903::/48,DIRECT"
@@ -18172,7 +18190,6 @@ rules:
   - "IP-CIDR6,2a03:a1c0::/32,DIRECT"
   - "IP-CIDR6,2a03:a2a0::/32,DIRECT"
   - "IP-CIDR6,2a03:a400::/32,DIRECT"
-  - "IP-CIDR6,2a03:a4a0::/32,DIRECT"
   - "IP-CIDR6,2a03:a7c0::/32,DIRECT"
   - "IP-CIDR6,2a03:a840::/32,DIRECT"
   - "IP-CIDR6,2a03:a9c0::/30,DIRECT"
@@ -18316,7 +18333,6 @@ rules:
   - "IP-CIDR6,2a04:8c0::/29,DIRECT"
   - "IP-CIDR6,2a04:8ea0::/29,DIRECT"
   - "IP-CIDR6,2a04:8f00::/29,DIRECT"
-  - "IP-CIDR6,2a04:9407::/32,DIRECT"
   - "IP-CIDR6,2a04:9580::/29,DIRECT"
   - "IP-CIDR6,2a04:9600::/29,DIRECT"
   - "IP-CIDR6,2a04:99c0::/29,DIRECT"
@@ -18403,8 +18419,7 @@ rules:
   - "IP-CIDR6,2a05:541:142::/47,DIRECT"
   - "IP-CIDR6,2a05:541:144::/46,DIRECT"
   - "IP-CIDR6,2a05:541:148::/45,DIRECT"
-  - "IP-CIDR6,2a05:541:150::/48,DIRECT"
-  - "IP-CIDR6,2a05:541:152::/47,DIRECT"
+  - "IP-CIDR6,2a05:541:150::/46,DIRECT"
   - "IP-CIDR6,2a05:541:154::/47,DIRECT"
   - "IP-CIDR6,2a05:541:157::/48,DIRECT"
   - "IP-CIDR6,2a05:541:158::/45,DIRECT"
@@ -18591,7 +18606,6 @@ rules:
   - "IP-CIDR6,2a07:51c0::/29,DIRECT"
   - "IP-CIDR6,2a07:5340::/30,DIRECT"
   - "IP-CIDR6,2a07:5344::/32,DIRECT"
-  - "IP-CIDR6,2a07:57c0::/29,DIRECT"
   - "IP-CIDR6,2a07:5880::/29,DIRECT"
   - "IP-CIDR6,2a07:640::/29,DIRECT"
   - "IP-CIDR6,2a07:64c0::/29,DIRECT"
@@ -18702,9 +18716,7 @@ rules:
   - "IP-CIDR6,2a09:8880::/32,DIRECT"
   - "IP-CIDR6,2a09:8b80::/29,DIRECT"
   - "IP-CIDR6,2a09:9300::/29,DIRECT"
-  - "IP-CIDR6,2a09:9440::/30,DIRECT"
-  - "IP-CIDR6,2a09:9445::/32,DIRECT"
-  - "IP-CIDR6,2a09:9446::/31,DIRECT"
+  - "IP-CIDR6,2a09:9440::/29,DIRECT"
   - "IP-CIDR6,2a09:9540::/29,DIRECT"
   - "IP-CIDR6,2a09:9b00::/29,DIRECT"
   - "IP-CIDR6,2a09:a200::/29,DIRECT"
@@ -18728,7 +18740,6 @@ rules:
   - "IP-CIDR6,2a09:bac0:1000:877::/64,DIRECT"
   - "IP-CIDR6,2a09:bac0:1001:329::/64,DIRECT"
   - "IP-CIDR6,2a09:bac0:158::/48,DIRECT"
-  - "IP-CIDR6,2a09:bac0:284::/48,DIRECT"
   - "IP-CIDR6,2a09:bac0:404::/48,DIRECT"
   - "IP-CIDR6,2a09:bac0:87::/48,DIRECT"
   - "IP-CIDR6,2a09:bac1:6180:10::/64,DIRECT"
@@ -18868,6 +18879,7 @@ rules:
   - "IP-CIDR6,2a09:cf40::/29,DIRECT"
   - "IP-CIDR6,2a09:d000::/29,DIRECT"
   - "IP-CIDR6,2a09:d100::/29,DIRECT"
+  - "IP-CIDR6,2a09:d140::/29,DIRECT"
   - "IP-CIDR6,2a09:d2c0::/32,DIRECT"
   - "IP-CIDR6,2a09:d2c1:1000::/36,DIRECT"
   - "IP-CIDR6,2a09:d2c1:100::/40,DIRECT"
@@ -19184,7 +19196,6 @@ rules:
   - "IP-CIDR6,2a0c:a8c0::/29,DIRECT"
   - "IP-CIDR6,2a0c:a9c0::/29,DIRECT"
   - "IP-CIDR6,2a0c:b641:540::/44,DIRECT"
-  - "IP-CIDR6,2a0c:b641:613::/48,DIRECT"
   - "IP-CIDR6,2a0c:b80::/29,DIRECT"
   - "IP-CIDR6,2a0c:b980::/29,DIRECT"
   - "IP-CIDR6,2a0c:bc0::/29,DIRECT"
@@ -19573,6 +19584,7 @@ rules:
   - "IP-CIDR6,2a0e:ff80::/29,DIRECT"
   - "IP-CIDR6,2a0e:ffc0::/29,DIRECT"
   - "IP-CIDR6,2a0f:1140::/32,DIRECT"
+  - "IP-CIDR6,2a0f:1203::/32,DIRECT"
   - "IP-CIDR6,2a0f:1586::/32,DIRECT"
   - "IP-CIDR6,2a0f:1800::/29,DIRECT"
   - "IP-CIDR6,2a0f:1900::/29,DIRECT"
@@ -20051,9 +20063,7 @@ rules:
   - "IP-CIDR6,2a12:6600::/29,DIRECT"
   - "IP-CIDR6,2a12:6700::/29,DIRECT"
   - "IP-CIDR6,2a12:6780::/29,DIRECT"
-  - "IP-CIDR6,2a12:6c40::/31,DIRECT"
-  - "IP-CIDR6,2a12:6c43::/32,DIRECT"
-  - "IP-CIDR6,2a12:6c44::/30,DIRECT"
+  - "IP-CIDR6,2a12:6c40::/29,DIRECT"
   - "IP-CIDR6,2a12:70c0::/29,DIRECT"
   - "IP-CIDR6,2a12:7300::/29,DIRECT"
   - "IP-CIDR6,2a12:7380::/32,DIRECT"
@@ -20158,6 +20168,7 @@ rules:
   - "IP-CIDR6,2a13:1340::/29,DIRECT"
   - "IP-CIDR6,2a13:17c0::/29,DIRECT"
   - "IP-CIDR6,2a13:18c0:100::/48,DIRECT"
+  - "IP-CIDR6,2a13:18c2::/32,DIRECT"
   - "IP-CIDR6,2a13:1ac0::/29,DIRECT"
   - "IP-CIDR6,2a13:22c0::/29,DIRECT"
   - "IP-CIDR6,2a13:2300::/29,DIRECT"
@@ -20621,7 +20632,6 @@ rules:
   - "IP-CIDR,31.77.169.0/24,DIRECT"
   - "IP-CIDR,31.77.171.0/24,DIRECT"
   - "IP-CIDR,31.77.173.0/24,DIRECT"
-  - "IP-CIDR,31.77.232.0/24,DIRECT"
   - "IP-CIDR,31.77.78.0/24,DIRECT"
   - "IP-CIDR,31.8.0.0/16,DIRECT"
   - "IP-CIDR,34.103.38.0/23,DIRECT"
@@ -20943,6 +20953,7 @@ rules:
   - "IP-CIDR,45.130.150.0/23,DIRECT"
   - "IP-CIDR,45.130.168.0/21,DIRECT"
   - "IP-CIDR,45.130.188.0/22,DIRECT"
+  - "IP-CIDR,45.130.254.0/24,DIRECT"
   - "IP-CIDR,45.130.40.0/22,DIRECT"
   - "IP-CIDR,45.130.8.0/22,DIRECT"
   - "IP-CIDR,45.131.160.0/23,DIRECT"
@@ -21205,6 +21216,7 @@ rules:
   - "IP-CIDR,45.153.230.0/24,DIRECT"
   - "IP-CIDR,45.153.28.0/22,DIRECT"
   - "IP-CIDR,45.153.44.0/22,DIRECT"
+  - "IP-CIDR,45.153.49.0/24,DIRECT"
   - "IP-CIDR,45.153.52.0/24,DIRECT"
   - "IP-CIDR,45.153.55.0/24,DIRECT"
   - "IP-CIDR,45.153.68.0/22,DIRECT"
@@ -21368,16 +21380,7 @@ rules:
   - "IP-CIDR,45.89.228.0/23,DIRECT"
   - "IP-CIDR,45.89.230.0/24,DIRECT"
   - "IP-CIDR,45.89.24.0/22,DIRECT"
-  - "IP-CIDR,45.89.52.0/23,DIRECT"
-  - "IP-CIDR,45.89.54.0/25,DIRECT"
-  - "IP-CIDR,45.89.54.128/30,DIRECT"
-  - "IP-CIDR,45.89.54.132/32,DIRECT"
-  - "IP-CIDR,45.89.54.134/31,DIRECT"
-  - "IP-CIDR,45.89.54.136/29,DIRECT"
-  - "IP-CIDR,45.89.54.144/28,DIRECT"
-  - "IP-CIDR,45.89.54.160/27,DIRECT"
-  - "IP-CIDR,45.89.54.192/26,DIRECT"
-  - "IP-CIDR,45.89.55.0/24,DIRECT"
+  - "IP-CIDR,45.89.52.0/22,DIRECT"
   - "IP-CIDR,45.89.65.0/24,DIRECT"
   - "IP-CIDR,45.89.66.0/23,DIRECT"
   - "IP-CIDR,45.89.68.0/23,DIRECT"
@@ -21495,20 +21498,17 @@ rules:
   - "IP-CIDR,46.16.96.0/21,DIRECT"
   - "IP-CIDR,46.160.0.0/18,DIRECT"
   - "IP-CIDR,46.160.128.0/17,DIRECT"
-  - "IP-CIDR,46.161.1.0/24,DIRECT"
+  - "IP-CIDR,46.161.0.0/20,DIRECT"
   - "IP-CIDR,46.161.128.0/18,DIRECT"
   - "IP-CIDR,46.161.16.0/21,DIRECT"
-  - "IP-CIDR,46.161.2.0/23,DIRECT"
   - "IP-CIDR,46.161.24.0/23,DIRECT"
   - "IP-CIDR,46.161.26.0/24,DIRECT"
   - "IP-CIDR,46.161.28.0/22,DIRECT"
   - "IP-CIDR,46.161.32.0/21,DIRECT"
-  - "IP-CIDR,46.161.4.0/22,DIRECT"
   - "IP-CIDR,46.161.41.0/24,DIRECT"
   - "IP-CIDR,46.161.42.0/23,DIRECT"
   - "IP-CIDR,46.161.44.0/22,DIRECT"
   - "IP-CIDR,46.161.48.0/20,DIRECT"
-  - "IP-CIDR,46.161.8.0/21,DIRECT"
   - "IP-CIDR,46.162.0.0/19,DIRECT"
   - "IP-CIDR,46.162.32.0/20,DIRECT"
   - "IP-CIDR,46.162.48.0/21,DIRECT"
@@ -21973,15 +21973,7 @@ rules:
   - "IP-CIDR,5.252.176.0/24,DIRECT"
   - "IP-CIDR,5.252.192.0/22,DIRECT"
   - "IP-CIDR,5.252.21.0/24,DIRECT"
-  - "IP-CIDR,5.252.22.0/24,DIRECT"
-  - "IP-CIDR,5.252.23.0/29,DIRECT"
-  - "IP-CIDR,5.252.23.10/31,DIRECT"
-  - "IP-CIDR,5.252.23.12/30,DIRECT"
-  - "IP-CIDR,5.252.23.128/25,DIRECT"
-  - "IP-CIDR,5.252.23.16/28,DIRECT"
-  - "IP-CIDR,5.252.23.32/27,DIRECT"
-  - "IP-CIDR,5.252.23.64/26,DIRECT"
-  - "IP-CIDR,5.252.23.9/32,DIRECT"
+  - "IP-CIDR,5.252.22.0/23,DIRECT"
   - "IP-CIDR,5.252.28.0/22,DIRECT"
   - "IP-CIDR,5.252.64.0/22,DIRECT"
   - "IP-CIDR,5.253.100.0/22,DIRECT"
@@ -22227,9 +22219,12 @@ rules:
   - "IP-CIDR,62.78.80.0/20,DIRECT"
   - "IP-CIDR,62.84.104.0/21,DIRECT"
   - "IP-CIDR,62.84.112.0/20,DIRECT"
+  - "IP-CIDR,62.84.163.0/24,DIRECT"
   - "IP-CIDR,62.89.192.0/20,DIRECT"
   - "IP-CIDR,62.89.212.0/22,DIRECT"
-  - "IP-CIDR,62.89.216.0/21,DIRECT"
+  - "IP-CIDR,62.89.216.0/22,DIRECT"
+  - "IP-CIDR,62.89.221.0/24,DIRECT"
+  - "IP-CIDR,62.89.222.0/24,DIRECT"
   - "IP-CIDR,62.89.224.0/19,DIRECT"
   - "IP-CIDR,64.188.90.0/24,DIRECT"
   - "IP-CIDR,66.251.216.0/24,DIRECT"
@@ -22672,7 +22667,6 @@ rules:
   - "IP-CIDR,8.209.0.0/19,DIRECT"
   - "IP-CIDR,8.209.128.0/18,DIRECT"
   - "IP-CIDR,8.21.110.0/24,DIRECT"
-  - "IP-CIDR,8.23.139.0/24,DIRECT"
   - "IP-CIDR,8.40.27.0/24,DIRECT"
   - "IP-CIDR,8.41.37.0/24,DIRECT"
   - "IP-CIDR,80.115.192.0/19,DIRECT"
@@ -22939,6 +22933,7 @@ rules:
   - "IP-CIDR,81.177.128.0/18,DIRECT"
   - "IP-CIDR,81.177.192.0/20,DIRECT"
   - "IP-CIDR,81.177.208.0/22,DIRECT"
+  - "IP-CIDR,81.177.213.0/24,DIRECT"
   - "IP-CIDR,81.177.215.0/24,DIRECT"
   - "IP-CIDR,81.177.216.0/21,DIRECT"
   - "IP-CIDR,81.177.224.0/19,DIRECT"
@@ -23597,6 +23592,7 @@ rules:
   - "IP-CIDR,87.255.224.0/19,DIRECT"
   - "IP-CIDR,87.58.192.2/32,DIRECT"
   - "IP-CIDR,87.76.0.0/20,DIRECT"
+  - "IP-CIDR,87.83.2.0/24,DIRECT"
   - "IP-CIDR,87.84.0.0/24,DIRECT"
   - "IP-CIDR,88.135.0.0/20,DIRECT"
   - "IP-CIDR,88.135.48.0/20,DIRECT"
@@ -23648,11 +23644,6 @@ rules:
   - "IP-CIDR,88.218.66.0/23,DIRECT"
   - "IP-CIDR,88.218.72.0/22,DIRECT"
   - "IP-CIDR,88.221.132.0/24,DIRECT"
-  - "IP-CIDR,88.221.133.132/30,DIRECT"
-  - "IP-CIDR,88.221.133.140/30,DIRECT"
-  - "IP-CIDR,88.221.133.148/30,DIRECT"
-  - "IP-CIDR,88.221.133.157/32,DIRECT"
-  - "IP-CIDR,88.221.133.158/31,DIRECT"
   - "IP-CIDR,88.80.32.0/19,DIRECT"
   - "IP-CIDR,88.81.192.0/19,DIRECT"
   - "IP-CIDR,88.81.32.0/19,DIRECT"
@@ -23731,6 +23722,7 @@ rules:
   - "IP-CIDR,89.175.0.0/16,DIRECT"
   - "IP-CIDR,89.178.0.0/15,DIRECT"
   - "IP-CIDR,89.18.128.0/19,DIRECT"
+  - "IP-CIDR,89.184.20.0/24,DIRECT"
   - "IP-CIDR,89.184.224.0/19,DIRECT"
   - "IP-CIDR,89.185.64.0/21,DIRECT"
   - "IP-CIDR,89.185.72.0/22,DIRECT"
@@ -24360,6 +24352,7 @@ rules:
   - "IP-CIDR,91.209.127.0/24,DIRECT"
   - "IP-CIDR,91.209.128.0/23,DIRECT"
   - "IP-CIDR,91.209.130.0/24,DIRECT"
+  - "IP-CIDR,91.209.135.0/24,DIRECT"
   - "IP-CIDR,91.209.140.0/24,DIRECT"
   - "IP-CIDR,91.209.147.0/24,DIRECT"
   - "IP-CIDR,91.209.148.0/24,DIRECT"
@@ -24486,8 +24479,7 @@ rules:
   - "IP-CIDR,91.213.50.0/23,DIRECT"
   - "IP-CIDR,91.213.67.0/24,DIRECT"
   - "IP-CIDR,91.213.87.0/24,DIRECT"
-  - "IP-CIDR,91.214.116.0/23,DIRECT"
-  - "IP-CIDR,91.214.118.0/24,DIRECT"
+  - "IP-CIDR,91.214.116.0/22,DIRECT"
   - "IP-CIDR,91.214.120.0/22,DIRECT"
   - "IP-CIDR,91.214.131.0/24,DIRECT"
   - "IP-CIDR,91.214.140.0/22,DIRECT"
@@ -24998,7 +24990,6 @@ rules:
   - "IP-CIDR,91.231.234.0/23,DIRECT"
   - "IP-CIDR,91.231.236.0/22,DIRECT"
   - "IP-CIDR,91.231.243.0/24,DIRECT"
-  - "IP-CIDR,91.231.64.0/23,DIRECT"
   - "IP-CIDR,91.231.8.0/24,DIRECT"
   - "IP-CIDR,91.231.94.0/23,DIRECT"
   - "IP-CIDR,91.231.96.0/24,DIRECT"
@@ -26336,10 +26327,7 @@ rules:
   - "IP-CIDR,95.47.118.0/24,DIRECT"
   - "IP-CIDR,95.47.137.227/32,DIRECT"
   - "IP-CIDR,95.47.140.0/24,DIRECT"
-  - "IP-CIDR,95.47.142.214/32,DIRECT"
-  - "IP-CIDR,95.47.143.111/32,DIRECT"
-  - "IP-CIDR,95.47.143.112/32,DIRECT"
-  - "IP-CIDR,95.47.143.234/32,DIRECT"
+  - "IP-CIDR,95.47.142.0/23,DIRECT"
   - "IP-CIDR,95.47.146.0/23,DIRECT"
   - "IP-CIDR,95.47.152.0/24,DIRECT"
   - "IP-CIDR,95.47.155.0/24,DIRECT"
