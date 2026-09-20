@@ -5,11 +5,14 @@ import os
 import sys
 import time
 import urllib.request
+import math
 from pathlib import Path
 
 
 CATALOG_PATH = Path("whitelist_configs_combined.json")
 CONFIG_KEYS = {"remarks", "outbounds", "routing"}
+MIN_SOURCE_RETAIN_RATIO = 0.5
+
 CANONICAL_DIRECT_OUTBOUND = {
     "protocol": "freedom",
     "settings": {"domainStrategy": "UseIP"},
@@ -163,11 +166,18 @@ def normalize_direct(config, direct_domains):
         rules.append({"type": "field", "protocol": ["bittorrent"], "outboundTag": "direct"})
 
 
-def validate(configs, source_count, direct_domains):
+def validate(configs, source_count, direct_domains, previous_count=None):
     if not configs:
         raise RuntimeError("Refusing to publish an empty catalog")
     if len(configs) != source_count:
         raise RuntimeError(f"Final config count {len(configs)} != source count {source_count}")
+    if previous_count:
+        minimum = max(2, math.ceil(previous_count * MIN_SOURCE_RETAIN_RATIO))
+        if len(configs) < minimum:
+            raise RuntimeError(
+                f"Refusing suspicious catalog shrink: {previous_count} -> {len(configs)} "
+                f"(minimum allowed {minimum})"
+            )
 
     for config in configs:
         remarks = config.get("remarks", "<no remarks>")
@@ -202,7 +212,7 @@ def main():
     for config in final_configs:
         normalize_direct(config, direct_domains)
 
-    validate(final_configs, len(source_configs), direct_domains)
+    validate(final_configs, len(source_configs), direct_domains, len(current_configs))
     CATALOG_PATH.write_text(
         json.dumps(final_configs, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
