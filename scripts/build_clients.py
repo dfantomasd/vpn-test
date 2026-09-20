@@ -170,6 +170,9 @@ def resolve_server_names():
             addresses.add(str(ipaddress.ip_address(host)))
         except ValueError:
             addresses.update(resolved.get(host, []))
+    registration_path = ROOT / "rules/server_registration.json"
+    previous_registrations = read_json(registration_path) if registration_path.exists() else {}
+
     def registration(address):
         url = "https://rdap.db.ripe.net/ip/" + address
         try:
@@ -177,6 +180,13 @@ def resolve_server_names():
                 value = json.load(response)
             return address, {"country": value.get("country"), "name": value.get("name"), "url": url}
         except Exception:
+            previous = previous_registrations.get(address, {})
+            if previous.get("country"):
+                cached = dict(previous)
+                cached["url"] = url
+                cached["stale_cache"] = True
+                cached["lookup_failed"] = True
+                return address, cached
             return address, {"country": None, "url": url, "lookup_failed": True}
     with ThreadPoolExecutor(max_workers=4) as pool:
         registrations = dict(pool.map(registration, sorted(addresses)))
@@ -204,8 +214,7 @@ def foreign_nodes(catalog):
             reason = reason or "Russian entry IP (GeoIP RU)"
         if any(registrations.get(str(ip), {}).get("country") == "RU" for ip in addresses):
             reason = reason or "Russian network registration (RDAP RU)"
-        if any(not registrations.get(str(ip), {}).get("country") or
-               registrations.get(str(ip), {}).get("lookup_failed") for ip in addresses):
+        if any(not registrations.get(str(ip), {}).get("country") for ip in addresses):
             reason = reason or "Unknown network registration country"
         if reason:
             excluded.append({"name": name, "server": host, "reason": reason})

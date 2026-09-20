@@ -57,7 +57,12 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release download v1.19.30 --repo MetaCubeX/mihomo --pattern mihomo-linux-amd64-v1-v1.19.30.gz --dir "$RUNNER_TEMP"
+          for attempt in 1 2 3; do
+            rm -f "$RUNNER_TEMP/mihomo-linux-amd64-v1-v1.19.30.gz"
+            gh release download v1.19.30 --repo MetaCubeX/mihomo --pattern mihomo-linux-amd64-v1-v1.19.30.gz --dir "$RUNNER_TEMP" && break
+            test "$attempt" -eq 3 && exit 1
+            sleep $((attempt * 5))
+          done
           gzip -d "$RUNNER_TEMP/mihomo-linux-amd64-v1-v1.19.30.gz"
           chmod u+x "$RUNNER_TEMP/mihomo-linux-amd64-v1-v1.19.30"
       - name: Measure servers (three bounded 256 KiB samples per node)
