@@ -16,6 +16,7 @@ import subprocess
 import tempfile
 import urllib.parse
 import urllib.request
+import urllib.error
 import uuid
 
 try:
@@ -201,14 +202,32 @@ def main():
             for n in rule['ip_cidr']]
     candidates, seen, seen_candidate_hosts, source_hashes = [], set(), set(), {}
     for source, url in SOURCES:
-        with urllib.request.urlopen(url, timeout=30) as response:
-            raw = response.read(MAX_SOURCE_BYTES + 1)
+        try:
+            request = urllib.request.Request(
+                url,
+                headers={
+                    'User-Agent': 'vpn-test/1.0 (+https://github.com/dfantomasd/vpn-test)',
+                    'Accept': 'text/plain,*/*;q=0.8',
+                },
+            )
+            with urllib.request.urlopen(request, timeout=30) as response:
+                raw = response.read(MAX_SOURCE_BYTES + 1)
+        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, OSError) as exc:
+            rejected[source + ':fetch_failed'] += 1
+            print(f'{source}: fetch failed: {type(exc).__name__}: {exc}', flush=True)
+            continue
         if len(raw) > MAX_SOURCE_BYTES:
             rejected[source + ':source_too_large'] += 1
             continue
         source_hashes[source] = hashlib.sha256(raw).hexdigest()
+        try:
+            lines = source_lines(raw)
+        except (ValueError, UnicodeError) as exc:
+            rejected[source + ':invalid_source'] += 1
+            print(f'{source}: invalid source: {exc}', flush=True)
+            continue
         accepted = 0
-        for line in source_lines(raw)[:20000]:
+        for line in lines[:20000]:
             try:
                 outbound = parse_link(line)
                 if not is_whitelist_profile(outbound):
