@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T10:44:16.202051+00:00",
+  "generated_at": "2026-09-21T17:04:28.531810+00:00",
   "happ_mode": "one device-side auto profile plus manual servers",
   "karing_conversion_excluded": [],
   "allowed_protocols": [
@@ -13,7 +13,11 @@
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
-      "name": "🇫🇷⚡Франция",
+      "name": "🇪🇸⚡Испания",
+      "reason": "Contains Russian or location-unknown VLESS endpoint"
+    },
+    {
+      "name": "🇬🇧⚡Англия-2 EXTRA",
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
@@ -25,8 +29,8 @@
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
-      "name": "🇬🇧⚡Англия-2 EXTRA",
-      "reason": "Contains Russian or location-unknown VLESS endpoint"
+      "name": "🇫🇮🎮Финляндия GAMING",
+      "reason": "Contains non-VLESS outbound"
     },
     {
       "name": "🇳🇱🎮Нидерланды GAMING",
@@ -37,11 +41,11 @@
       "reason": "Contains non-VLESS outbound"
     },
     {
-      "name": "🇫🇮🎮Финляндия GAMING",
+      "name": "🇷🇺💳Россия",
       "reason": "Contains non-VLESS outbound"
     },
     {
-      "name": "🇷🇺💳Россия",
+      "name": "🇬🇧Англия SS",
       "reason": "Contains non-VLESS outbound"
     },
     {
@@ -50,10 +54,6 @@
     },
     {
       "name": "🇨🇦Канада SS",
-      "reason": "Contains non-VLESS outbound"
-    },
-    {
-      "name": "🇬🇧Англия SS",
       "reason": "Contains non-VLESS outbound"
     },
     {
@@ -69,15 +69,15 @@
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
-      "name": "🇩🇪⚪Германия (БС-5)☁️",
-      "reason": "Contains Russian or location-unknown VLESS endpoint"
-    },
-    {
       "name": "🇨🇭⚪Швейцария (БС-1)☁️",
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
       "name": "🇨🇭⚪Швейцария (БС-2)☁️",
+      "reason": "Contains Russian or location-unknown VLESS endpoint"
+    },
+    {
+      "name": "🇩🇪⚪Германия (БС-5)☁️",
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     }
   ],
@@ -86,8 +86,13 @@
   "karing_excluded_advanced_xhttp": [],
   "excluded_russian_or_unknown_servers": [
     {
-      "name": "🇫🇷⚡Франция",
-      "server": "154.222.132.180",
+      "name": "🇪🇸⚡Испания",
+      "server": "154.222.132.66",
+      "reason": "Unknown network registration country"
+    },
+    {
+      "name": "🇬🇧⚡Англия-2 EXTRA",
+      "server": "234604.aib2bsas.online",
       "reason": "Unknown network registration country"
     },
     {
@@ -101,24 +106,14 @@
       "reason": "Unknown network registration country"
     },
     {
-      "name": "🇬🇧⚡Англия-2 EXTRA",
-      "server": "234604.aib2bsas.online",
-      "reason": "Unknown network registration country"
-    },
-    {
       "name": "⬇️ Обходы белых списков ⬇️ / endpoint 2",
       "server": "87.242.94.245",
       "reason": "Russian entry IP (GeoIP RU)"
     },
     {
-      "name": "🇹🇷⚪Турция (БС-4)☁️ / endpoint 2",
+      "name": "🇹🇷⚪Турция (БС-3)☁️ / endpoint 2",
       "server": "87.242.94.245",
       "reason": "Russian entry IP (GeoIP RU)"
-    },
-    {
-      "name": "🇩🇪⚪Германия (БС-5)☁️ / endpoint 2",
-      "server": "188.72.103.4",
-      "reason": "Russian network registration (RDAP RU)"
     },
     {
       "name": "🇨🇭⚪Швейцария (БС-1)☁️ / endpoint 2",
@@ -129,6 +124,11 @@
       "name": "🇨🇭⚪Швейцария (БС-2)☁️ / endpoint 2",
       "server": "shprcdn.homes",
       "reason": "Russian entry IP (GeoIP RU)"
+    },
+    {
+      "name": "🇩🇪⚪Германия (БС-5)☁️ / endpoint 2",
+      "server": "188.72.103.4",
+      "reason": "Russian network registration (RDAP RU)"
     }
   ],
   "measurements_available": true,
