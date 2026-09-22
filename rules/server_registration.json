@@ -51,14 +51,14 @@
   "154.222.69.11": {
     "country": "DE",
     "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.11",
-    "stale_cache": true,
-    "lookup_failed": true
+    "url": "https://rdap.db.ripe.net/ip/154.222.69.11"
   },
   "154.222.69.120": {
     "country": "DE",
     "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.120"
+    "url": "https://rdap.db.ripe.net/ip/154.222.69.120",
+    "stale_cache": true,
+    "lookup_failed": true
   },
   "154.222.69.16": {
     "country": "DE",
@@ -73,9 +73,7 @@
   "154.222.69.172": {
     "country": "DE",
     "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.172",
-    "stale_cache": true,
-    "lookup_failed": true
+    "url": "https://rdap.db.ripe.net/ip/154.222.69.172"
   },
   "154.222.69.180": {
     "country": "DE",
@@ -85,16 +83,12 @@
   "154.222.69.187": {
     "country": "DE",
     "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.187",
-    "stale_cache": true,
-    "lookup_failed": true
+    "url": "https://rdap.db.ripe.net/ip/154.222.69.187"
   },
   "154.222.69.197": {
     "country": "DE",
     "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.197",
-    "stale_cache": true,
-    "lookup_failed": true
+    "url": "https://rdap.db.ripe.net/ip/154.222.69.197"
   },
   "154.222.69.234": {
     "country": "DE",
@@ -109,9 +103,7 @@
   "154.222.69.250": {
     "country": "DE",
     "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.250",
-    "stale_cache": true,
-    "lookup_failed": true
+    "url": "https://rdap.db.ripe.net/ip/154.222.69.250"
   },
   "154.222.69.36": {
     "country": "DE",
@@ -150,10 +142,10 @@
     "name": "GLOBALTELEHOST-FRA",
     "url": "https://rdap.db.ripe.net/ip/2604:86c0:f401:b::2"
   },
-  "46.243.142.42": {
+  "45.9.24.199": {
     "country": "RU",
-    "name": "RU-CLOUDRU-20101228",
-    "url": "https://rdap.db.ripe.net/ip/46.243.142.42"
+    "name": "RU-CLOUDRU-20190417",
+    "url": "https://rdap.db.ripe.net/ip/45.9.24.199"
   },
   "87.242.94.245": {
     "country": "RU",
