@@ -24,14 +24,14 @@
   "154.222.132.194": {
     "country": "DE",
     "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.132.194",
-    "stale_cache": true,
-    "lookup_failed": true
+    "url": "https://rdap.db.ripe.net/ip/154.222.132.194"
   },
   "154.222.132.22": {
     "country": "DE",
     "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.132.22"
+    "url": "https://rdap.db.ripe.net/ip/154.222.132.22",
+    "stale_cache": true,
+    "lookup_failed": true
   },
   "154.222.132.30": {
     "country": "DE",
@@ -44,14 +44,16 @@
     "url": "https://rdap.db.ripe.net/ip/154.222.132.63"
   },
   "154.222.132.66": {
-    "country": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.132.66",
-    "lookup_failed": true
+    "country": "DE",
+    "name": null,
+    "url": "https://rdap.db.ripe.net/ip/154.222.132.66"
   },
   "154.222.69.11": {
     "country": "DE",
     "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.11"
+    "url": "https://rdap.db.ripe.net/ip/154.222.69.11",
+    "stale_cache": true,
+    "lookup_failed": true
   },
   "154.222.69.120": {
     "country": "DE",
@@ -66,9 +68,7 @@
   "154.222.69.166": {
     "country": "DE",
     "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.166",
-    "stale_cache": true,
-    "lookup_failed": true
+    "url": "https://rdap.db.ripe.net/ip/154.222.69.166"
   },
   "154.222.69.172": {
     "country": "DE",
@@ -85,12 +85,16 @@
   "154.222.69.187": {
     "country": "DE",
     "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.187"
+    "url": "https://rdap.db.ripe.net/ip/154.222.69.187",
+    "stale_cache": true,
+    "lookup_failed": true
   },
   "154.222.69.197": {
     "country": "DE",
     "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.197"
+    "url": "https://rdap.db.ripe.net/ip/154.222.69.197",
+    "stale_cache": true,
+    "lookup_failed": true
   },
   "154.222.69.234": {
     "country": "DE",
@@ -146,10 +150,10 @@
     "name": "GLOBALTELEHOST-FRA",
     "url": "https://rdap.db.ripe.net/ip/2604:86c0:f401:b::2"
   },
-  "45.9.24.199": {
+  "46.243.142.42": {
     "country": "RU",
-    "name": "RU-CLOUDRU-20190417",
-    "url": "https://rdap.db.ripe.net/ip/45.9.24.199"
+    "name": "RU-CLOUDRU-20101228",
+    "url": "https://rdap.db.ripe.net/ip/46.243.142.42"
   },
   "87.242.94.245": {
     "country": "RU",
