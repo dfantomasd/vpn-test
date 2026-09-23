@@ -1,14 +1,14 @@
 {
-  "234604.aib2bsas.online": [
-    "2604:86c0:f301:a::3"
-  ],
   "263160.aib2bsas.online": [
     "2604:86c0:f401:b::2"
   ],
-  "shprcdn.homes": [
-    "45.9.24.199"
+  "234604.aib2bsas.online": [
+    "2604:86c0:f301:a::3"
   ],
   "shprcdn.xyz": [
     "94.139.255.25"
+  ],
+  "shprcdn.homes": [
+    "45.9.24.199"
   ]
 }
