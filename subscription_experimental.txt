@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · DE · 2cd592 | тест: ≈1.84 Мбит/с · 539 мс",
+    "remarks": "🧪 Vovaplus · DE · ba0ffa | тест: ≈1.94 Мбит/с · 544 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1655,7 +1655,7 @@
           "security": "reality",
           "realitySettings": {
             "serverName": "eu-central.cendora.ru",
-            "fingerprint": "qq",
+            "fingerprint": "chrome",
             "publicKey": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
             "shortId": "00bca5982f82d083",
             "spiderX": "/"
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 HardVPN-whitelist · EE · 423491 | тест: ≈1.55 Мбит/с · 813 мс",
+    "remarks": "🧪 Au1rxx · NL · 37f55a | тест: ≈1.80 Мбит/с · 614 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,11 +2438,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "150.241.101.80",
-              "port": 8443,
+              "address": "179.254.111.0",
+              "port": 443,
               "users": [
                 {
-                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
+                  "id": "94006a20-6cd6-4751-a14d-c5a0bacb68bb",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -2454,10 +2454,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "yandex.net",
-            "fingerprint": "chrome",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "6ba85179e30d4fc2",
+            "serverName": "yandex.ru",
+            "fingerprint": "safari",
+            "publicKey": "dBvFkg2zny545Ws6H_LXKEohOYV2MW_zACRrRQE1IUg",
+            "shortId": "992e5a9a",
             "spiderX": "/"
           }
         }
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · DE · internet-tenshi-whitelist · 1a8203",
+    "remarks": "🧪 internet-tenshi-whitelist · CZ · 0af3bd | тест: ≈1.61 Мбит/с · 601 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,11 +3238,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "144.31.40.96",
-              "port": 2053,
+              "address": "31.76.7.154",
+              "port": 7443,
               "users": [
                 {
-                  "id": "7ab9fe4f-6699-427f-a828-9fcf2496d714",
+                  "id": "d7cad038-0c3f-4cce-8f8a-36464aaf66c0",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -3254,10 +3254,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "www.max.ru",
-            "fingerprint": "firefox",
-            "publicKey": "DophD0TUx8mYl11BY3mQdYI-5hG6mwIfE1EN8DkPJ3w",
-            "shortId": "5979d7a79c264488",
+            "serverName": "ya.ru",
+            "fingerprint": "chrome",
+            "publicKey": "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ",
+            "shortId": "d2061bb1",
             "spiderX": "/"
           }
         }
