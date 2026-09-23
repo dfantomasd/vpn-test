@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · DE · 2cd592 | тест: ≈1.70 Мбит/с · 602 мс",
+    "remarks": "🧪 Au1rxx · DE · 2cd592 | тест: ≈1.84 Мбит/с · 539 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · internet-tenshi-whitelist · 423491",
+    "remarks": "🧪 HardVPN-whitelist · EE · 423491 | тест: ≈1.55 Мбит/с · 813 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · AvenCores-whitelist-pool · c818b3",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · DE · internet-tenshi-whitelist · 1a8203",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,11 +3238,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "150.241.101.17",
-              "port": 8443,
+              "address": "144.31.40.96",
+              "port": 2053,
               "users": [
                 {
-                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
+                  "id": "7ab9fe4f-6699-427f-a828-9fcf2496d714",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -3254,10 +3254,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "yandex.net",
-            "fingerprint": "safari",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "6ba85179e30d4fc2",
+            "serverName": "www.max.ru",
+            "fingerprint": "firefox",
+            "publicKey": "DophD0TUx8mYl11BY3mQdYI-5hG6mwIfE1EN8DkPJ3w",
+            "shortId": "5979d7a79c264488",
             "spiderX": "/"
           }
         }
