@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T19:10:45.494895+00:00",
+  "generated_at": "2026-09-24T22:24:35.075583+00:00",
   "happ_mode": "one device-side auto profile plus manual servers",
   "karing_conversion_excluded": [],
   "allowed_protocols": [
@@ -25,11 +25,11 @@
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
-      "name": "🇨🇭🎮Швейцария GAMING",
+      "name": "🇫🇮🎮Финляндия GAMING",
       "reason": "Contains non-VLESS outbound"
     },
     {
-      "name": "🇫🇮🎮Финляндия GAMING",
+      "name": "🇨🇭🎮Швейцария GAMING",
       "reason": "Contains non-VLESS outbound"
     },
     {
@@ -45,11 +45,11 @@
       "reason": "Contains non-VLESS outbound"
     },
     {
-      "name": "🇨🇦Канада SS",
+      "name": "🇮🇹Италия SS",
       "reason": "Contains non-VLESS outbound"
     },
     {
-      "name": "🇮🇹Италия SS",
+      "name": "🇨🇦Канада SS",
       "reason": "Contains non-VLESS outbound"
     },
     {
@@ -102,7 +102,7 @@
       "reason": "Russian entry IP (GeoIP RU)"
     },
     {
-      "name": "🇹🇷⚪Турция (БС-4)☁️ / endpoint 2",
+      "name": "🇹🇷⚪Турция (БС-3)☁️ / endpoint 2",
       "server": "87.242.94.147",
       "reason": "Russian entry IP (GeoIP RU)"
     },
