@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · DE · ba0ffa | тест: ≈1.60 Мбит/с · 614 мс",
+    "remarks": "🧪 Au1rxx · DE · fca5e4 | тест: ≈2.53 Мбит/с · 401 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1655,7 +1655,7 @@
           "security": "reality",
           "realitySettings": {
             "serverName": "eu-central.cendora.ru",
-            "fingerprint": "chrome",
+            "fingerprint": "random",
             "publicKey": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
             "shortId": "00bca5982f82d083",
             "spiderX": "/"
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 Vovaplus · AT · 1ece6f | тест: ≈1.54 Мбит/с · 704 мс",
+    "remarks": "🧪 Vovaplus · AT · 1ece6f | тест: ≈2.38 Мбит/с · 449 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · DE · internet-tenshi-whitelist · 1a8203",
+    "remarks": "🧪 AvenCores-whitelist-pool · EE · 3af017 | тест: ≈1.95 Мбит/с · 595 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,11 +3238,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "144.31.40.96",
-              "port": 2053,
+              "address": "150.241.101.17",
+              "port": 8443,
               "users": [
                 {
-                  "id": "7ab9fe4f-6699-427f-a828-9fcf2496d714",
+                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -3254,10 +3254,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "www.max.ru",
-            "fingerprint": "firefox",
-            "publicKey": "DophD0TUx8mYl11BY3mQdYI-5hG6mwIfE1EN8DkPJ3w",
-            "shortId": "5979d7a79c264488",
+            "serverName": "yandex.net",
+            "fingerprint": "chrome",
+            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+            "shortId": "6ba85179e30d4fc2",
             "spiderX": "/"
           }
         }
