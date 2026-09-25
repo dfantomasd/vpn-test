@@ -4,50 +4,40 @@
     "name": null,
     "url": "https://rdap.db.ripe.net/ip/154.222.132.132"
   },
-  "154.222.132.178": {
+  "154.222.132.142": {
     "country": "DE",
     "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.132.178"
+    "url": "https://rdap.db.ripe.net/ip/154.222.132.142"
+  },
+  "154.222.132.166": {
+    "country": "DE",
+    "name": null,
+    "url": "https://rdap.db.ripe.net/ip/154.222.132.166"
+  },
+  "154.222.132.224": {
+    "country": "DE",
+    "name": null,
+    "url": "https://rdap.db.ripe.net/ip/154.222.132.224"
+  },
+  "154.222.132.227": {
+    "country": "DE",
+    "name": null,
+    "url": "https://rdap.db.ripe.net/ip/154.222.132.227"
   },
   "154.222.132.241": {
     "country": "DE",
     "name": null,
     "url": "https://rdap.db.ripe.net/ip/154.222.132.241"
   },
-  "154.222.132.67": {
+  "154.222.132.76": {
     "country": "DE",
     "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.132.67"
+    "url": "https://rdap.db.ripe.net/ip/154.222.132.76"
   },
-  "154.222.69.105": {
+  "154.222.69.38": {
     "country": "DE",
     "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.105"
-  },
-  "154.222.69.147": {
-    "country": "DE",
-    "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.147"
-  },
-  "154.222.69.198": {
-    "country": "DE",
-    "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.198"
-  },
-  "154.222.69.219": {
-    "country": "DE",
-    "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.219"
-  },
-  "154.222.69.235": {
-    "country": "DE",
-    "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.235"
-  },
-  "154.222.69.34": {
-    "country": "DE",
-    "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.34"
+    "url": "https://rdap.db.ripe.net/ip/154.222.69.38"
   },
   "154.222.69.50": {
     "country": "DE",
@@ -59,25 +49,10 @@
     "name": null,
     "url": "https://rdap.db.ripe.net/ip/154.222.69.56"
   },
-  "154.222.69.70": {
+  "154.222.69.83": {
     "country": "DE",
     "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.70"
-  },
-  "154.222.69.84": {
-    "country": "DE",
-    "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.84"
-  },
-  "154.222.69.97": {
-    "country": "DE",
-    "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.97"
-  },
-  "154.222.69.98": {
-    "country": "DE",
-    "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.98"
+    "url": "https://rdap.db.ripe.net/ip/154.222.69.83"
   },
   "188.72.103.4": {
     "country": "RU",
@@ -124,6 +99,11 @@
     "name": "NET-94-118-144-0-24",
     "url": "https://rdap.db.ripe.net/ip/94.118.144.132"
   },
+  "94.118.144.150": {
+    "country": "AM",
+    "name": "NET-94-118-144-0-24",
+    "url": "https://rdap.db.ripe.net/ip/94.118.144.150"
+  },
   "94.118.144.154": {
     "country": "AM",
     "name": "NET-94-118-144-0-24",
@@ -134,15 +114,35 @@
     "name": "NET-94-118-144-0-24",
     "url": "https://rdap.db.ripe.net/ip/94.118.144.194"
   },
+  "94.118.144.216": {
+    "country": "AM",
+    "name": "NET-94-118-144-0-24",
+    "url": "https://rdap.db.ripe.net/ip/94.118.144.216"
+  },
+  "94.118.144.229": {
+    "country": "AM",
+    "name": "NET-94-118-144-0-24",
+    "url": "https://rdap.db.ripe.net/ip/94.118.144.229"
+  },
   "94.118.144.237": {
     "country": "AM",
     "name": "NET-94-118-144-0-24",
     "url": "https://rdap.db.ripe.net/ip/94.118.144.237"
   },
+  "94.118.144.243": {
+    "country": "AM",
+    "name": "NET-94-118-144-0-24",
+    "url": "https://rdap.db.ripe.net/ip/94.118.144.243"
+  },
   "94.118.144.47": {
     "country": "AM",
     "name": "NET-94-118-144-0-24",
     "url": "https://rdap.db.ripe.net/ip/94.118.144.47"
+  },
+  "94.118.144.9": {
+    "country": "AM",
+    "name": "NET-94-118-144-0-24",
+    "url": "https://rdap.db.ripe.net/ip/94.118.144.9"
   },
   "94.139.255.25": {
     "country": "RU",
