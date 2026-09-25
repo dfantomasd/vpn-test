@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · DE · f73b1e | тест: ≈2.64 Мбит/с · 392 мс",
+    "remarks": "🧪 aviamasters · AL · c7b453 | тест: ≈2.03 Мбит/с · 530 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1638,11 +1638,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "144.31.168.95",
+              "address": "144.31.131.38",
               "port": 443,
               "users": [
                 {
-                  "id": "423b1d79-08c4-403f-9d5e-c541f791b55f",
+                  "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -1654,10 +1654,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "eu-central.cendora.ru",
-            "fingerprint": "firefox",
-            "publicKey": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
-            "shortId": "00bca5982f82d083",
+            "serverName": "prod.pl-node-01.security-sbrf.ru",
+            "fingerprint": "chrome",
+            "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+            "shortId": "db04ce8bdb8900f1",
             "spiderX": "/"
           }
         }
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · CZ · 81d15b | тест: ≈2.29 Мбит/с · 482 мс",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · DE · internet-tenshi-whitelist · 1a8203",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,11 +2438,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "31.76.7.154",
-              "port": 7443,
+              "address": "144.31.40.96",
+              "port": 2053,
               "users": [
                 {
-                  "id": "d7cad038-0c3f-4cce-8f8a-36464aaf66c0",
+                  "id": "7ab9fe4f-6699-427f-a828-9fcf2496d714",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -2454,10 +2454,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "ya.ru",
+            "serverName": "www.max.ru",
             "fingerprint": "firefox",
-            "publicKey": "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ",
-            "shortId": "d2061bb1",
+            "publicKey": "DophD0TUx8mYl11BY3mQdYI-5hG6mwIfE1EN8DkPJ3w",
+            "shortId": "5979d7a79c264488",
             "spiderX": "/"
           }
         }
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "🧪 Vovaplus · AT · 9ebc0f | тест: ≈2.22 Мбит/с · 477 мс",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · HardVPN-whitelist · 423491",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,11 +3238,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "152.53.1.40",
-              "port": 443,
+              "address": "150.241.101.80",
+              "port": 8443,
               "users": [
                 {
-                  "id": "edde565e-41f5-400e-84ea-7b87a3e84488",
+                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -3254,10 +3254,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "at.quattro-tech.ru",
-            "fingerprint": "qq",
-            "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-            "shortId": "43dcff53849b81e6",
+            "serverName": "yandex.net",
+            "fingerprint": "chrome",
+            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+            "shortId": "6ba85179e30d4fc2",
             "spiderX": "/"
           }
         }
