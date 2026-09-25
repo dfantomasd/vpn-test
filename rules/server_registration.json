@@ -64,6 +64,11 @@
     "name": null,
     "url": "https://rdap.db.ripe.net/ip/154.222.69.161"
   },
+  "154.222.69.171": {
+    "country": "DE",
+    "name": null,
+    "url": "https://rdap.db.ripe.net/ip/154.222.69.171"
+  },
   "154.222.69.205": {
     "country": "DE",
     "name": null,
@@ -123,11 +128,6 @@
     "country": "RU",
     "name": "RU-CLOUDRU-20050722",
     "url": "https://rdap.db.ripe.net/ip/87.242.94.147"
-  },
-  "94.118.144.114": {
-    "country": "AM",
-    "name": "NET-94-118-144-0-24",
-    "url": "https://rdap.db.ripe.net/ip/94.118.144.114"
   },
   "94.118.144.180": {
     "country": "AM",
