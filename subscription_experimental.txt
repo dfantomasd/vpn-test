@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · igareck · 31f991",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · DE · Au1rxx · 2b7c76",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,11 +3238,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "est1.serverslocal.ru",
+              "address": "185.249.153.108",
               "port": 443,
               "users": [
                 {
-                  "id": "86863a94-436f-4b42-87a9-ada20223fc98",
+                  "id": "4cf9c712-11c4-47d8-aa31-a1693a1aa4e5",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -3254,10 +3254,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "est1.serverslocal.ru",
-            "fingerprint": "android",
-            "publicKey": "4NWUAAR518Hr4ivYfZqY_jkZtnJvJDiWC9LGkwalUV4",
-            "shortId": "ca851e83d2f3d725",
+            "serverName": "www.nordivablog.ru",
+            "fingerprint": "firefox",
+            "publicKey": "xOJ3INBNzRKOKYGQZmSYczgTjTKwdYQ4BFfc75wVazw",
+            "shortId": "73c9e31ccafda20e",
             "spiderX": "/"
           }
         }
