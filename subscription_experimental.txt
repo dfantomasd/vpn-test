@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · DE · 2b7c76 | тест: ≈1.92 Мбит/с · 580 мс",
+    "remarks": "🧪 Au1rxx · DE · 2b7c76 | тест: ≈2.39 Мбит/с · 428 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · AL · c7b453 | тест: ≈1.81 Мбит/с · 536 мс",
+    "remarks": "🧪 internet-tenshi-whitelist · EE · 3af017 | тест: ≈1.80 Мбит/с · 580 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,11 +2438,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "144.31.131.38",
-              "port": 443,
+              "address": "150.241.101.17",
+              "port": 8443,
               "users": [
                 {
-                  "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -2454,10 +2454,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "prod.pl-node-01.security-sbrf.ru",
+            "serverName": "yandex.net",
             "fingerprint": "chrome",
-            "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-            "shortId": "db04ce8bdb8900f1",
+            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+            "shortId": "6ba85179e30d4fc2",
             "spiderX": "/"
           }
         }
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · EE · c818b3 | тест: ≈1.55 Мбит/с · 728 мс",
+    "remarks": "🧪 HardVPN-whitelist · EE · 423491 | тест: ≈1.69 Мбит/с · 627 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,7 +3238,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "150.241.101.17",
+              "address": "150.241.101.80",
               "port": 8443,
               "users": [
                 {
@@ -3255,7 +3255,7 @@
           "security": "reality",
           "realitySettings": {
             "serverName": "yandex.net",
-            "fingerprint": "safari",
+            "fingerprint": "chrome",
             "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
             "shortId": "6ba85179e30d4fc2",
             "spiderX": "/"
