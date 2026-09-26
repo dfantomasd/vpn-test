@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T19:52:22.438473+00:00",
+  "generated_at": "2026-09-26T22:50:19.107880+00:00",
   "happ_mode": "one device-side auto profile plus manual servers",
   "karing_conversion_excluded": [],
   "allowed_protocols": [
@@ -25,10 +25,6 @@
       "reason": "Contains Russian or location-unknown VLESS endpoint"
     },
     {
-      "name": "🇨🇭🎮Швейцария GAMING",
-      "reason": "Contains non-VLESS outbound"
-    },
-    {
       "name": "🇳🇱🎮Нидерланды GAMING",
       "reason": "Contains non-VLESS outbound"
     },
@@ -37,11 +33,15 @@
       "reason": "Contains non-VLESS outbound"
     },
     {
+      "name": "🇨🇭🎮Швейцария GAMING",
+      "reason": "Contains non-VLESS outbound"
+    },
+    {
       "name": "🇷🇺💳Россия",
       "reason": "Contains non-VLESS outbound"
     },
     {
-      "name": "🇨🇦Канада SS",
+      "name": "🇮🇹Италия SS",
       "reason": "Contains non-VLESS outbound"
     },
     {
@@ -49,7 +49,7 @@
       "reason": "Contains non-VLESS outbound"
     },
     {
-      "name": "🇮🇹Италия SS",
+      "name": "🇨🇦Канада SS",
       "reason": "Contains non-VLESS outbound"
     },
     {
@@ -98,11 +98,6 @@
     },
     {
       "name": "⬇️ Обходы белых списков ⬇️ / endpoint 2",
-      "server": "188.72.103.4",
-      "reason": "Russian network registration (RDAP RU)"
-    },
-    {
-      "name": "🇨🇭⚪Швейцария (БС-1)☁️ / endpoint 2",
       "server": "shprcdn.xyz",
       "reason": "Russian entry IP (GeoIP RU)"
     },
@@ -113,13 +108,18 @@
     },
     {
       "name": "🇹🇷⚪Турция (БС-3)☁️ / endpoint 2",
-      "server": "87.242.94.147",
+      "server": "87.242.94.247",
       "reason": "Russian entry IP (GeoIP RU)"
     },
     {
       "name": "🇹🇷⚪Турция (БС-4)☁️ / endpoint 2",
-      "server": "87.242.94.147",
+      "server": "87.242.94.247",
       "reason": "Russian entry IP (GeoIP RU)"
+    },
+    {
+      "name": "🇩🇪⚪Германия (БС-5)☁️ / endpoint 2",
+      "server": "188.72.103.4",
+      "reason": "Russian network registration (RDAP RU)"
     }
   ],
   "measurements_available": true,
