@@ -4,11 +4,6 @@
     "name": null,
     "url": "https://rdap.db.ripe.net/ip/154.222.132.227"
   },
-  "154.222.132.72": {
-    "country": "DE",
-    "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.132.72"
-  },
   "154.222.69.141": {
     "country": "DE",
     "name": null,
@@ -28,6 +23,11 @@
     "country": "DE",
     "name": null,
     "url": "https://rdap.db.ripe.net/ip/154.222.69.71"
+  },
+  "154.222.69.81": {
+    "country": "DE",
+    "name": null,
+    "url": "https://rdap.db.ripe.net/ip/154.222.69.81"
   },
   "154.222.69.88": {
     "country": "DE",
