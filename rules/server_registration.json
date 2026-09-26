@@ -74,15 +74,15 @@
     "name": "NET-94-118-144-0-24",
     "url": "https://rdap.db.ripe.net/ip/94.118.144.116"
   },
-  "94.118.144.132": {
-    "country": "AM",
-    "name": "NET-94-118-144-0-24",
-    "url": "https://rdap.db.ripe.net/ip/94.118.144.132"
-  },
   "94.118.144.150": {
     "country": "AM",
     "name": "NET-94-118-144-0-24",
     "url": "https://rdap.db.ripe.net/ip/94.118.144.150"
+  },
+  "94.118.144.153": {
+    "country": "AM",
+    "name": "NET-94-118-144-0-24",
+    "url": "https://rdap.db.ripe.net/ip/94.118.144.153"
   },
   "94.118.144.154": {
     "country": "AM",
