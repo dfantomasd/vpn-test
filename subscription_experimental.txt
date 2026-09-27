@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · DE · Vovaplus · 80fd95",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · IR · morpheus · c6db1e",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,11 +2438,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "185.249.153.108",
+              "address": "212.16.92.112",
               "port": 443,
               "users": [
                 {
-                  "id": "4cf9c712-11c4-47d8-aa31-a1693a1aa4e5",
+                  "id": "32721515-985b-4773-9e70-5d2e1b88a060",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -2454,10 +2454,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "www.nordivablog.ru",
-            "fingerprint": "chrome",
-            "publicKey": "xOJ3INBNzRKOKYGQZmSYczgTjTKwdYQ4BFfc75wVazw",
-            "shortId": "73c9e31ccafda20e",
+            "serverName": "jobinvest.ru",
+            "fingerprint": "",
+            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+            "shortId": "",
             "spiderX": "/"
           }
         }
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · DE · Radikal · 8795f5",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · DE · Vovaplus · 80fd95",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,11 +3238,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "185.238.191.171",
+              "address": "185.249.153.108",
               "port": 443,
               "users": [
                 {
-                  "id": "02e2d68f-9982-4467-ad47-00cbeeae30e6",
+                  "id": "4cf9c712-11c4-47d8-aa31-a1693a1aa4e5",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -3254,10 +3254,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "de-cdn.ru",
-            "fingerprint": "",
-            "publicKey": "bg_o5_i-5MSy-t3CB3iyqIeI8Uqyy_wTP2kheJCXngg",
-            "shortId": "f7d0420b8ab26060",
+            "serverName": "www.nordivablog.ru",
+            "fingerprint": "chrome",
+            "publicKey": "xOJ3INBNzRKOKYGQZmSYczgTjTKwdYQ4BFfc75wVazw",
+            "shortId": "73c9e31ccafda20e",
             "spiderX": "/"
           }
         }
