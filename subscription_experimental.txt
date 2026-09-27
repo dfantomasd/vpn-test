@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · AT · 9ebc0f | тест: ≈2.34 Мбит/с · 456 мс",
+    "remarks": "🧪 Au1rxx · AT · 9ebc0f | тест: ≈1.85 Мбит/с · 556 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · EE · 3af017 | тест: ≈1.51 Мбит/с · 599 мс",
+    "remarks": "🧪 internet-tenshi-whitelist · CZ · 0af3bd | тест: ≈1.78 Мбит/с · 665 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,11 +2438,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "150.241.101.17",
-              "port": 8443,
+              "address": "31.76.7.154",
+              "port": 7443,
               "users": [
                 {
-                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
+                  "id": "d7cad038-0c3f-4cce-8f8a-36464aaf66c0",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -2454,10 +2454,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "yandex.net",
+            "serverName": "ya.ru",
             "fingerprint": "chrome",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "6ba85179e30d4fc2",
+            "publicKey": "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ",
+            "shortId": "d2061bb1",
             "spiderX": "/"
           }
         }
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · HardVPN-whitelist · 423491",
+    "remarks": "🧪 Vovaplus · EE · 3af017 | тест: ≈1.56 Мбит/с · 682 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,7 +3238,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "150.241.101.80",
+              "address": "150.241.101.17",
               "port": 8443,
               "users": [
                 {
