@@ -1,33 +1,28 @@
 {
-  "154.222.132.16": {
-    "country": "DE",
-    "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.132.16"
-  },
-  "154.222.132.46": {
-    "country": "DE",
-    "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.132.46"
-  },
   "154.222.132.61": {
     "country": "DE",
     "name": null,
     "url": "https://rdap.db.ripe.net/ip/154.222.132.61"
   },
-  "154.222.69.145": {
+  "154.222.69.102": {
     "country": "DE",
     "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.145"
+    "url": "https://rdap.db.ripe.net/ip/154.222.69.102"
   },
-  "154.222.69.20": {
+  "154.222.69.188": {
     "country": "DE",
     "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.20"
+    "url": "https://rdap.db.ripe.net/ip/154.222.69.188"
   },
-  "154.222.69.244": {
+  "154.222.69.231": {
     "country": "DE",
     "name": null,
-    "url": "https://rdap.db.ripe.net/ip/154.222.69.244"
+    "url": "https://rdap.db.ripe.net/ip/154.222.69.231"
+  },
+  "154.222.69.42": {
+    "country": "DE",
+    "name": null,
+    "url": "https://rdap.db.ripe.net/ip/154.222.69.42"
   },
   "188.72.103.4": {
     "country": "RU",
@@ -64,6 +59,11 @@
     "name": "RU-CLOUDRU-20050722",
     "url": "https://rdap.db.ripe.net/ip/87.242.94.247"
   },
+  "94.118.144.108": {
+    "country": "AM",
+    "name": "NET-94-118-144-0-24",
+    "url": "https://rdap.db.ripe.net/ip/94.118.144.108"
+  },
   "94.118.144.140": {
     "country": "AM",
     "name": "NET-94-118-144-0-24",
@@ -83,11 +83,6 @@
     "country": "AM",
     "name": "NET-94-118-144-0-24",
     "url": "https://rdap.db.ripe.net/ip/94.118.144.151"
-  },
-  "94.118.144.152": {
-    "country": "AM",
-    "name": "NET-94-118-144-0-24",
-    "url": "https://rdap.db.ripe.net/ip/94.118.144.152"
   },
   "94.118.144.153": {
     "country": "AM",
@@ -134,10 +129,10 @@
     "name": "NET-94-118-144-0-24",
     "url": "https://rdap.db.ripe.net/ip/94.118.144.46"
   },
-  "94.118.144.66": {
+  "94.118.144.56": {
     "country": "AM",
     "name": "NET-94-118-144-0-24",
-    "url": "https://rdap.db.ripe.net/ip/94.118.144.66"
+    "url": "https://rdap.db.ripe.net/ip/94.118.144.56"
   },
   "94.118.144.68": {
     "country": "AM",
@@ -148,5 +143,10 @@
     "country": "AM",
     "name": "NET-94-118-144-0-24",
     "url": "https://rdap.db.ripe.net/ip/94.118.144.78"
+  },
+  "94.118.144.88": {
+    "country": "AM",
+    "name": "NET-94-118-144-0-24",
+    "url": "https://rdap.db.ripe.net/ip/94.118.144.88"
   }
 }
