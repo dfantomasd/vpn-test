@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · AT · 935198 | тест: ≈2.05 Мбит/с · 517 мс",
+    "remarks": "🧪 Radikal · SE · bc5af2 | тест: ≈1.97 Мбит/с · 521 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1638,11 +1638,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "152.53.1.40",
+              "address": "212.147.245.198",
               "port": 443,
               "users": [
                 {
-                  "id": "edde565e-41f5-400e-84ea-7b87a3e84488",
+                  "id": "042d2d08-2973-5d10-97ad-3b75f16bbe54",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -1654,10 +1654,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "at.quattro-tech.ru",
-            "fingerprint": "random",
-            "publicKey": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-            "shortId": "43dcff53849b81e6",
+            "serverName": "online.1c.ru",
+            "fingerprint": "chrome",
+            "publicKey": "xwLNHc6jBOg5Ddr1LezwY7I45nP485Qfu1YJXMKwVnI",
+            "shortId": "330a464a00000000",
             "spiderX": "/"
           }
         }
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 Vovaplus · EE · 3af017 | тест: ≈1.60 Мбит/с · 794 мс",
+    "remarks": "🧪 Au1rxx · EE · c818b3 | тест: ≈1.53 Мбит/с · 761 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2455,7 +2455,7 @@
           "security": "reality",
           "realitySettings": {
             "serverName": "yandex.net",
-            "fingerprint": "chrome",
+            "fingerprint": "safari",
             "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
             "shortId": "6ba85179e30d4fc2",
             "spiderX": "/"
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · internet-tenshi-whitelist · 3a84b5",
+    "remarks": "🧪 HardVPN-whitelist · DE · 26af31 | тест: ≈1.68 Мбит/с · 896 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,12 +3238,13 @@
         "settings": {
           "vnext": [
             {
-              "address": "93.89.220.7",
-              "port": 8443,
+              "address": "31.76.100.41",
+              "port": 443,
               "users": [
                 {
-                  "id": "6eefb4c5-96c2-4b41-a8e3-3dd13e8e09d0",
-                  "encryption": "none"
+                  "id": "d72f05b0-b182-4783-a6f2-21cecc7d841a",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
                 }
               ]
             }
@@ -3253,10 +3254,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "eh.vk.com",
+            "serverName": "dzen.ru",
             "fingerprint": "firefox",
-            "publicKey": "GzQr6fDhigtRAr0n2Y7Nk3snhdytYyOvaYo9zYe1Xn4",
-            "shortId": "b3a1cc510a2001c6",
+            "publicKey": "SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js",
+            "shortId": "a1b2c3d4e5f67890",
             "spiderX": "/"
           }
         }
