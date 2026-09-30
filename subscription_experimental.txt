@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Vovaplus · AT · 9ebc0f | тест: ≈1.70 Мбит/с · 631 мс",
+    "remarks": "🧪 Vovaplus · AT · 9ebc0f | тест: ≈1.71 Мбит/с · 623 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 Radikal · SE · bc5af2 | тест: ≈1.50 Мбит/с · 653 мс",
+    "remarks": "🧪 internet-tenshi-whitelist · PL · dafe3b | тест: ≈1.57 Мбит/с · 696 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,11 +2438,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "212.147.245.198",
+              "address": "179.198.49.43",
               "port": 443,
               "users": [
                 {
-                  "id": "042d2d08-2973-5d10-97ad-3b75f16bbe54",
+                  "id": "d72f05b0-b182-4783-a6f2-21cecc7d841a",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -2454,10 +2454,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "online.1c.ru",
+            "serverName": "dzen.ru",
             "fingerprint": "chrome",
-            "publicKey": "xwLNHc6jBOg5Ddr1LezwY7I45nP485Qfu1YJXMKwVnI",
-            "shortId": "330a464a00000000",
+            "publicKey": "SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js",
+            "shortId": "a1b2c3d4e5f67890",
             "spiderX": "/"
           }
         }
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · internet-tenshi-whitelist · 3a84b5",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · internet-tenshi-whitelist · 3af017",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,12 +3238,13 @@
         "settings": {
           "vnext": [
             {
-              "address": "93.89.220.7",
+              "address": "150.241.101.17",
               "port": 8443,
               "users": [
                 {
-                  "id": "6eefb4c5-96c2-4b41-a8e3-3dd13e8e09d0",
-                  "encryption": "none"
+                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
                 }
               ]
             }
@@ -3253,10 +3254,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "eh.vk.com",
-            "fingerprint": "firefox",
-            "publicKey": "GzQr6fDhigtRAr0n2Y7Nk3snhdytYyOvaYo9zYe1Xn4",
-            "shortId": "b3a1cc510a2001c6",
+            "serverName": "yandex.net",
+            "fingerprint": "chrome",
+            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+            "shortId": "6ba85179e30d4fc2",
             "spiderX": "/"
           }
         }
