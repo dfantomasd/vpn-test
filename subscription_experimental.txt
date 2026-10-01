@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · PL · internet-tenshi-whitelist · dafe3b",
+    "remarks": "🧪 aviamasters · DE · a848be | тест: ≈1.54 Мбит/с · 661 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1638,11 +1638,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "179.198.49.43",
+              "address": "179.254.163.11",
               "port": 443,
               "users": [
                 {
-                  "id": "d72f05b0-b182-4783-a6f2-21cecc7d841a",
+                  "id": "aef06aad-8e97-4452-9257-6142b5b1ceb7",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -1654,10 +1654,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "dzen.ru",
+            "serverName": "decemberfest.elfhost.ru",
             "fingerprint": "chrome",
-            "publicKey": "SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js",
-            "shortId": "a1b2c3d4e5f67890",
+            "publicKey": "FvxhTol6CtmTv7BQZANpoRGBRMUIrNSsLbTUe4x8JG8",
+            "shortId": "a4b32f5132c11d9b",
             "spiderX": "/"
           }
         }
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · PL · HardVPN-whitelist · a763d8",
+    "remarks": "🧪 Au1rxx · NL · 5bb3eb | тест: ≈1.67 Мбит/с · 737 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,12 +2438,13 @@
         "settings": {
           "vnext": [
             {
-              "address": "tg.riotvpn.eu",
-              "port": 443,
+              "address": "nl.vpnifty.ru",
+              "port": 18443,
               "users": [
                 {
-                  "id": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
-                  "encryption": "none"
+                  "id": "a85fe87b-0fba-4657-9a0e-35ef48c43ef4",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
                 }
               ]
             }
@@ -2453,13 +2454,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "ads.x5.ru",
-            "fingerprint": "chrome",
-            "alpn": [
-              "channel@VPNine1-channel@VPNine1-channel@VPNine1-channel@VPNine1-channel@VPNine1-channel@VPNine1-channel@VPNine1-channel@VPNine1"
-            ],
-            "publicKey": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
-            "shortId": "2f49bccf11150ef2",
+            "serverName": "nl.vpnifty.ru",
+            "fingerprint": "edge",
+            "publicKey": "7cjXiyeAfM-T8WIAKKfqXtNn4Myv0Tm8N0OaXm2QAkU",
+            "shortId": "",
             "spiderX": "/"
           }
         }
@@ -3202,7 +3200,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · CY · Generation-Liberty · e30d44",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · internet-tenshi-whitelist · 3af017",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3240,11 +3238,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "45.15.125.8",
+              "address": "150.241.101.17",
               "port": 8443,
               "users": [
                 {
-                  "id": "b9e5c4b7-1e9b-4ca5-82dc-43f3a440484c",
+                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -3256,10 +3254,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "max.ru",
+            "serverName": "yandex.net",
             "fingerprint": "chrome",
-            "publicKey": "YF_Vfx9VdDFXKM4bL1RZx6vsUqlSMtT56wPt987Aul8",
-            "shortId": "db49831a996244d8",
+            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+            "shortId": "6ba85179e30d4fc2",
             "spiderX": "/"
           }
         }
