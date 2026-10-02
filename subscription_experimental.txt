@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · internet-tenshi-whitelist · 3af017",
+    "remarks": "🧪 internet-tenshi-whitelist · EE · 3af017 | тест: ≈1.94 Мбит/с · 606 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · HardVPN-whitelist · 423491",
+    "remarks": "🧪 HardVPN-whitelist · EE · 423491 | тест: ≈1.79 Мбит/с · 609 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · TR · morpheus · ec171e",
+    "remarks": "🧪 igareck · EE · 44599d | тест: ≈1.73 Мбит/с · 781 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,27 +3238,31 @@
         "settings": {
           "vnext": [
             {
-              "address": "194.135.34.189",
-              "port": 443,
+              "address": "150.241.101.41",
+              "port": 8448,
               "users": [
                 {
-                  "id": "2c5268a3-4d6b-43ec-8930-a5de3d3cbbb7",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
+                  "id": "e147ea33-7a27-4073-b33c-dfb91c5c7063",
+                  "encryption": "none"
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "tcp",
+          "network": "xhttp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "max.ru",
-            "fingerprint": "firefox",
-            "publicKey": "zczckT0tZNDJue5SCz0NTLaHML3_wFFIzsWRtynbV3U",
-            "shortId": "",
+            "serverName": "api-maps.yandex.ru",
+            "fingerprint": "chrome",
+            "publicKey": "5a7gJ2ukZ5NPECAks1GHvsg-lVDXVp0W6mCHQ00_cVw",
+            "shortId": "e02b44b0419d931c",
             "spiderX": "/"
+          },
+          "xhttpSettings": {
+            "path": "/assets/v2",
+            "host": "150.241.101.41",
+            "mode": "auto"
           }
         }
       },
