@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 internet-tenshi-whitelist · EE · 3af017 | тест: ≈1.94 Мбит/с · 606 мс",
+    "remarks": "🧪 internet-tenshi-whitelist · EE · 3af017 | тест: ≈1.76 Мбит/с · 690 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 HardVPN-whitelist · EE · 423491 | тест: ≈1.79 Мбит/с · 609 мс",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · DE · internet-tenshi-whitelist · 994740",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,11 +2438,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "150.241.101.80",
-              "port": 8443,
+              "address": "154.222.69.236",
+              "port": 443,
               "users": [
                 {
-                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
+                  "id": "1677b86a-313b-4a36-81d9-224a5260ef22",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -2454,10 +2454,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "yandex.net",
-            "fingerprint": "chrome",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "6ba85179e30d4fc2",
+            "serverName": "news.mail.ru",
+            "fingerprint": "firefox",
+            "publicKey": "uIH7gOx_hHxyTJeu8JHfa4JIypRplsEVZnOIin4s9jI",
+            "shortId": "76a2ad8ee09b18bc",
             "spiderX": "/"
           }
         }
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "🧪 igareck · EE · 44599d | тест: ≈1.73 Мбит/с · 781 мс",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · HardVPN-whitelist · 423491",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,31 +3238,27 @@
         "settings": {
           "vnext": [
             {
-              "address": "150.241.101.41",
-              "port": 8448,
+              "address": "150.241.101.80",
+              "port": 8443,
               "users": [
                 {
-                  "id": "e147ea33-7a27-4073-b33c-dfb91c5c7063",
-                  "encryption": "none"
+                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "xhttp",
+          "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "api-maps.yandex.ru",
+            "serverName": "yandex.net",
             "fingerprint": "chrome",
-            "publicKey": "5a7gJ2ukZ5NPECAks1GHvsg-lVDXVp0W6mCHQ00_cVw",
-            "shortId": "e02b44b0419d931c",
+            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+            "shortId": "6ba85179e30d4fc2",
             "spiderX": "/"
-          },
-          "xhttpSettings": {
-            "path": "/assets/v2",
-            "host": "150.241.101.41",
-            "mode": "auto"
           }
         }
       },
