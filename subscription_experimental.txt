@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 internet-tenshi-whitelist · EE · 3af017 | тест: ≈1.76 Мбит/с · 690 мс",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · internet-tenshi-whitelist · 3af017",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · DE · internet-tenshi-whitelist · 994740",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · DE · zieng2-whitelist · bea018",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,11 +2438,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "154.222.69.236",
-              "port": 443,
+              "address": "185.134.203.61",
+              "port": 8445,
               "users": [
                 {
-                  "id": "1677b86a-313b-4a36-81d9-224a5260ef22",
+                  "id": "bb26e00a-f640-408b-bc9a-279879085c29",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -2454,10 +2454,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "news.mail.ru",
-            "fingerprint": "firefox",
-            "publicKey": "uIH7gOx_hHxyTJeu8JHfa4JIypRplsEVZnOIin4s9jI",
-            "shortId": "76a2ad8ee09b18bc",
+            "serverName": "passport.yandex.ru",
+            "fingerprint": "random",
+            "publicKey": "jevHLhaXUL4xbcFLBB-1rA1T04VrMvXKBhJbCs67Lkc",
+            "shortId": "",
             "spiderX": "/"
           }
         }
