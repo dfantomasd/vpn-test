@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · internet-tenshi-whitelist · 3af017",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · HardVPN-whitelist · 423491",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1638,7 +1638,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "150.241.101.17",
+              "address": "150.241.101.80",
               "port": 8443,
               "users": [
                 {
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · HardVPN-whitelist · 423491",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · Au1rxx · f88bf4",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,7 +2438,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "150.241.101.80",
+              "address": "150.241.101.17",
               "port": 8443,
               "users": [
                 {
@@ -2455,7 +2455,7 @@
           "security": "reality",
           "realitySettings": {
             "serverName": "yandex.net",
-            "fingerprint": "chrome",
+            "fingerprint": "firefox",
             "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
             "shortId": "6ba85179e30d4fc2",
             "spiderX": "/"
