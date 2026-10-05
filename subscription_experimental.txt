@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 igareck · DE · b1fddb | тест: ≈1.72 Мбит/с · 525 мс",
+    "remarks": "🧪 igareck · DE · c0af74 | тест: ≈2.56 Мбит/с · 403 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1638,7 +1638,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "144.31.62.242",
+              "address": "144.31.62.195",
               "port": 443,
               "users": [
                 {
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · internet-tenshi-whitelist · c818b3",
+    "remarks": "🧪 igareck · DE · a03ab9 | тест: ≈2.41 Мбит/с · 384 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,11 +2438,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "150.241.101.17",
-              "port": 8443,
+              "address": "144.31.62.170",
+              "port": 443,
               "users": [
                 {
-                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
+                  "id": "318c935d-c195-41d3-99ad-9bbcfdab3386",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -2454,10 +2454,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "yandex.net",
-            "fingerprint": "safari",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "6ba85179e30d4fc2",
+            "serverName": "de2.srv.vbuste.ru",
+            "fingerprint": "firefox",
+            "publicKey": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
+            "shortId": "4be4110078ebed4a",
             "spiderX": "/"
           }
         }
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · HardVPN-whitelist · 423491",
+    "remarks": "🧪 Au1rxx · NL · 822de5 | тест: ≈2.54 Мбит/с · 430 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,11 +3238,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "150.241.101.80",
-              "port": 8443,
+              "address": "150.241.80.113",
+              "port": 443,
               "users": [
                 {
-                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
+                  "id": "86037609-3790-4901-bd2f-c698092fb1fc",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -3254,10 +3254,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "yandex.net",
-            "fingerprint": "chrome",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "6ba85179e30d4fc2",
+            "serverName": "nl.skfv-mirror.ru",
+            "fingerprint": "safari",
+            "publicKey": "qmfrMwVYth3lsYuv7qfr22YlTIlNtVjMl0v4Z5pX7hM",
+            "shortId": "87cc0414902bee2d",
             "spiderX": "/"
           }
         }
