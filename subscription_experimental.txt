@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Vovaplus · DE · c0af74 | тест: ≈1.90 Мбит/с · 473 мс",
+    "remarks": "🧪 Au1rxx · DE · b1fddb | тест: ≈2.06 Мбит/с · 466 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1638,7 +1638,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "144.31.62.195",
+              "address": "144.31.62.242",
               "port": 443,
               "users": [
                 {
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · DE · b1fddb | тест: ≈1.85 Мбит/с · 515 мс",
+    "remarks": "🧪 internet-tenshi-whitelist · EE · 3af017 | тест: ≈1.63 Мбит/с · 666 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,11 +2438,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "144.31.62.242",
-              "port": 443,
+              "address": "150.241.101.17",
+              "port": 8443,
               "users": [
                 {
-                  "id": "318c935d-c195-41d3-99ad-9bbcfdab3386",
+                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -2454,10 +2454,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "de2.srv.vbuste.ru",
-            "fingerprint": "firefox",
-            "publicKey": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
-            "shortId": "4be4110078ebed4a",
+            "serverName": "yandex.net",
+            "fingerprint": "chrome",
+            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+            "shortId": "6ba85179e30d4fc2",
             "spiderX": "/"
           }
         }
