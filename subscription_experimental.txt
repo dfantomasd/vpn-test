@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · DE · b1fddb | тест: ≈2.06 Мбит/с · 466 мс",
+    "remarks": "🧪 Vovaplus · DE · b1fddb | тест: ≈2.56 Мбит/с · 398 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 internet-tenshi-whitelist · EE · 3af017 | тест: ≈1.63 Мбит/с · 666 мс",
+    "remarks": "🧪 internet-tenshi-whitelist · EE · f88bf4 | тест: ≈1.75 Мбит/с · 617 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2455,7 +2455,7 @@
           "security": "reality",
           "realitySettings": {
             "serverName": "yandex.net",
-            "fingerprint": "chrome",
+            "fingerprint": "firefox",
             "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
             "shortId": "6ba85179e30d4fc2",
             "spiderX": "/"
