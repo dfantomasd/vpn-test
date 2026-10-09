@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · GB · 661688 | тест: ≈2.86 Мбит/с · 352 мс",
+    "remarks": "🧪 Au1rxx · NL · 274812 | тест: ≈1.85 Мбит/с · 577 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1638,11 +1638,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "193.202.113.5",
+              "address": "87.199.205.28",
               "port": 443,
               "users": [
                 {
-                  "id": "6f756511-7fc3-41ba-874b-8cdc8e1b225f",
+                  "id": "501a2da5-cb22-4a3f-915e-e3b821d1d62d",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -1654,10 +1654,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "edge-uk2.mystatic-cdn.ru",
+            "serverName": "vkvd754.okcdn.ru",
             "fingerprint": "firefox",
-            "publicKey": "65d6SIYIqiX-SN4vx_BnNiQJ8Lnr0HAgUKoT7WgWRgI",
-            "shortId": "ee169e93d3c277a1",
+            "publicKey": "W-9zyiOq287RtXVTZlTFbSDJ0Mx8joyBLJoA7ZE7eBw",
+            "shortId": "ef1d3554c652a436",
             "spiderX": "/"
           }
         }
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 Vovaplus · EE · c818b3 | тест: ≈1.89 Мбит/с · 561 мс",
+    "remarks": "🧪 Vovaplus · EE · c818b3 | тест: ≈1.67 Мбит/с · 773 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
