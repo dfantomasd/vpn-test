@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Vovaplus · DE · c16ec4 | тест: ≈1.65 Мбит/с · 622 мс",
+    "remarks": "🧪 Vovaplus · DE · c16ec4 | тест: ≈1.52 Мбит/с · 717 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 Vovaplus · DE · 9c555c | тест: ≈1.66 Мбит/с · 642 мс",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · SE · internet-tenshi-whitelist · 196b39",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,11 +2438,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "144.31.62.170",
-              "port": 443,
+              "address": "sweedenqfds777.qcloud.surf",
+              "port": 21221,
               "users": [
                 {
-                  "id": "318c935d-c195-41d3-99ad-9bbcfdab3386",
+                  "id": "4ad3dbf5-2005-4d96-b56c-a0ca9905cab6",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -2454,10 +2454,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "de2.srv.vbuste.ru",
-            "fingerprint": "chrome",
-            "publicKey": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
-            "shortId": "4be4110078ebed4a",
+            "serverName": "metrika.yandex.ru",
+            "fingerprint": "firefox",
+            "publicKey": "RtxGqCtQJeOyUwSe7k6oZOrQWV1hPbC-TMqqgxl9fn4",
+            "shortId": "c430045c",
             "spiderX": "/"
           }
         }
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · internet-tenshi-whitelist · 423491",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · HardVPN-whitelist · 423491",
     "inbounds": [
       {
         "listen": "127.0.0.1",
