@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Vovaplus · DE · c16ec4 | тест: ≈2.31 Мбит/с · 383 мс",
+    "remarks": "🧪 Vovaplus · DE · 00dc71 | тест: ≈1.62 Мбит/с · 633 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1638,7 +1638,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "150.241.79.232",
+              "address": "144.31.62.195",
               "port": 443,
               "users": [
                 {
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · FI · internet-tenshi-whitelist · 42233d",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · ES · internet-tenshi-whitelist · a9fbd9",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,11 +2438,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "finkawwwbroy5.qcloud.surf",
-              "port": 20324,
+              "address": "spainspeedboostjbl88.qcloud.surf",
+              "port": 27311,
               "users": [
                 {
-                  "id": "4ad3dbf5-2005-4d96-b56c-a0ca9905cab6",
+                  "id": "8bd04756-3beb-4348-82c9-d35453df50ce",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -2455,9 +2455,9 @@
           "security": "reality",
           "realitySettings": {
             "serverName": "metrika.yandex.ru",
-            "fingerprint": "random",
-            "publicKey": "RK2g-bLoaa9GD9cJRRk2ktU9nAvP4-YmUPnBs1-UC1A",
-            "shortId": "a9391e22",
+            "fingerprint": "firefox",
+            "publicKey": "9vHDWMrmerdjndp_XHbCc9jaR-9K95H_mwpLvI2emkY",
+            "shortId": "56daff9a",
             "spiderX": "/"
           }
         }
