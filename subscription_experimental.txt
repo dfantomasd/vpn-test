@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 igareck · NL · 9a52fe | тест: ≈2.07 Мбит/с · 560 мс",
+    "remarks": "🧪 igareck · NL · 9752dd | тест: ≈2.08 Мбит/с · 484 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1655,7 +1655,7 @@
           "security": "reality",
           "realitySettings": {
             "serverName": "nd-3.ardesnode.ru",
-            "fingerprint": "chrome",
+            "fingerprint": "safari",
             "publicKey": "PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs",
             "shortId": "9ea74b83f4993ca9",
             "spiderX": "/"
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 Vovaplus · EE · 3af017 | тест: ≈1.56 Мбит/с · 715 мс",
+    "remarks": "🧪 aviamasters · DE · 9c555c | тест: ≈2.05 Мбит/с · 478 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,11 +2438,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "150.241.101.17",
-              "port": 8443,
+              "address": "144.31.62.170",
+              "port": 443,
               "users": [
                 {
-                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
+                  "id": "318c935d-c195-41d3-99ad-9bbcfdab3386",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -2454,10 +2454,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "yandex.net",
+            "serverName": "de2.srv.vbuste.ru",
             "fingerprint": "chrome",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "6ba85179e30d4fc2",
+            "publicKey": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
+            "shortId": "4be4110078ebed4a",
             "spiderX": "/"
           }
         }
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · internet-tenshi-whitelist · 423491",
+    "remarks": "🧪 Vovaplus · DE · c16ec4 | тест: ≈2.09 Мбит/с · 530 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,11 +3238,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "150.241.101.80",
-              "port": 8443,
+              "address": "150.241.79.232",
+              "port": 443,
               "users": [
                 {
-                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
+                  "id": "318c935d-c195-41d3-99ad-9bbcfdab3386",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -3254,10 +3254,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "yandex.net",
+            "serverName": "de2.srv.vbuste.ru",
             "fingerprint": "chrome",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "6ba85179e30d4fc2",
+            "publicKey": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
+            "shortId": "4be4110078ebed4a",
             "spiderX": "/"
           }
         }
