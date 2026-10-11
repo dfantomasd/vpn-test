@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Vovaplus · DE · c16ec4 | тест: ≈2.79 Мбит/с · 385 мс",
+    "remarks": "🧪 Vovaplus · DE · c16ec4 | тест: ≈2.31 Мбит/с · 383 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · SE · internet-tenshi-whitelist · 196b39",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · FI · internet-tenshi-whitelist · 42233d",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,8 +2438,8 @@
         "settings": {
           "vnext": [
             {
-              "address": "sweedenqfds777.qcloud.surf",
-              "port": 21221,
+              "address": "finkawwwbroy5.qcloud.surf",
+              "port": 20324,
               "users": [
                 {
                   "id": "4ad3dbf5-2005-4d96-b56c-a0ca9905cab6",
@@ -2455,9 +2455,9 @@
           "security": "reality",
           "realitySettings": {
             "serverName": "metrika.yandex.ru",
-            "fingerprint": "firefox",
-            "publicKey": "RtxGqCtQJeOyUwSe7k6oZOrQWV1hPbC-TMqqgxl9fn4",
-            "shortId": "c430045c",
+            "fingerprint": "random",
+            "publicKey": "RK2g-bLoaa9GD9cJRRk2ktU9nAvP4-YmUPnBs1-UC1A",
+            "shortId": "a9391e22",
             "spiderX": "/"
           }
         }
