@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Vovaplus · DE · 00dc71 | тест: ≈1.61 Мбит/с · 623 мс",
+    "remarks": "🧪 aviamasters · DE · 0248ec | тест: ≈1.91 Мбит/с · 541 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1638,7 +1638,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "144.31.62.195",
+              "address": "144.31.62.162",
               "port": 443,
               "users": [
                 {
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · DE · c16ec4 | тест: ≈1.57 Мбит/с · 635 мс",
+    "remarks": "🧪 Vovaplus · DE · c16ec4 | тест: ≈1.72 Мбит/с · 547 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · ES · internet-tenshi-whitelist · a9fbd9",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · ES · internet-tenshi-whitelist · 944e26",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3242,7 +3242,7 @@
               "port": 27311,
               "users": [
                 {
-                  "id": "8bd04756-3beb-4348-82c9-d35453df50ce",
+                  "id": "4ad3dbf5-2005-4d96-b56c-a0ca9905cab6",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
