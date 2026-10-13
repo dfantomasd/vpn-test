@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Vovaplus · DE · 00dc71 | тест: ≈2.59 Мбит/с · 394 мс",
+    "remarks": "🧪 Vovaplus · DE · 00dc71 | тест: ≈2.50 Мбит/с · 408 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · DE · c16ec4 | тест: ≈2.61 Мбит/с · 399 мс",
+    "remarks": "🧪 Au1rxx · GB · 0bf949 | тест: ≈2.43 Мбит/с · 397 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,7 +2438,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "150.241.79.232",
+              "address": "179.61.145.245",
               "port": 443,
               "users": [
                 {
@@ -2455,7 +2455,7 @@
           "security": "reality",
           "realitySettings": {
             "serverName": "de2.srv.vbuste.ru",
-            "fingerprint": "chrome",
+            "fingerprint": "randomized",
             "publicKey": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
             "shortId": "4be4110078ebed4a",
             "spiderX": "/"
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "🧪 aviamasters · GB · 7f1b7a | тест: ≈2.59 Мбит/с · 413 мс",
+    "remarks": "🧪 Au1rxx · DE · c16ec4 | тест: ≈1.81 Мбит/с · 384 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,7 +3238,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "179.61.145.245",
+              "address": "150.241.79.232",
               "port": 443,
               "users": [
                 {
