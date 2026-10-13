@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Vovaplus · DE · 00dc71 | тест: ≈2.11 Мбит/с · 471 мс",
+    "remarks": "🧪 Vovaplus · DE · 00dc71 | тест: ≈2.59 Мбит/с · 394 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 aviamasters · DE · 9c555c | тест: ≈2.09 Мбит/с · 468 мс",
+    "remarks": "🧪 Au1rxx · DE · c16ec4 | тест: ≈2.61 Мбит/с · 399 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,7 +2438,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "144.31.62.170",
+              "address": "150.241.79.232",
               "port": 443,
               "users": [
                 {
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "🧪 igareck · SE · 0dbce5 | тест: ≈1.69 Мбит/с · 768 мс",
+    "remarks": "🧪 aviamasters · GB · 7f1b7a | тест: ≈2.59 Мбит/с · 413 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,11 +3238,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "se3.h1cloud.net",
-              "port": 25643,
+              "address": "179.61.145.245",
+              "port": 443,
               "users": [
                 {
-                  "id": "83383473-0d62-4089-ac4d-d7ecb413504a",
+                  "id": "318c935d-c195-41d3-99ad-9bbcfdab3386",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -3254,10 +3254,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "ru1.boutique-hotel1108.ru",
-            "fingerprint": "firefox",
-            "publicKey": "NBKdM5Q5Tiue7YkxEldtShCCHi1GJ0WKCizyhPXQTy4",
-            "shortId": "20672f0333e23e84",
+            "serverName": "de2.srv.vbuste.ru",
+            "fingerprint": "chrome",
+            "publicKey": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
+            "shortId": "4be4110078ebed4a",
             "spiderX": "/"
           }
         }
