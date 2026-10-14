@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · GB · 0bf949 | тест: ≈1.85 Мбит/с · 582 мс",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · internet-tenshi-whitelist · 23c05a",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1638,11 +1638,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "179.61.145.245",
+              "address": "95.85.224.51",
               "port": 443,
               "users": [
                 {
-                  "id": "318c935d-c195-41d3-99ad-9bbcfdab3386",
+                  "id": "342ab7e4-5a89-0001-8809-304120d4aa83",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -1654,10 +1654,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "de2.srv.vbuste.ru",
-            "fingerprint": "randomized",
-            "publicKey": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
-            "shortId": "4be4110078ebed4a",
+            "serverName": "max.ru",
+            "fingerprint": "firefox",
+            "publicKey": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
+            "shortId": "a696de84963656de",
             "spiderX": "/"
           }
         }
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 aviamasters · PL · c32fab | тест: ≈1.54 Мбит/с · 782 мс",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · PL · HardVPN-whitelist · a763d8",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,13 +2438,12 @@
         "settings": {
           "vnext": [
             {
-              "address": "144.31.101.196",
-              "port": 33891,
+              "address": "tg.riotvpn.eu",
+              "port": 443,
               "users": [
                 {
-                  "id": "1c794e75-bcd4-4a65-9f69-ed0a10f33d60",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
+                  "id": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
+                  "encryption": "none"
                 }
               ]
             }
@@ -2454,11 +2453,14 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "browser.yandex.com",
+            "serverName": "ads.x5.ru",
             "fingerprint": "chrome",
-            "publicKey": "HXXIkFRPeRpluXJ7SOoUGf9EOq4Lw-oJpvg1W0UPbEw",
-            "shortId": "5bd7b68ca4c04443",
-            "spiderX": "/health"
+            "alpn": [
+              "channel@VPNine1-channel@VPNine1-channel@VPNine1-channel@VPNine1-channel@VPNine1-channel@VPNine1-channel@VPNine1-channel@VPNine1"
+            ],
+            "publicKey": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
+            "shortId": "2f49bccf11150ef2",
+            "spiderX": "/"
           }
         }
       },
@@ -3200,7 +3202,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · DE · internet-tenshi-whitelist · 05f30b",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · CY · Generation-Liberty · e30d44",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,11 +3240,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "qcloudge1.exitvpn.shop",
-              "port": 20268,
+              "address": "45.15.125.8",
+              "port": 8443,
               "users": [
                 {
-                  "id": "8bd04756-3beb-4348-82c9-d35453df50ce",
+                  "id": "b9e5c4b7-1e9b-4ca5-82dc-43f3a440484c",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -3254,10 +3256,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "metrika.yandex.ru",
-            "fingerprint": "firefox",
-            "publicKey": "5H_MmyfvF4SkwS84wTbLmtcZDecXJIJtZ3uisiKQpSM",
-            "shortId": "0c774b50",
+            "serverName": "max.ru",
+            "fingerprint": "chrome",
+            "publicKey": "YF_Vfx9VdDFXKM4bL1RZx6vsUqlSMtT56wPt987Aul8",
+            "shortId": "db49831a996244d8",
             "spiderX": "/"
           }
         }
