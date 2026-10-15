@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · PL · c32fab | тест: ≈1.82 Мбит/с · 659 мс",
+    "remarks": "🧪 Au1rxx · PL · 71cdcc | тест: ≈1.80 Мбит/с · 641 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1658,7 +1658,7 @@
             "fingerprint": "chrome",
             "publicKey": "HXXIkFRPeRpluXJ7SOoUGf9EOq4Lw-oJpvg1W0UPbEw",
             "shortId": "5bd7b68ca4c04443",
-            "spiderX": "/health"
+            "spiderX": "/"
           }
         }
       },
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 internet-tenshi-whitelist · EE · f88bf4 | тест: ≈1.62 Мбит/с · 664 мс",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · internet-tenshi-whitelist · f88bf4",
     "inbounds": [
       {
         "listen": "127.0.0.1",
