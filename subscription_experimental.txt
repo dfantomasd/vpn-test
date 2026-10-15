@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · EE · internet-tenshi-whitelist · f88bf4",
+    "remarks": "🧪 Au1rxx · GB · 7f1b7a | тест: ≈2.33 Мбит/с · 434 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1638,11 +1638,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "150.241.101.17",
-              "port": 8443,
+              "address": "179.61.145.245",
+              "port": 443,
               "users": [
                 {
-                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
+                  "id": "318c935d-c195-41d3-99ad-9bbcfdab3386",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -1654,10 +1654,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "yandex.net",
-            "fingerprint": "firefox",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "6ba85179e30d4fc2",
+            "serverName": "de2.srv.vbuste.ru",
+            "fingerprint": "chrome",
+            "publicKey": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
+            "shortId": "4be4110078ebed4a",
             "spiderX": "/"
           }
         }
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · PL · Au1rxx · c32fab",
+    "remarks": "🧪 Au1rxx · PL · c32fab | тест: ≈1.91 Мбит/с · 618 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · NL · Radikal · 515a83",
+    "remarks": "🧪 internet-tenshi-whitelist · EE · f88bf4 | тест: ≈1.72 Мбит/с · 582 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,11 +3238,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "ch1.hap-plus.ru",
-              "port": 443,
+              "address": "150.241.101.17",
+              "port": 8443,
               "users": [
                 {
-                  "id": "05d7a479-a099-40cf-aecf-41aa934767b0",
+                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -3254,10 +3254,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "ch1.hap-plus.ru",
-            "fingerprint": "chrome",
-            "publicKey": "NItAy5Fi072QpLZ_fscMRjXSIDpR7M3IUUlW6LvXYwE",
-            "shortId": "23ef2df191b16ed6",
+            "serverName": "yandex.net",
+            "fingerprint": "firefox",
+            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+            "shortId": "6ba85179e30d4fc2",
             "spiderX": "/"
           }
         }
