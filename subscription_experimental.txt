@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · GB · 71eb8d | тест: ≈2.80 Мбит/с · 428 мс",
+    "remarks": "🧪 Au1rxx · GB · 71eb8d | тест: ≈2.15 Мбит/с · 513 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · PL · c32fab | тест: ≈2.06 Мбит/с · 548 мс",
+    "remarks": "🧪 Au1rxx · PL · c32fab | тест: ≈1.81 Мбит/с · 650 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "📱 ПРОВЕРИТЬ iPhone · BY · internet-tenshi-whitelist · 054500",
+    "remarks": "🧪 aviamasters · EE · 3af017 | тест: ≈1.54 Мбит/с · 617 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,11 +3238,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "178.172.227.228",
-              "port": 10444,
+              "address": "150.241.101.17",
+              "port": 8443,
               "users": [
                 {
-                  "id": "b6e5dc56-836f-48c1-9163-b0b0b43b647d",
+                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -3254,10 +3254,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "ads.x5.ru",
-            "fingerprint": "firefox",
-            "publicKey": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
-            "shortId": "8debcf36f1cc69ff",
+            "serverName": "yandex.net",
+            "fingerprint": "chrome",
+            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+            "shortId": "6ba85179e30d4fc2",
             "spiderX": "/"
           }
         }
