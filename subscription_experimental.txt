@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · GB · 0457ca | тест: ≈2.33 Мбит/с · 523 мс",
+    "remarks": "🧪 Au1rxx · GB · 71eb8d | тест: ≈2.22 Мбит/с · 501 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1655,7 +1655,7 @@
           "security": "reality",
           "realitySettings": {
             "serverName": "ads.x5.ru",
-            "fingerprint": "safari",
+            "fingerprint": "chrome",
             "publicKey": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
             "shortId": "8debcf36f1cc69ff",
             "spiderX": "/"
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · PL · 71cdcc | тест: ≈1.85 Мбит/с · 591 мс",
+    "remarks": "🧪 Au1rxx · PL · c32fab | тест: ≈1.81 Мбит/с · 615 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2458,7 +2458,7 @@
             "fingerprint": "chrome",
             "publicKey": "HXXIkFRPeRpluXJ7SOoUGf9EOq4Lw-oJpvg1W0UPbEw",
             "shortId": "5bd7b68ca4c04443",
-            "spiderX": "/"
+            "spiderX": "/health"
           }
         }
       },
