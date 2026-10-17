@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · GB · 71eb8d | тест: ≈2.15 Мбит/с · 513 мс",
+    "remarks": "🧪 Au1rxx · GB · 71eb8d | тест: ≈2.54 Мбит/с · 415 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · PL · c32fab | тест: ≈1.81 Мбит/с · 650 мс",
+    "remarks": "🧪 Au1rxx · PL · c32fab | тест: ≈2.20 Мбит/с · 551 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "🧪 aviamasters · EE · 3af017 | тест: ≈1.54 Мбит/с · 617 мс",
+    "remarks": "🧪 Au1rxx · EE · c818b3 | тест: ≈1.98 Мбит/с · 562 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3255,7 +3255,7 @@
           "security": "reality",
           "realitySettings": {
             "serverName": "yandex.net",
-            "fingerprint": "chrome",
+            "fingerprint": "safari",
             "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
             "shortId": "6ba85179e30d4fc2",
             "spiderX": "/"
