@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · GB · 71eb8d | тест: ≈2.36 Мбит/с · 464 мс",
+    "remarks": "🧪 Au1rxx · GB · 71eb8d | тест: ≈2.04 Мбит/с · 529 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · PL · c32fab | тест: ≈2.06 Мбит/с · 567 мс",
+    "remarks": "🧪 Au1rxx · PL · c32fab | тест: ≈1.85 Мбит/с · 679 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · EE · 3af017 | тест: ≈2.10 Мбит/с · 920 мс",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · NL · internet-tenshi-whitelist · 0ea752",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,11 +3238,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "150.241.101.17",
+              "address": "129.101.121.70",
               "port": 8443,
               "users": [
                 {
-                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
+                  "id": "a96ad3ea-4820-43d2-bbf3-27c6bf19d652",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -3254,10 +3254,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "yandex.net",
+            "serverName": "storage.yandex.net",
             "fingerprint": "chrome",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "6ba85179e30d4fc2",
+            "publicKey": "xX9ZxZRrF_EER9-8fOegxR97HV5KaMaftAD7eq10UXw",
+            "shortId": "75dd7e79a7876314",
             "spiderX": "/"
           }
         }
