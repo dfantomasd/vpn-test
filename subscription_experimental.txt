@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · GB · 71eb8d | тест: ≈1.60 Мбит/с · 614 мс",
+    "remarks": "🧪 Au1rxx · GB · 0457ca | тест: ≈2.33 Мбит/с · 523 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1655,7 +1655,7 @@
           "security": "reality",
           "realitySettings": {
             "serverName": "ads.x5.ru",
-            "fingerprint": "chrome",
+            "fingerprint": "safari",
             "publicKey": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
             "shortId": "8debcf36f1cc69ff",
             "spiderX": "/"
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · DE · a1deb3 | тест: ≈1.61 Мбит/с · 667 мс",
+    "remarks": "🧪 Au1rxx · PL · 71cdcc | тест: ≈1.85 Мбит/с · 591 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,11 +2438,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "144.31.215.162",
-              "port": 443,
+              "address": "144.31.101.196",
+              "port": 33891,
               "users": [
                 {
-                  "id": "558b26f6-061b-4079-9b84-ca13b3e90ae3",
+                  "id": "1c794e75-bcd4-4a65-9f69-ed0a10f33d60",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -2454,10 +2454,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "c1.qwyak.ru",
+            "serverName": "browser.yandex.com",
             "fingerprint": "chrome",
-            "publicKey": "kqKpUiLtm5SPT2NO5Ss4LuH9xpTOxi79UJZWURwulwI",
-            "shortId": "547f159030aedc64",
+            "publicKey": "HXXIkFRPeRpluXJ7SOoUGf9EOq4Lw-oJpvg1W0UPbEw",
+            "shortId": "5bd7b68ca4c04443",
             "spiderX": "/"
           }
         }
