@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · GB · 71eb8d | тест: ≈2.54 Мбит/с · 415 мс",
+    "remarks": "🧪 Au1rxx · GB · 0457ca | тест: ≈1.86 Мбит/с · 688 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -1655,7 +1655,7 @@
           "security": "reality",
           "realitySettings": {
             "serverName": "ads.x5.ru",
-            "fingerprint": "chrome",
+            "fingerprint": "safari",
             "publicKey": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
             "shortId": "8debcf36f1cc69ff",
             "spiderX": "/"
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · PL · c32fab | тест: ≈2.20 Мбит/с · 551 мс",
+    "remarks": "🧪 Au1rxx · PL · 71cdcc | тест: ≈1.53 Мбит/с · 754 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2458,7 +2458,7 @@
             "fingerprint": "chrome",
             "publicKey": "HXXIkFRPeRpluXJ7SOoUGf9EOq4Lw-oJpvg1W0UPbEw",
             "shortId": "5bd7b68ca4c04443",
-            "spiderX": "/health"
+            "spiderX": "/"
           }
         }
       },
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · EE · c818b3 | тест: ≈1.98 Мбит/с · 562 мс",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · NL · internet-tenshi-whitelist · 0ea752",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,11 +3238,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "150.241.101.17",
+              "address": "129.101.121.70",
               "port": 8443,
               "users": [
                 {
-                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
+                  "id": "a96ad3ea-4820-43d2-bbf3-27c6bf19d652",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -3254,10 +3254,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "yandex.net",
-            "fingerprint": "safari",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "6ba85179e30d4fc2",
+            "serverName": "storage.yandex.net",
+            "fingerprint": "chrome",
+            "publicKey": "xX9ZxZRrF_EER9-8fOegxR97HV5KaMaftAD7eq10UXw",
+            "shortId": "75dd7e79a7876314",
             "spiderX": "/"
           }
         }
