@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · GB · 71eb8d | тест: ≈2.22 Мбит/с · 484 мс",
+    "remarks": "🧪 Au1rxx · GB · 71eb8d | тест: ≈1.60 Мбит/с · 614 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2400,7 +2400,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · PL · 71cdcc | тест: ≈1.86 Мбит/с · 886 мс",
+    "remarks": "🧪 Au1rxx · DE · a1deb3 | тест: ≈1.61 Мбит/с · 667 мс",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -2438,11 +2438,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "144.31.101.196",
-              "port": 33891,
+              "address": "144.31.215.162",
+              "port": 443,
               "users": [
                 {
-                  "id": "1c794e75-bcd4-4a65-9f69-ed0a10f33d60",
+                  "id": "558b26f6-061b-4079-9b84-ca13b3e90ae3",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -2454,10 +2454,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "browser.yandex.com",
+            "serverName": "c1.qwyak.ru",
             "fingerprint": "chrome",
-            "publicKey": "HXXIkFRPeRpluXJ7SOoUGf9EOq4Lw-oJpvg1W0UPbEw",
-            "shortId": "5bd7b68ca4c04443",
+            "publicKey": "kqKpUiLtm5SPT2NO5Ss4LuH9xpTOxi79UJZWURwulwI",
+            "shortId": "547f159030aedc64",
             "spiderX": "/"
           }
         }
@@ -3200,7 +3200,7 @@
     }
   },
   {
-    "remarks": "🧪 Au1rxx · EE · c818b3 | тест: ≈1.54 Мбит/с · 920 мс",
+    "remarks": "📱 ПРОВЕРИТЬ iPhone · NL · internet-tenshi-whitelist · 0ea752",
     "inbounds": [
       {
         "listen": "127.0.0.1",
@@ -3238,11 +3238,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "150.241.101.17",
+              "address": "129.101.121.70",
               "port": 8443,
               "users": [
                 {
-                  "id": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
+                  "id": "a96ad3ea-4820-43d2-bbf3-27c6bf19d652",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -3254,10 +3254,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "yandex.net",
-            "fingerprint": "safari",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "6ba85179e30d4fc2",
+            "serverName": "storage.yandex.net",
+            "fingerprint": "chrome",
+            "publicKey": "xX9ZxZRrF_EER9-8fOegxR97HV5KaMaftAD7eq10UXw",
+            "shortId": "75dd7e79a7876314",
             "spiderX": "/"
           }
         }
